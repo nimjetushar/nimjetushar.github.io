@@ -5,13 +5,15 @@ import {
   educationSet,
   referencesSet,
   projectsSet
-} from "../../prop_types/resume";
+} from "../../prop_types";
 
 import About from "./about";
 import Education from "./education";
 import Portfolio from "./portfolio";
 import Footer from "./footer";
 import Skills from "./skills";
+import Work from "./work";
+import References from "./references";
 
 class Section extends Component {
   render() {
@@ -23,11 +25,11 @@ class Section extends Component {
     return (
       <Fragment>
         <About content={this.props.basics} />
-        {/* <Work content={this.props.work} /> */}
+        <Work content={this.props.work} />
         <Education content={this.props.education} />
         <Skills content={skillsContent} />
         <Portfolio content={this.props.portfolio} />
-        {/* <References content={this.props.references} /> */}
+        <References content={this.props.references} />
         <Footer content={this.props.basics} />
       </Fragment>
     );

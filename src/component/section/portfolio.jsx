@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { projects, projectsSet } from "../../prop_types/resume";
+import { projects, projectsSet } from "../../prop_types";
 import Modal from "./modal";
 import Random from "../../utils/random";
 

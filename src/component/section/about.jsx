@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { basics } from "../../prop_types/resume";
+import { basics } from "../../prop_types";
 
 class About extends Component {
   render() {

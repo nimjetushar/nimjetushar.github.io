@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { education, educationSet } from "../../prop_types/resume";
+import { education, educationSet } from "../../prop_types";
 import Datetime from "../../utils/datetime";
 
 class Entry extends Component {

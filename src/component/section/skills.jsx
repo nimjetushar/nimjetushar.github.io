@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { languages, languagesSet, skillsSet } from "../../prop_types/resume";
+import { languages, languagesSet, skillsSet } from "../../prop_types";
 
 class Entry extends Component {
   constructor(props) {
@@ -87,7 +87,7 @@ class Skills extends Component {
             </h1>
           </div>
           <div className="ten columns main-col">
-            {this.props.content.skills.map(function(skill, index) {
+            {this.props.content.skills.map((skill, index) => {
               return (
                 <Skill
                   key={index}

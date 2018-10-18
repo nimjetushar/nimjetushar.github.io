@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SocialMedia from "./social_media";
 
-import { basics } from "../prop_types/resume";
+import { basics } from "../prop_types";
 
 class Banner extends Component {
   render() {

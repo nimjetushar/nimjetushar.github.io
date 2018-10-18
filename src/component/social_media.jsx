@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { profiles } from "../prop_types/resume";
+import { profiles } from "../prop_types";
 
 function mapIcon(socialMedia) {
   const media = socialMedia.replace(/ /g, "-");

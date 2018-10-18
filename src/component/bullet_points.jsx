@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { bulletPoints } from "../prop_types/resume";
+import { bulletPoints } from "../prop_types";
 
 class BulletPoints extends Component {
   render() {

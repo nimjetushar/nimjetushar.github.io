@@ -1,67 +1,90 @@
-export default {
+const email = "tusharnimje21@gmail.com";
+
+const details = {
   basics: {
-    name: "<FULL_NAME>",
-    label: "<PROFESSION>",
+    name: "Tushar Nimje",
+    label: "Software Engineer",
     picture: "<PHOTO>",
-    email: "<EMAIL_ADDRESS>",
-    phone: "<PHONE_NUMBER>",
-    website: "<WEBSITE>",
-    summary: ["<SUMMARY_1>", "<SUMMARY_2>", "<SUMMARY_3>"],
+    email: email,
+    // phone: "<PHONE_NUMBER>",
+    website: "https://nimjetushar.github.io",
+    summary: [
+      "Conscientious, results-driven and analytical software engineer with years of professional exposure in software development. Strong in architectural research, software design and agile team.",
+      "Excellent written and verbal communication skills. Interested in challenging technical roles in web applications."
+    ],
     location: {
-      address: "<ADDRESS>",
-      postalCode: "<POSTAL_CODE>",
-      city: "<CITY>",
-      countryCode: "<COUNTRY>",
-      region: "<REGION>"
+      // address: "<ADDRESS>",
+      // postalCode: "<POSTAL_CODE>",
+      city: "Pune",
+      countryCode: "India"
+      // region: "<REGION>"
     },
     profiles: [
       {
-        network: "<NETWORK>",
-        username: "<USERNAME>",
-        url: "<URL>"
+        network: "Email",
+        username: email,
+        url: `mailto:${email}`
+      },
+      {
+        network: "LinkedIn",
+        username: "tushar",
+        url: ""
+      },
+      {
+        network: "GitHub",
+        username: "nimjetushar",
+        url: "https://github.com/nimjetushar"
       }
     ]
   },
   work: [
     {
-      company: "<COMPANY_NAME>",
-      position: "<POSITION>",
-      website: "<COMPANY_WEBSITE>",
-      startDate: "<START_DATE>",
-      endDate: "<END_DATE>",
-      summary: "<SUMMARY>",
+      company: "Synechron Inc.",
+      position: "Sr. Associate Technology",
+      website: "https://www.synechron.com",
+      startDate: "Mar 2017",
+      endDate: "Oct 2018",
+      summary: "Pune, India",
       highlights: ["<HIGHTLIGHT_1>", "<HIGHTLIGHT_2>", "<HIGHTLIGHT_3>"]
-    }
-  ],
-  volunteer: [
+    },
     {
-      organization: "<ORGANIZATION_NAME>",
-      position: "<POSITION>",
-      website: "<WEBSITE>",
-      startDate: "<START_DATE>",
-      endDate: "<END_DATE>",
-      summary: "<SUMMARY>",
+      company: "GlobalLogic India Pvt Ltd.",
+      position: "Software Engineer",
+      website: "https://www.globallogic.com",
+      startDate: "Oct 2014",
+      endDate: "Mar 2017",
+      summary: "Nagpur, India",
       highlights: ["<HIGHTLIGHT_1>", "<HIGHTLIGHT_2>", "<HIGHTLIGHT_3>"]
     }
   ],
   education: [
     {
-      institution: "<INSTITUTION_NAME>",
-      area: "<AREA_OF_STUDY>",
-      studyType: "<STUDY_TYPE>",
-      startDate: "<START_DATE>",
-      endDate: "<END_DATE>",
-      gpa: "<GRADE_POINT_AVERAGE>",
-      summary: "<SUMMARY>",
-      courses: ["<COURSE_1>", "<COURSE_2>", "<COURSE_3>"]
-    }
-  ],
-  awards: [
+      institution: "G.H Raisoni College of Engineering",
+      area: "Electronic and Telecommunication",
+      studyType: "Graduation",
+      startDate: "2009-06-01",
+      endDate: "2013-05-30",
+      gpa: "First",
+      summary: "Nagpur, India"
+      // courses: ["<COURSE_1>", "<COURSE_2>", "<COURSE_3>"]
+    },
     {
-      title: "<AWARD_TITLE>",
-      date: "<DATE>",
-      awarder: "<AWARDER>",
-      summary: "<SUMMARY>"
+      institution: "Hadas Jr. College",
+      area: "Science",
+      studyType: "Higher Secondary school",
+      startDate: "2008-06-01",
+      endDate: "2009-05-30",
+      gpa: "Distinction",
+      summary: "Nagpur, India"
+    },
+    {
+      institution: "Saraswati Vidyalaya",
+      area: "Science",
+      studyType: "Secondary school",
+      startDate: "2006-06-01",
+      endDate: "2007-05-30",
+      gpa: "Distinction",
+      summary: "Nagpur, India"
     }
   ],
   projects: [
@@ -81,21 +104,32 @@ export default {
   ],
   skills: [
     {
-      title: "<DESCRIPTION_TITLE>",
-      description: ["<DESCRIPTION_1>", "<DESCRIPTION_2>", "<DESCRIPTION_3>"],
+      title: "Programming Languages",
+      description: [
+        "Worked primarily with JavaScript on frameworks such as Angular, React.js, Express.js.",
+        "Interested in functional programming and serverless architectures."
+      ],
       skillDetails: [
         {
-          name: "<SKILL_NAME>",
-          level: "<SKILL_LEVEL>",
-          keywords: ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
+          name: "JavaScript",
+          level: "90",
+          keywords: ["programming"]
         }
       ]
     }
   ],
   languages: [
     {
-      name: "<LANGUAGE_NAME>",
-      level: "<LANGUAGE_LEVEL>"
+      name: "English",
+      level: "90"
+    },
+    {
+      name: "Hindi",
+      level: "90"
+    },
+    {
+      name: "Marathi",
+      level: "90"
     }
   ],
   interests: [
@@ -113,3 +147,5 @@ export default {
     }
   ]
 };
+
+export default details;

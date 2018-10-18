@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactModal from "react-modal";
 import PropTypes from "prop-types";
-import { projects } from "../../prop_types/resume";
+import { projects } from "../../prop_types";
 
 class Modal extends Component {
   render() {
