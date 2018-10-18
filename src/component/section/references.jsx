@@ -27,11 +27,10 @@ class References extends Component {
   render() {
     const carouselConfig = {
       autoplay: true,
-      decorators: [],
-      framePadding: "10px",
-      cellSpacing: 30,
-      wrapAround: true
+      wrapAround: true,
+      withoutControls: true
     };
+
     return (
       <section id="testimonials">
         <div className="text-container">
@@ -45,8 +44,8 @@ class References extends Component {
               <div className="flexslider">
                 <Carousel
                   autoplay={carouselConfig.autoplay}
-                  decorators={carouselConfig.decorators}
                   wrapAround={carouselConfig.wrapAround}
+                  withoutControls={carouselConfig.withoutControls}
                 >
                   {this.props.content.map((entry, index) => {
                     return <Entry key={index} entry={entry} />;

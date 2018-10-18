@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 
-import resumeConfig from "../config/resume_data";
 import Header from "./header";
 import Navigation from "./navigation";
 import Banner from "./banner";
@@ -8,6 +7,7 @@ import ScrollDown from "./scrolldown";
 import Section from "./section";
 import Loading from "./loading";
 import { NavigationConfig } from "../config/app.config.js";
+import data from "../data/resume.json";
 
 class Main extends Component {
   constructor(props) {
@@ -17,10 +17,9 @@ class Main extends Component {
       navigation: NavigationConfig
     };
   }
+
   componentDidMount() {
-    this.setState({
-      resume: resumeConfig
-    });
+    this.setState({ resume: data });
   }
 
   onLoad() {

@@ -28,7 +28,7 @@ class Section extends Component {
         <Work content={this.props.work} />
         <Education content={this.props.education} />
         <Skills content={skillsContent} />
-        <Portfolio content={this.props.portfolio} />
+        {/* <Portfolio content={this.props.portfolio} /> */}
         <References content={this.props.references} />
         <Footer content={this.props.basics} />
       </Fragment>
