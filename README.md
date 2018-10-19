@@ -8,12 +8,12 @@ This project is for github profile. The project is deployed on following link [`
 
 ## Follow steps for local setup.
 
-# Install dependencies
+Install dependencies
 ```npm install```
 
-# Start development live-reload server
+Start development live-reload server
 ```npm start```
-# You can view the site at [`http://localhost:8080`](http://localhost:8080).
+You can view the site at [`http://localhost:8080`](http://localhost:8080).
 
-# Create build:
+Create build:
 ```npm run build```
