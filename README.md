@@ -1,7 +1,8 @@
-# Tushar Nimje Github profile
+# Tushar Nimje Github profile (CV)
 
-This project is for github profile
+This project is for github profile. The project is deployed on following link https://nimjetushar.github.io/
 
+## Follow steps for local setup.
 ```sh
 # Install dependencies
 npm install
