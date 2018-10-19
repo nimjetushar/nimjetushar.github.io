@@ -2,8 +2,6 @@ import PropTypes from "prop-types";
 
 export const references = PropTypes.shape({
   name: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-  company: PropTypes.string.isRequired,
   reference: PropTypes.string.isRequired
 });
 

@@ -37,6 +37,17 @@ class About extends Component {
                   </a>
                 </p>
               </div>
+              <div className="columns download">
+                <p>
+                  <a
+                    className="button"
+                    href={this.props.content.resumeUrl}
+                  >
+                    <i className="fa fa-download" />
+                    Download Resume
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

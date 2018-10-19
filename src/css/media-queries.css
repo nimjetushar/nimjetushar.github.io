@@ -156,13 +156,13 @@
    /* hide menu panel */
    #nav-wrap ul#nav {
       height: auto;
-		display: none;
+		  display: none;
       clear: both;
       width: auto;
       float: right;
 
       position: relative;
-      top: 12px;
+      /* top: 12px; */
       right: 0;
    }
 

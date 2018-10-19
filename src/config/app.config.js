@@ -4,6 +4,6 @@ export const NavigationConfig = {
   work: "Work",
   education: "Education",
   skill: "Skills",
-  portfolio: "Portfolio",
-  testimonials: "References"
+  // portfolio: "Portfolio",
+  testimonials: "testimonials"
 };

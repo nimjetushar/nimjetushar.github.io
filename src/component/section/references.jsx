@@ -10,9 +10,6 @@ class Entry extends Component {
           <p>{this.props.entry.reference}</p>
           <cite>
             {this.props.entry.name}
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            {`${this.props.entry.position}, ${this.props.entry.company}`}
           </cite>
         </blockquote>
       </div>

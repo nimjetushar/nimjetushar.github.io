@@ -10,5 +10,6 @@ export const basics = PropTypes.shape({
   website: PropTypes.string.isRequired,
   summary: bulletPoints,
   location: location,
-  profiles: profiles
+  profiles: profiles,
+  resumeUrl: PropTypes.string.isRequired
 }).isRequired;
