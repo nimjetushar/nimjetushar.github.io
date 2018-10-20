@@ -9,7 +9,7 @@ export const basics = PropTypes.shape({
   phone: PropTypes.string.isRequired,
   website: PropTypes.string.isRequired,
   summary: bulletPoints,
-  location: location,
-  profiles: profiles,
+  location,
+  profiles,
   resumeUrl: PropTypes.string.isRequired
 }).isRequired;

@@ -1,19 +1,18 @@
-var gulp = require("gulp"),
+const gulp = require("gulp"),
   del = require("del");
 
-var filesToMove = [
-  "./build/index.html",
-  "./build/favicon/**",
-  "./build/static/**",
-  "./build/service-worker.js"
-];
-
-var fileToDelete = [
-  "./index.html",
-  "./favicon/**",
-  "./static/**",
-  "./service-worker.js"
-];
+const filesToMove = [
+    "./build/index.html",
+    "./build/favicon/**",
+    "./build/static/**",
+    "./build/service-worker.js"
+  ],
+  fileToDelete = [
+    "./index.html",
+    "./favicon/**",
+    "./static/**",
+    "./service-worker.js"
+  ];
 
 gulp.task("default", ["clean", "move"], function() {
   console.log("Moving files from build folder");

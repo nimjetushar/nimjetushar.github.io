@@ -170,6 +170,17 @@
       ]
     },
     {
+      "title": "Database",
+      "description": [],
+      "skillDetails": [
+        {
+          "name": "Mongodb",
+          "level": "50",
+          "keywords": ["mongo db", "mongoos", ""]
+        }
+      ]
+    },
+    {
       "title": "Tools",
       "description": [],
       "skillDetails": [

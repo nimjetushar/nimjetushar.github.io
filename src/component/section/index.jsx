@@ -9,7 +9,7 @@ import {
 
 import About from "./about";
 import Education from "./education";
-import Portfolio from "./portfolio";
+// import Portfolio from "./portfolio";
 import Footer from "./footer";
 import Skills from "./skills";
 import Work from "./work";
@@ -37,7 +37,7 @@ class Section extends Component {
 }
 
 Section.propTypes = {
-  basics: basics,
+  basics,
   work: workSet,
   education: educationSet,
   portfolio: projectsSet,

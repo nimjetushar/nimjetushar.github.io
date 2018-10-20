@@ -19,7 +19,7 @@ class Banner extends Component {
 }
 
 Banner.propTypes = {
-  basics: basics
+  basics
 };
 
 export default Banner;

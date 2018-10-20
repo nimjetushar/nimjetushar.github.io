@@ -32,7 +32,7 @@ class Navigation extends Component {
 }
 
 Navigation.propTypes = {
-  navigation: navigation
+  navigation
 };
 
 export default Navigation;

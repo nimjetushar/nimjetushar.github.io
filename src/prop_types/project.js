@@ -8,7 +8,7 @@ export const projects = PropTypes.shape({
   releaseDate: PropTypes.string.isRequired,
   website: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
-  image: image,
+  image,
   keywords: bulletPoints
 });
 export const projectsSet = PropTypes.arrayOf(projects).isRequired;

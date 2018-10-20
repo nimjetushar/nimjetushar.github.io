@@ -40,7 +40,7 @@ class SocialMedia extends Component {
 
 SocialMedia.propTypes = {
   ulClass: PropTypes.string.isRequired,
-  profiles: profiles
+  profiles
 };
 
 export default SocialMedia;

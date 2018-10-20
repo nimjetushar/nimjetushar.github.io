@@ -6,7 +6,7 @@ function applyFunc(dt) {
 }
 
 const Datetime = {
-  getDisplayFromDate: function(datetime) {
+  getDisplayFromDate(datetime) {
     if (datetime === "Present") {
       return datetime;
     }
