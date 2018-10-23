@@ -30,5 +30,15 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "move": "gulp"
-  }
+  },
+  "description": "Github profile (https://nimjetushar.github.io/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimjetushar/nimjetushar.github.io.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/nimjetushar/nimjetushar.github.io/issues"
+  },
+  "homepage": "https://nimjetushar.github.io/"
 }

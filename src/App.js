@@ -7,12 +7,13 @@ import Main from "./component/main";
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="*" component={NotFound} />
-        </Switch>
-      </Router>
+      <Main />
+      // <Router>
+      //   <Switch>
+      //     <Route exact path="/" component={Main} />
+      //     <Route exact path="*" component={NotFound} />
+      //   </Switch>
+      // </Router>
     );
   }
 }
