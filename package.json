@@ -10,8 +10,7 @@
     "nuka-carousel": "4.4.1",
     "react": "16.5.2",
     "react-dom": "16.4.2",
-    "react-modal": "3.6.1",
-    "react-router-dom": "4.3.1"
+    "react-modal": "3.6.1"
   },
   "devDependencies": {
     "del": "3.0.0",

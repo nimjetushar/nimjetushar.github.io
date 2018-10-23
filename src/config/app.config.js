@@ -7,3 +7,9 @@ export const NavigationConfig = {
   // portfolio: "Portfolio",
   testimonials: "testimonials"
 };
+
+export function getDataUrl() {
+  if (window.location.origin.indexOf("localhost") === -1) {
+    return "./src/data/resume.json";
+  }
+}

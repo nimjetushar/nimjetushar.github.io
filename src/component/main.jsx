@@ -6,8 +6,7 @@ import Banner from "./banner";
 import ScrollDown from "./scrolldown";
 import Section from "./section";
 import Loading from "./loading";
-import { NavigationConfig } from "../config/app.config.js";
-import data from "../data/resume.json";
+import { NavigationConfig, getDataUrl } from "../config/app.config.js";
 
 class Main extends Component {
   constructor(props) {
@@ -19,7 +18,19 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    this.setState({ resume: data });
+    const url = getDataUrl();
+    if (url) {
+      fetch(url)
+        .then(res => res.json())
+        .then(res => {
+          this.setState({ resume: res });
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    } else {
+      this.setState({ resume: require("../data/resume.json") });
+    }
   }
 
   onLoad() {
