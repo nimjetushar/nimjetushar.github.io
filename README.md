@@ -15,7 +15,7 @@ Start development live-reload server
 ```npm start```
 You can view the site at [`http://localhost:8080`](http://localhost:8080).
 
-Create build:
+Create build
 ```npm run build```
 
 ## Licence
