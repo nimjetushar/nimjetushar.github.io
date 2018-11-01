@@ -2,6 +2,7 @@
 
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-website)](https://nimjetushar.github.io)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7dae8aeb54a040e8b85406dee879b4a7)](https://www.codacy.com/app/tpn/nimjetushar.github.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nimjetushar/nimjetushar.github.io&amp;utm_campaign=Badge_Grade)
+[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/nimjetushar/nimjetushar-github-io)
 
 This project is for github profile. The project is deployed on following link [`https://nimjetushar.github.io/`](https://nimjetushar.github.io/)
 
