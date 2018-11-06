@@ -1,22 +1,19 @@
 import React, { Component } from "react";
 import { education, educationSet } from "../../prop_types";
-import Datetime from "../../utils/datetime";
 
 class Entry extends Component {
   render() {
-    const startDate = Datetime.getDisplayFromDate(this.props.entry.startDate);
-    const endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
     return (
       <div className="row item">
         <div className="twelve columns">
           <h3>{this.props.entry.institution}</h3>
           <p className="info">
-            {this.props.entry.area}
+            {this.props.entry.studyType} in {this.props.entry.area}
             <span> &bull; </span>
             <span className="info-summary">{this.props.entry.summary}</span>
             <span> &bull; </span>
             <em className="date">
-              {startDate} - {endDate}
+              {this.props.entry.startDate} - {this.props.entry.endDate}
             </em>
           </p>
         </div>

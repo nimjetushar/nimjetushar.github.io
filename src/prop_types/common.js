@@ -13,6 +13,7 @@ export const profile = PropTypes.shape({
   username: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 }).isRequired;
+
 export const profiles = PropTypes.arrayOf(profile).isRequired;
 
 export const bulletPoints = PropTypes.arrayOf(PropTypes.string).isRequired;

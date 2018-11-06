@@ -6,11 +6,9 @@
   "license": "apache-2.0",
   "dependencies": {
     "font-awesome": "4.7.0",
-    "moment": "2.22.2",
     "nuka-carousel": "4.4.1",
     "react": "16.5.2",
     "react-dom": "16.4.2",
-    "react-modal": "3.6.1",
     "react-router-dom": "4.3.1"
   },
   "devDependencies": {

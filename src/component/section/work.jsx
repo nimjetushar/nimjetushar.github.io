@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { workSet, work } from "../../prop_types";
-import Datetime from "../../utils/datetime";
 import BulletPoints from "../bullet_points";
 
 class Entry extends Component {
   render() {
-    const startDate = Datetime.getDisplayFromDate(this.props.entry.startDate);
-    const endDate = Datetime.getDisplayFromDate(this.props.entry.endDate);
     const index = this.props.index + 1;
     const divider = index === this.props.total ? <br /> : <hr />;
 
@@ -25,7 +22,7 @@ class Entry extends Component {
             <span className="info-summary">{this.props.entry.summary}</span>
             <span> &bull; </span>
             <em className="date">
-              {startDate} - {endDate}
+              {this.props.entry.startDate} - {this.props.entry.endDate}
             </em>
           </p>
           <BulletPoints points={this.props.entry.highlights} />

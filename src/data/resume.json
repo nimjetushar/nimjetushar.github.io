@@ -33,6 +33,11 @@
         "network": "GitHub",
         "username": "nimjetushar",
         "url": "https://github.com/nimjetushar"
+      },
+      {
+        "network": "StackShare",
+        "username": "nimjetushar",
+        "url": "https://stackshare.io/nimjetushar/my-stack"
       }
     ]
   },
@@ -67,20 +72,20 @@
   "education": [
     {
       "institution": "G.H Raisoni College of Engineering",
-      "area": "Electronic and Telecommunication",
+      "area": "Electronic and Telecommunication (ETC)",
       "studyType": "Graduation",
-      "startDate": "2009-06-01",
-      "endDate": "2013-05-30",
-      "gpa": "First",
+      "startDate": "July 2009",
+      "endDate": "June 2013",
+      "gpa": "First class",
       "summary": "Nagpur, India",
-      "courses": ["Electronics", "Telecommunication"]
+      "courses": ["B.E", "Electronics", "Telecommunication"]
     },
     {
       "institution": "Hadas Jr. College",
       "area": "Science",
-      "studyType": "Higher Secondary school",
-      "startDate": "2008-06-01",
-      "endDate": "2009-05-30",
+      "studyType": "HSC",
+      "startDate": "July 2008",
+      "endDate": "June 2009",
       "gpa": "Distinction",
       "summary": "Nagpur, India",
       "courses": ["Physic", "Chemistry", "Maths"]
@@ -88,27 +93,12 @@
     {
       "institution": "Saraswati Vidyalaya",
       "area": "Science",
-      "studyType": "Secondary school",
-      "startDate": "2006-06-01",
-      "endDate": "2007-05-30",
+      "studyType": "SSC",
+      "startDate": "July 2006",
+      "endDate": "June 2007",
       "gpa": "Distinction",
       "summary": "Nagpur, India",
       "courses": []
-    }
-  ],
-  "projects": [
-    {
-      "name": "<PUBLICATION_NAME>",
-      "publisher": "<PUBLISHER>",
-      "category": "<CATEGORY>",
-      "releaseDate": "<RELEASE_DATE>",
-      "website": "<WEBSITE>",
-      "summary": "<SUMMARY>",
-      "image": {
-        "modal": "<MODAL_IMAGE>",
-        "thumb": "<THUMBNAIL_IMAGE>"
-      },
-      "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
     }
   ],
   "skills": [
@@ -139,7 +129,7 @@
       ]
     },
     {
-      "title": "Frameworks/Libraies",
+      "title": "Frameworks / Libraies",
       "description": [],
       "skillDetails": [
         {
@@ -148,7 +138,7 @@
           "keywords": ["Angular 2", "Angular 4", "Angular 5"]
         },
         {
-          "name": "Less/SCSS",
+          "name": "Less / SCSS",
           "level": "80",
           "keywords": ["css preprocessors"]
         },
@@ -219,12 +209,6 @@
     {
       "name": "Marathi",
       "level": "90"
-    }
-  ],
-  "interests": [
-    {
-      "name": "<INTEREST_NAME>",
-      "keywords": ["<KEYWORD_1>", "<KEYWORD_2>", "<KEYWORD_3>"]
     }
   ],
   "references": [

@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from "react";
+
 import {
   basics,
   workSet,
   educationSet,
   referencesSet,
-  projectsSet
+  skillsSet,
+  languagesSet
 } from "../../prop_types";
-
 import About from "./about";
 import Education from "./education";
-// import Portfolio from "./portfolio";
 import Footer from "./footer";
 import Skills from "./skills";
 import Work from "./work";
@@ -28,7 +28,6 @@ class Section extends Component {
         <Work content={this.props.work} />
         <Education content={this.props.education} />
         <Skills content={skillsContent} />
-        {/* <Portfolio content={this.props.portfolio} /> */}
         <References content={this.props.references} />
         <Footer content={this.props.basics} />
       </Fragment>
@@ -40,8 +39,9 @@ Section.propTypes = {
   basics,
   work: workSet,
   education: educationSet,
-  portfolio: projectsSet,
-  references: referencesSet
+  references: referencesSet,
+  skills: skillsSet,
+  languages: languagesSet
 };
 
 export default Section;
