@@ -18,19 +18,13 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    const url = getDataUrl();
-    if (url) {
-      fetch(url)
-        .then(res => res.json())
-        .then(res => {
-          this.setState({ resume: res });
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    } else {
-      this.setState({ resume: require("../data/resume.json") });
-    }
+    getDataUrl()
+      .then(res => {
+        this.setState({ resume: res });
+      })
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   onLoad() {
