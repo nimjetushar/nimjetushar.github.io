@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { bulletPoints } from "./common";
+import PropTypes from 'prop-types';
+import { bulletPoints } from './common';
 
 export const education = PropTypes.shape({
   institution: PropTypes.string.isRequired,

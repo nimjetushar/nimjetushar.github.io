@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Header extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class Header extends Component {
 
   componentDidMount() {
     this.updateDimensions();
-    return window.addEventListener("resize", this.updateDimensions.bind(this));
+    return window.addEventListener('resize', this.updateDimensions.bind(this));
   }
 
   render() {
@@ -30,14 +30,14 @@ class Header extends Component {
       height: this.state.window.height
     };
     return (
-      <header id="home" style={style}>
-        {this.props.children}
-      </header>
+        <header id="home" style={ style }>
+            {this.props.children}
+        </header>
     );
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions.bind(this));
+    window.removeEventListener('resize', this.updateDimensions.bind(this));
   }
 }
 

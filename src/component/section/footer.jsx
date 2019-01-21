@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import SocialMedia from "../social_media";
+import React, { Component } from 'react';
+import SocialMedia from '../social_media';
 
 class Footer extends Component {
   render() {
     return (
-      <footer>
-        <div className="row">
-          <div className="twelve columns">
-            <SocialMedia
+        <footer>
+            <div className="row">
+                <div className="twelve columns">
+                    <SocialMedia
               ulClass="social-links"
-              profiles={this.props.content.profiles}
+              profiles={ this.props.content.profiles }
             />
-            <ul className="copyright">
-              <li>
+                    <ul className="copyright">
+                        <li>
                 This site is developed in React.js by&nbsp;
                 <a
                   href="https://nimjetushar.github.io"
@@ -21,7 +21,7 @@ class Footer extends Component {
                   rel="noopener noreferrer"
                 >
                   Tushar Nimje
-                </a>{" "}
+                </a>{' '}
                 from the original design of Ceevee from&nbsp;
                 <a
                   href="http://www.styleshout.com/"
@@ -31,16 +31,16 @@ class Footer extends Component {
                 >
                   Styleshout
                 </a>
-              </li>
-            </ul>
-          </div>
-          <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#home">
-              <i className="icon-up-open" />
-            </a>
-          </div>
-        </div>
-      </footer>
+                        </li>
+                    </ul>
+                </div>
+                <div id="go-top">
+                    <a className="smoothscroll" title="Back to Top" href="#home">
+                        <i className="icon-up-open" />
+                    </a>
+                </div>
+            </div>
+        </footer>
     );
   }
 }

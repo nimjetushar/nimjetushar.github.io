@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { bulletPoints, location, profiles } from "./common";
+import PropTypes from 'prop-types';
+import { bulletPoints, location, profiles } from './common';
 
 export const basics = PropTypes.shape({
   name: PropTypes.string.isRequired,

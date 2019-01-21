@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Link extends Component {
   render() {
     return (
-      <li>
-        <a className="smoothscroll" href={`#${this.props.link}`}>
-          {this.props.name}
-        </a>
-      </li>
+        <li>
+            <a className="smoothscroll" href={ `#${ this.props.link }` }>
+                {this.props.name}
+            </a>
+        </li>
     );
   }
 }

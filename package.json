@@ -64,7 +64,7 @@
     "build": "npm-run-all build-css build-js && npm run move",
     "test": "node scripts/test.js --env=jsdom",
     "move": "gulp",
-    "lint": "eslint --fix --ext .js,.jsx src/**"
+    "lint": "eslint --ext .jsx,.js --fix src/**"
   },
   "description": "Github profile (https://nimjetushar.github.io/)",
   "repository": {
