@@ -1,0 +1,24 @@
+@import "./css/default.css";
+@import "./css/layout.css";
+@import "./css/magnific-popup.css";
+@import "./css/media-queries.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+footer .stackshare-logo {
+    opacity: 0.3;
+}
+
+.stackshare-logo {
+    background: #fff url("./images/stackshare-logo.png") no-repeat center;
+    width: 0.9em;
+    height: 0.9em;
+    background-size: contain;
+    display: block;
+    border-radius: 4px;
+}

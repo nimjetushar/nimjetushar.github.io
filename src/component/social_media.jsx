@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { profiles } from '../prop_types';
-import stackshare from '../images/stackshare-logo.png'
 
 function mapIcon(socialMedia) {
   const media = socialMedia.replace(/ /g, '-');
@@ -16,7 +15,7 @@ function mapIcon(socialMedia) {
           </i>
       );
     case 'stackshare':
-      return <img className="stackshare-logo" src={ stackshare } alt="SS"/>;
+      return <i className="stackshare-logo"/>;
     default:
       return <i className={ `fa fa-${ media }` } />;
   }

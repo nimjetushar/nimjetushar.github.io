@@ -27,7 +27,7 @@ class Header extends Component {
 
   render() {
     const style = {
-      height: this.state.window.height
+      height: this.state.window.innerHeight
     };
     return (
         <header id="home" style={ style }>
