@@ -83,5 +83,13 @@
       "node",
       "mjs"
     ]
+  },
+  "buildconfig": {
+    "port": 3000,
+    "filecache": [
+      "**.css",
+      "font/**.*",
+      "image/**.*"
+    ]
   }
 }

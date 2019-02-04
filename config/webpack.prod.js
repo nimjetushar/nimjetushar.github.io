@@ -5,7 +5,8 @@ const webpackMerge = require("webpack-merge"),
   SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin'),
   path = require("path"),
   basePath = process.cwd(),
-  rootDir = path.resolve(basePath, "./");
+  rootDir = path.resolve(basePath, "./"),
+  packageJson = require("../package.json");
 
 module.exports = mode => {
   return webpackMerge(commonConfig(mode), {
@@ -22,9 +23,7 @@ module.exports = mode => {
         cacheId: 'nimjetushar',
         filename: 'service-workers.js',
         staticFileGlobs: [
-          'dist/**.css',
-          'dist/font/**.*',
-          'dist/image/**.*'
+          ...packageJson.buildconfig.filecache
         ],
         maximumFileSizeToCacheInBytes: 4194304,
         staticFileGlobsIgnorePatterns: [/\.json/, /\.map/, /\.xml/]

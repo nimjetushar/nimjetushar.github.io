@@ -3,7 +3,8 @@ const webpackMerge = require("webpack-merge"),
   path = require("path"),
   basePath = process.cwd(),
   rootDir = path.resolve(basePath, "./"),
-  port = 3000;
+  packageJson = require('../package.json'),
+  port = packageJson.buildconfig.port;
 
 module.exports = (mode) => {
   return webpackMerge(commonConfig(mode), {

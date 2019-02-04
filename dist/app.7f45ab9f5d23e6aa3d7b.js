@@ -147,21 +147,21 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([32,3]);
+/******/ 	deferredModules.push([312,3]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 29:
+/***/ 309:
 /***/ (function(module) {
 
 module.exports = {"basics":{"name":"Tushar Nimje","label":"Software Engineer","picture":"https://avatars2.githubusercontent.com/u/16893368?s=460&v=4","email":"tusharnimje21@gmail.com","phone":"","website":"https://nimjetushar.github.io","summary":["Software engineer with hands on experience in JavaScript, Angular, React and Nodejs. Experience of working in an Agile and Fast-paced product development enviroment. Excellent written and verbal communication skills. Interested in challenging technical roles in web applications.","Conscientious, results-driven and analytical software engineer with years of professional exposure in software development. Strong in architectural research, software design and agile team."],"resumeUrl":"https://github.com/nimjetushar/Documents/raw/master/Tushar%20Nimje%20(JavaScript%20developer-3.10%20%20year).pdf","location":{"address":"","postalCode":"","city":"Pune","countryCode":"India","region":""},"profiles":[{"network":"Email","username":"tusharnimje21@gmail.com","url":"mailto:tusharnimje21@gmail.com"},{"network":"LinkedIn","username":"tushar","url":"https://www.linkedin.com/in/tushar-nimje"},{"network":"GitHub","username":"nimjetushar","url":"https://github.com/nimjetushar"},{"network":"StackShare","username":"nimjetushar","url":"https://stackshare.io/nimjetushar/my-stack"}]},"work":[{"company":"Synechron Inc.","position":"Sr. Associate Technology","website":"https://www.synechron.com","startDate":"Mar 2017","endDate":"Oct 2018","summary":"Pune, India","highlights":["Involved in the development of the company’s 2 main projects in the finance domain using Angular, javascript, HTML, CSS technology.","Responsible for architecture design, core development and deployment of application.","Implemented CI/CD pipeline for all the microservices using Jenkins with PCF deployment.","Delivered project using Agile methodology."]},{"company":"GlobalLogic India Pvt Ltd.","position":"Software Engineer","website":"https://www.globallogic.com","startDate":"Oct 2014","endDate":"Mar 2017","summary":"Nagpur, India","highlights":["Involved in development and issue fixing of project.","Responsible for different modules of application."]}],"education":[{"institution":"G.H Raisoni College of Engineering","area":"Electronic and Telecommunication (ETC)","studyType":"Graduation","startDate":"July 2009","endDate":"June 2013","gpa":"First class","summary":"Nagpur, India","courses":["B.E","Electronics","Telecommunication"]},{"institution":"Hadas Jr. College","area":"Science","studyType":"HSC","startDate":"July 2008","endDate":"June 2009","gpa":"Distinction","summary":"Nagpur, India","courses":["Physic","Chemistry","Maths"]},{"institution":"Saraswati Vidyalaya","area":"Science","studyType":"SSC","startDate":"July 2006","endDate":"June 2007","gpa":"Distinction","summary":"Nagpur, India","courses":[]}],"skills":[{"title":"Programming Languages","description":[],"skillDetails":[{"name":"JavaScript","level":"90","keywords":["programming"]},{"name":"HTML + CSS","level":"90","keywords":["programming"]},{"name":"Node Js","level":"80","keywords":["programming","server technology"]},{"name":"Python","level":"50","keywords":["language"]}]},{"title":"Frameworks / Libraies","description":[],"skillDetails":[{"name":"Angular","level":"90","keywords":["Angular 2","Angular 4","Angular 5"]},{"name":"Less / SCSS","level":"80","keywords":["css preprocessors"]},{"name":"AngularJs","level":"70","keywords":["Angular 1.x"]},{"name":"React + Redux","level":"60","keywords":["library"]},{"name":"Express Js","level":"60","keywords":["framework"]}]},{"title":"Database","description":[],"skillDetails":[{"name":"Mongodb","level":"50","keywords":["mongo db","mongoos"]}]},{"title":"Tools","description":[],"skillDetails":[{"name":"Git","level":"80","keywords":["version management tool"]},{"name":"Webpack","level":"70","keywords":["bundler"]},{"name":"Gulp","level":"70","keywords":["build tool"]},{"name":"Cordova","level":"50","keywords":["mobile app development tool"]}]}],"languages":[{"name":"English","level":"90"},{"name":"Hindi","level":"90"},{"name":"Marathi","level":"90"}],"references":[{"name":"Albert Einstein","position":"","company":"","reference":"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."},{"name":"Walt Disney","position":"","company":"","reference":"All our dreams can come true if we have the courage to pursue them."}]};
 
 /***/ }),
 
-/***/ 32:
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -172,7 +172,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(5);
+var react_dom = __webpack_require__(121);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // CONCATENATED MODULE: ./src/component/header.jsx
@@ -1267,7 +1267,7 @@ work_Work.propTypes = {
 };
 /* harmony default export */ var section_work = (work_Work);
 // EXTERNAL MODULE: ./node_modules/nuka-carousel/es/index.js + 19 modules
-var es = __webpack_require__(7);
+var es = __webpack_require__(123);
 
 // CONCATENATED MODULE: ./src/component/section/references.jsx
 function references_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { references_typeof = function _typeof(obj) { return typeof obj; }; } else { references_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return references_typeof(obj); }
@@ -1508,7 +1508,7 @@ function getDataUrl() {
         reject(err);
       });
     } else {
-      var data = __webpack_require__(29);
+      var data = __webpack_require__(309);
 
       resolve(data);
     }
@@ -1645,11 +1645,19 @@ function (_Component) {
 }(react["Component"]);
 
 /* harmony default export */ var src_App = (App_App);
+// CONCATENATED MODULE: ./src/registerWebWorkers.js
+function registerWebWorker() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('dist/service-workers.js');
+  }
+}
 // CONCATENATED MODULE: ./src/index.js
 
 
 
+
 react_dom_default.a.render(react_default.a.createElement(src_App, null), document.getElementById('root'));
+registerWebWorker();
 
 /***/ })
 
