@@ -1,11 +1,9 @@
-const webpack = require('webpack'),
-  HtmlWebpackPlugin = require('html-webpack-plugin'),
+const HtmlWebpackPlugin = require('html-webpack-plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin'),
   CleanWebpackPlugin = require('clean-webpack-plugin'),
   path = require('path'),
   basePath = process.cwd(),
   cleanUpList = [path.resolve(basePath, 'dist'), path.resolve(basePath, 'index.html')];
-
 
 function fileLoaderOpt(type) {
   return {
@@ -74,7 +72,7 @@ module.exports = mode => {
         use: [
           {
             loader: 'file-loader',
-            options: fileLoaderOpt(image),
+            options: fileLoaderOpt('image'),
           }
         ]
       }]
