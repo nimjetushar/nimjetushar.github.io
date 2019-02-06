@@ -23,14 +23,14 @@ class Section extends Component {
     };
 
     return (
-        <Fragment>
-            <About content={ this.props.basics } />
-            <Work content={ this.props.work } />
-            <Education content={ this.props.education } />
-            <Skills content={ skillsContent } />
-            <References content={ this.props.references } />
-            <Footer content={ this.props.basics } />
-        </Fragment>
+      <Fragment>
+        <About content={this.props.basics} />
+        <Work content={this.props.work} />
+        <Education content={this.props.education} />
+        <Skills content={skillsContent} />
+        <References content={this.props.references} />
+        <Footer content={this.props.basics} />
+      </Fragment>
     );
   }
 }

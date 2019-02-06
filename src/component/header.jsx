@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Header extends Component {
   constructor(props) {
@@ -30,15 +31,19 @@ class Header extends Component {
       height: this.state.window.innerHeight
     };
     return (
-        <header id="home" style={ style }>
-            {this.props.children}
-        </header>
+      <header id="home" style={style}>
+        {this.props.children}
+      </header>
     );
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateDimensions.bind(this));
   }
+}
+
+Header.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Header;

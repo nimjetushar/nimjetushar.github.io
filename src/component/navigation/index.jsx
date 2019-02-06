@@ -9,24 +9,24 @@ class Navigation extends Component {
     function navContent(navigation) {
       const keys = Object.keys(navigation);
       const links = keys.map((navigationLink, index) => {
-        const navigationName = navigation[ navigationLink ];
-        return <Link key={ index } link={ navigationLink } name={ navigationName } />;
+        const navigationName = navigation[navigationLink];
+        return <Link key={index} link={navigationLink} name={navigationName} />;
       });
       return links;
     }
 
     return (
-        <nav id="nav-wrap" className="opaque">
-            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+      <nav id="nav-wrap" className="opaque">
+        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
         </a>
-            <a className="mobile-btn" href="#" title="Hide navigation">
+        <a className="mobile-btn" href="#" title="Hide navigation">
           Hide navigation
         </a>
-            <ul id="nav" className="nav">
-                {navContent(this.props.navigation)}
-            </ul>
-        </nav>
+        <ul id="nav" className="nav">
+          {navContent(this.props.navigation)}
+        </ul>
+      </nav>
     );
   }
 }

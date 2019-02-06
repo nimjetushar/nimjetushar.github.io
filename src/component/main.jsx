@@ -29,22 +29,22 @@ class Main extends Component {
 
   onLoad() {
     return (
-        <Fragment>
-            <Header>
-                <Navigation navigation={ this.state.navigation } />
-                <Banner basics={ this.state.resume.basics } />
-                <ScrollDown />
-            </Header>
-            <Section
-          basics={ this.state.resume.basics }
-          work={ this.state.resume.work }
-          education={ this.state.resume.education }
-          skills={ this.state.resume.skills }
-          languages={ this.state.resume.languages }
-          portfolio={ this.state.resume.projects }
-          references={ this.state.resume.references }
+      <Fragment>
+        <Header>
+          <Navigation navigation={this.state.navigation} />
+          <Banner basics={this.state.resume.basics} />
+          <ScrollDown />
+        </Header>
+        <Section
+          basics={this.state.resume.basics}
+          work={this.state.resume.work}
+          education={this.state.resume.education}
+          skills={this.state.resume.skills}
+          languages={this.state.resume.languages}
+          portfolio={this.state.resume.projects}
+          references={this.state.resume.references}
         />
-        </Fragment>
+      </Fragment>
     );
   }
 

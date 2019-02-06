@@ -12,7 +12,7 @@ class Entry extends Component {
         <div className="row item">
             <div className="twelve columns">
                 <h3>
-                    <a href={ this.props.entry.website } target="_blank">
+                    <a href={ this.props.entry.website } target="_blank" rel="noopener noreferrer">
                         {this.props.entry.company}
                     </a>
                 </h3>

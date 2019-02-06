@@ -175,6 +175,10 @@ var react_default = /*#__PURE__*/__webpack_require__.n(react);
 var react_dom = __webpack_require__(121);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
+// EXTERNAL MODULE: ./node_modules/prop-types/index.js
+var prop_types = __webpack_require__(1);
+var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
+
 // CONCATENATED MODULE: ./src/component/header.jsx
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -193,6 +197,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -253,11 +258,10 @@ function (_Component) {
   return Header;
 }(react["Component"]);
 
+header_Header.propTypes = {
+  children: prop_types_default.a.node.isRequired
+};
 /* harmony default export */ var header = (header_Header);
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(1);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-
 // CONCATENATED MODULE: ./src/component/navigation/link.jsx
 function link_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { link_typeof = function _typeof(obj) { return typeof obj; }; } else { link_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return link_typeof(obj); }
 
@@ -728,7 +732,8 @@ function (_Component) {
   about_createClass(About, [{
     key: "render",
     value: function render() {
-      var summary = this.props.content.summary.map(function (content, index) {
+      var props = this.props;
+      var summary = props.content.summary.map(function (content, index) {
         return react_default.a.createElement("p", {
           key: index
         }, content);
@@ -741,8 +746,8 @@ function (_Component) {
         className: "two columns"
       }, react_default.a.createElement("img", {
         className: "profile-pic",
-        src: this.props.content.picture,
-        alt: this.props.content.name
+        src: props.content.picture,
+        alt: props.content.name
       })), react_default.a.createElement("div", {
         className: "ten columns main-col"
       }, react_default.a.createElement("h2", null, "About Me"), summary, react_default.a.createElement("div", {
@@ -751,13 +756,13 @@ function (_Component) {
         className: "columns contact-details"
       }, react_default.a.createElement("h2", null, "Contact Details"), react_default.a.createElement("p", {
         className: "address"
-      }, react_default.a.createElement("span", null, this.props.content.location.city), react_default.a.createElement("br", null), react_default.a.createElement("span", null, this.props.content.location.countryCode), react_default.a.createElement("br", null), react_default.a.createElement("a", {
-        href: "mailto:".concat(this.props.content.email)
-      }, react_default.a.createElement("span", null, this.props.content.email)))), react_default.a.createElement("div", {
+      }, react_default.a.createElement("span", null, props.content.location.city), react_default.a.createElement("br", null), react_default.a.createElement("span", null, props.content.location.countryCode), react_default.a.createElement("br", null), react_default.a.createElement("a", {
+        href: "mailto:".concat(props.content.email)
+      }, react_default.a.createElement("span", null, props.content.email)))), react_default.a.createElement("div", {
         className: "columns download"
       }, react_default.a.createElement("p", null, react_default.a.createElement("a", {
         className: "button",
-        href: this.props.content.resumeUrl
+        href: props.content.resumeUrl
       }, react_default.a.createElement("i", {
         className: "fa fa-download"
       }), "Download Resume")))))));
@@ -888,6 +893,7 @@ function footer_setPrototypeOf(o, p) { footer_setPrototypeOf = Object.setPrototy
 
 
 
+
 var footer_Footer =
 /*#__PURE__*/
 function (_Component) {
@@ -902,13 +908,14 @@ function (_Component) {
   footer_createClass(Footer, [{
     key: "render",
     value: function render() {
+      var props = this.props;
       return react_default.a.createElement("footer", null, react_default.a.createElement("div", {
         className: "row"
       }, react_default.a.createElement("div", {
         className: "twelve columns"
       }, react_default.a.createElement(social_media, {
         ulClass: "social-links",
-        profiles: this.props.content.profiles
+        profiles: props.content.profiles
       }), react_default.a.createElement("ul", {
         className: "copyright"
       }, react_default.a.createElement("li", null, "This site is developed in React.js by\xA0", react_default.a.createElement("a", {
@@ -916,7 +923,7 @@ function (_Component) {
         title: "Tushar Nimje",
         target: "_blank",
         rel: "noopener noreferrer"
-      }, "Tushar Nimje"), ' ', "from the original design of Ceevee from\xA0", react_default.a.createElement("a", {
+      }, "Tushar Nimje"), " from the original design of Ceevee from\xA0 ", react_default.a.createElement("a", {
         href: "http://www.styleshout.com/",
         title: "Styleshout",
         target: "_blank",
@@ -936,6 +943,9 @@ function (_Component) {
   return Footer;
 }(react["Component"]);
 
+footer_Footer.propType = {
+  content: profiles
+};
 /* harmony default export */ var footer = (footer_Footer);
 // CONCATENATED MODULE: ./src/component/section/skills.jsx
 function skills_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { skills_typeof = function _typeof(obj) { return typeof obj; }; } else { skills_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return skills_typeof(obj); }
@@ -1203,7 +1213,8 @@ function (_Component) {
         className: "twelve columns"
       }, react_default.a.createElement("h3", null, react_default.a.createElement("a", {
         href: this.props.entry.website,
-        target: "_blank"
+        target: "_blank",
+        rel: "noopener noreferrer"
       }, this.props.entry.company)), react_default.a.createElement("p", {
         className: "info"
       }, this.props.entry.position, react_default.a.createElement("span", null, " \u2022 "), react_default.a.createElement("span", {
@@ -1646,8 +1657,11 @@ function (_Component) {
 
 /* harmony default export */ var src_App = (App_App);
 // CONCATENATED MODULE: ./src/registerWebWorkers.js
+var isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
 function registerWebWorker() {
-  if ('serviceWorker' in navigator) {
+  if (!isLocalhost && 'serviceWorker' in navigator) {
     navigator.serviceWorker.register('dist/service-workers.js');
   }
 }
