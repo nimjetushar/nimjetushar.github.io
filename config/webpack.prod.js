@@ -20,7 +20,7 @@ module.exports = mode => {
     plugins: [
       new OptimizeCSSAssetsPlugin({}),
       new SWPrecacheWebpackPlugin({
-        cacheId: 'nimjetushar',
+        cacheId: packageJson.name,
         filename: 'service-workers.js',
         staticFileGlobs: [
           ...packageJson.buildconfig.filecache
