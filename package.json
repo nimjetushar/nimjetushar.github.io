@@ -6,7 +6,7 @@
   "dependencies": {
     "@babel/polyfill": "7.2.5",
     "font-awesome": "4.7.0",
-    "nuka-carousel": "4.4.7",
+    "nuka-carousel": "4.4.8",
     "react": "16.8.1",
     "react-dom": "16.8.1"
   },
