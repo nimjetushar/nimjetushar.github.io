@@ -1,0 +1,461 @@
+/* ==================================================================
+
+*   Ceevee Media Queries
+*   url: styleshout.com
+*   03-18-2014
+
+/* ================================================================== */
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+   /* header styles
+  ------------------------------------------------------------------ */
+    header .banner-text h1 {
+      font: 80px/1.1em 'opensans-bold', sans-serif;
+      letter-spacing: -1px;
+      margin: 0 auto 12px auto;
+    }
+  }
+  
+  /* screenwidth less than 900px
+  --------------------------------------------------------------------- */
+  @media only screen and (max-width: 900px) {
+   /* header styles
+  ------------------------------------------------------------------ */
+    header {
+      .banner {
+        padding-bottom: 12px;
+      }
+      .banner-text {
+        h1 {
+          font: 78px/1.1em 'opensans-bold', sans-serif;
+          letter-spacing: -1px;
+        }
+        h3 {
+          font: 17px/1.9em 'librebaskerville-regular', serif;
+          width: 80%;
+        }
+        hr {
+          width: 65%;
+          margin: 12px auto;
+        }
+      }
+    }
+    /* nav-wrap */
+    #nav-wrap {
+      font: 11px 'opensans-bold', sans-serif;
+      letter-spacing: 1.5px;
+    }
+    /* About Section
+    ------------------------------------------------------------------- */
+    #about {
+      .profile-pic {
+        width: 114px;
+        height: 114px;
+        margin-left: 12px;
+      }
+      .contact-details, .download {
+        width: 50%;
+      }
+    }
+    /* Resume Section
+    ------------------------------------------------------------------- */
+    #work, #education {
+      padding-top: 10%;
+      h1 {
+        font: 16px/24px 'opensans-bold', sans-serif;
+      }
+      .main-col {
+        padding-right: 5%;
+        padding-top: 10%;
+      }
+    }
+    #skill {
+      padding-top: 10%;
+      h1 {
+        font: 16px/24px 'opensans-bold', sans-serif;
+      }
+      .main-col {
+        padding-right: 5%;
+        padding-top: 10%;
+      }
+      .inside {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    /* Testimonials Section
+    ------------------------------------------------------------------- */
+    #testimonials {
+      .header-col h1:before {
+        font-size: 66px;
+        line-height: 66px;
+      }
+      blockquote p {
+        font-size: 22px;
+        line-height: 46px;
+      }
+    }
+   /* Call to Action Section
+  ------------------------------------------------------------------- */
+    #call-to-action .header-col h1:before {
+      font-size: 66px;
+      line-height: 66px;
+    }
+    /* Contact Section
+    ------------------------------------------------------------------- */
+    #contact {
+      .section-head {
+        margin-bottom: 30px;
+      }
+      .header-col h1:before {
+        font-size: 66px;
+        line-height: 66px;
+      }
+      .section-head p.lead {
+        font: 17px/33px opensans-light, sans-serif;
+      }
+    }
+    .popup-modal {
+      max-width: 90%;
+      max-height: 80%;
+      overflow: auto;
+    }
+  }
+  
+  /* mobile wide/smaller tablets
+  ---------------------------------------------------------------------- */
+  
+  @media only screen and (max-width: 767px) {
+    /* mobile navigation
+    -------------------------------------------------------------------- */
+    #nav-wrap {
+      font: 12px 'opensans-bold', sans-serif;
+      background: transparent !important;
+      letter-spacing: 1.5px;
+      width: auto;
+      position: fixed;
+      top: 0;
+      right: 0;
+      > a {
+        width: 48px;
+        height: 48px;
+        text-align: left;
+        background-color: #CC5200;
+        position: relative;
+        border: none;
+        float: right;
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+        position: relative;
+        top: 0px;
+        right: 30px;
+        &:before {
+          position: absolute;
+          border: 2px solid #fff;
+          top: 35%;
+          left: 25%;
+          right: 25%;
+          content: '';
+        }
+        &:after {
+          position: absolute;
+          border: 2px solid #fff;
+          top: 35%;
+          left: 25%;
+          right: 25%;
+          content: '';
+          top: 60%;
+        }
+      }
+      &:not(:target) > a:first-of-type, &:target > a:last-of-type {
+        display: block;
+      }
+      ul#nav {
+        height: auto;
+        display: none;
+        clear: both;
+        width: auto;
+        float: right;
+        position: relative;
+        /* top: 12px; */
+        right: 0;
+      }
+      &:target > ul#nav {
+        display: block;
+        padding: 30px 20px 48px 20px;
+        background: #1f2024;
+        margin: 0 30px;
+        clear: both;
+      }
+    }
+    /* toggle buttons */
+    /* hide menu panel */
+    /* display menu panels */
+    ul#nav li {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding: 0 4%;
+      text-align: left;
+      border-bottom: 1px solid #2D2E34;
+      border-bottom-style: dotted;
+      a {
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin: 12px 0;
+        line-height: 16px;
+        /* reset line-height from 48px */
+        border: none;
+      }
+    }
+    /* Header Styles
+    -------------------------------------------------------------------- */
+    header {
+      .banner {
+        padding-bottom: 12px;
+        padding-top: 6px;
+      }
+      .banner-text {
+        h1 {
+          font: 68px/1.1em 'opensans-bold', sans-serif;
+        }
+        h3 {
+          font: 16px/1.9em 'librebaskerville-regular', serif;
+          width: 85%;
+        }
+        hr {
+          width: 80%;
+          margin: 18px auto;
+        }
+      }
+      .social {
+        margin: 18px 0 24px 0;
+        font-size: 24px;
+        line-height: 36px;
+        li {
+          margin: 0 10px;
+        }
+      }
+      .scrolldown {
+        display: none;
+      }
+    }
+    /* header social links */
+    /* scrolldown link */
+    /* About Section
+    -------------------------------------------------------------------- */
+    #about {
+      .profile-pic {
+        display: none;
+      }
+      .download .button {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+      }
+      .main-col {
+        padding-right: 30px;
+      }
+    }
+    /* Resume Section
+    --------------------------------------------------------------------- */
+    #resume {
+      .header-col {
+        padding-top: 0;
+        margin-bottom: 48px;
+        text-align: center;
+      }
+      h1 {
+        letter-spacing: 3px;
+      }
+      .main-col {
+        padding-right: 30px;
+      }
+      h3, .info {
+        text-align: center;
+      }
+    }
+    .bars {
+      width: 100%;
+    }
+    /* Call To Action Section
+    /* ----------------------------------------------------------------- */
+    #call-to-action {
+      text-align: center;
+      h1 {
+        font: 16px/24px 'opensans-bold', sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+        span {
+          display: block;
+        }
+      }
+      .header-col h1:before {
+        content: none;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    /* Portfolio Section
+    /* ----------------------------------------------------------------- */
+    #portfolio-wrapper .columns {
+      margin-bottom: 40px;
+    }
+    .popup-modal {
+      max-width: 90%;
+      max-height: 80%;
+      overflow: auto;
+    }
+    /* Testimonials Section
+    ----------------------------------------------------------------------- */
+    #testimonials {
+      .text-container {
+        text-align: center;
+      }
+      h1 {
+        font: 16px/24px 'opensans-bold', sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+        span {
+          display: block;
+        }
+      }
+      .header-col h1:before {
+        content: none;
+      }
+      blockquote {
+        padding-bottom: 24px;
+        p {
+          font-size: 20px;
+          line-height: 42px;
+        }
+      }
+    }
+    /* Control Nav */
+    .flex-control-nav {
+      text-align: center;
+      margin-left: -30px;
+    }
+    /* contact Section
+    ----------------------------------------------------------------------- */
+    #contact {
+      padding-bottom: 66px;
+      .section-head {
+        margin-bottom: 12px;
+        h1 {
+          font: 16px/24px 'opensans-bold', sans-serif;
+          text-align: center;
+          margin-bottom: 30px;
+          text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+        }
+      }
+      h1 span {
+        display: block;
+      }
+      .header-col {
+        padding-top: 0;
+        h1:before {
+          content: none;
+        }
+      }
+      .section-head p.lead {
+        text-align: center;
+      }
+      label {
+        float: none;
+        width: 100%;
+      }
+      input, textarea, select {
+        margin-bottom: 6px;
+        width: 100%;
+      }
+      button.submit {
+        margin: 30px 0 24px 0;
+      }
+    }
+    /* form */
+    #message-warning, #message-success {
+      width: 100%;
+      margin-left: 0;
+    }
+    /* footer
+    ------------------------------------------------------------------------ */
+    /* copyright */
+    footer {
+      .copyright li {
+        &:before {
+          content: none;
+        }
+        margin-right: 12px;
+      }
+      .social-links {
+        font-size: 22px;
+        li {
+          margin-left: 18px;
+        }
+      }
+    }
+    /* social links */
+    /* Go To Top Button */
+    #go-top {
+      margin-left: -22px;
+      a {
+        width: 54px;
+        height: 54px;
+        font-size: 18px;
+        line-height: 54px;
+      }
+    }
+  }
+  
+  /* mobile narrow
+    -------------------------------------------------------------------------- */
+  
+  @media only screen and (max-width: 480px) {
+    /* mobile navigation
+    -------------------------------------------------------------------- */
+    #nav-wrap ul#nav {
+      width: auto;
+      float: none;
+    }
+    /* header styles
+    -------------------------------------------------------------------- */
+    header {
+      .banner {
+        padding-top: 24px;
+      }
+      .banner-text {
+        h1 {
+          font: 40px/1.1em 'opensans-bold', sans-serif;
+          margin: 0 auto 24px auto;
+        }
+        h3 {
+          font: 14px/1.9em 'librebaskerville-regular', sans-serif;
+          width: 90%;
+        }
+      }
+      .social {
+        font-size: 20px;
+        li {
+          margin: 0 6px;
+        }
+      }
+    }
+    /* header social links */
+    /* footer
+    ------------------------------------------------------------------------ */
+    /* social links */
+    footer .social-links {
+      font-size: 20px;
+      li {
+        margin-left: 14px;
+      }
+    }
+  }

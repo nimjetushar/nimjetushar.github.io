@@ -3,10 +3,12 @@ const webpackMerge = require("webpack-merge"),
   OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"),
   UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
   SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin'),
+  CleanWebpackPlugin = require('clean-webpack-plugin'),
   path = require("path"),
   basePath = process.cwd(),
   rootDir = path.resolve(basePath, "./"),
-  packageJson = require("../package.json");
+  packageJson = require("../package.json"),
+  cleanUpList = [path.resolve(basePath, 'dist'), path.resolve(basePath, 'index.html')];
 
 module.exports = mode => {
   return webpackMerge(commonConfig(mode), {
@@ -18,6 +20,7 @@ module.exports = mode => {
       chunkFilename: "[id].chunk.[hash].js"
     },
     plugins: [
+      new CleanWebpackPlugin([...cleanUpList], { allowExternal: true }),
       new OptimizeCSSAssetsPlugin({}),
       new SWPrecacheWebpackPlugin({
         cacheId: packageJson.name,

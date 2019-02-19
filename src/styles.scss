@@ -1,13 +1,11 @@
-@import "./css/default.css";
-@import "./css/layout.css";
-@import "./css/magnific-popup.css";
-@import "./css/media-queries.css";
+@import "./css/default.scss";
+@import "./css/layout.scss";
+@import "./css/media-queries.scss";
 @import "../node_modules/font-awesome/css/font-awesome.css";
 
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
 footer .stackshare-logo {
@@ -21,4 +19,8 @@ footer .stackshare-logo {
     background-size: contain;
     display: block;
     border-radius: 4px;
+}
+
+html {
+    scroll-behavior: smooth;
 }

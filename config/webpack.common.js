@@ -1,9 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin'),
-  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
-  CleanWebpackPlugin = require('clean-webpack-plugin'),
-  path = require('path'),
-  basePath = process.cwd(),
-  cleanUpList = [path.resolve(basePath, 'dist'), path.resolve(basePath, 'index.html')];
+  MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function fileLoaderOpt(type) {
   return {
@@ -79,7 +75,6 @@ module.exports = mode => {
     },
 
     plugins: [
-      new CleanWebpackPlugin([...cleanUpList], { allowExternal: true }),
       new HtmlWebpackPlugin({
         template: './public/index.html', // Input FileName
         filename: mode ? '../index.html' : './index.html'// Output FileName
