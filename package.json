@@ -8,7 +8,7 @@
     "font-awesome": "4.7.0",
     "nuka-carousel": "4.4.8",
     "react": "16.8.3",
-    "react-dom": "16.8.2",
+    "react-dom": "16.8.3",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
