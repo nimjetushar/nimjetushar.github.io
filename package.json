@@ -6,7 +6,7 @@
   "dependencies": {
     "@babel/polyfill": "7.2.5",
     "font-awesome": "4.7.0",
-    "nuka-carousel": "4.5.1",
+    "nuka-carousel": "4.5.2",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "whatwg-fetch": "^3.0.0"
