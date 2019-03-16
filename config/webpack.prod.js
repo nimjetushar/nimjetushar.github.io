@@ -20,7 +20,9 @@ module.exports = mode => {
       chunkFilename: "[id].chunk.[hash].js"
     },
     plugins: [
-      new CleanWebpackPlugin([...cleanUpList], { allowExternal: true }),
+      new CleanWebpackPlugin({
+        cleanOnceBeforeBuildPatterns: cleanUpList
+      }),
       new OptimizeCSSAssetsPlugin({}),
       new SWPrecacheWebpackPlugin({
         cacheId: packageJson.name,
