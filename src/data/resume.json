@@ -78,7 +78,11 @@
       "endDate": "June 2013",
       "gpa": "First class",
       "summary": "Nagpur, India",
-      "courses": ["B.E", "Electronics", "Telecommunication"]
+      "courses": [
+        "B.E",
+        "Electronics",
+        "Telecommunication"
+      ]
     },
     {
       "institution": "Hadas Jr. College",
@@ -88,7 +92,11 @@
       "endDate": "June 2009",
       "gpa": "Distinction",
       "summary": "Nagpur, India",
-      "courses": ["Physic", "Chemistry", "Maths"]
+      "courses": [
+        "Physic",
+        "Chemistry",
+        "Maths"
+      ]
     },
     {
       "institution": "Saraswati Vidyalaya",
@@ -109,22 +117,31 @@
         {
           "name": "JavaScript",
           "level": "90",
-          "keywords": ["programming"]
+          "keywords": [
+            "programming"
+          ]
         },
         {
           "name": "HTML + CSS",
           "level": "90",
-          "keywords": ["programming"]
+          "keywords": [
+            "programming"
+          ]
         },
         {
           "name": "Node Js",
           "level": "80",
-          "keywords": ["programming", "server technology"]
+          "keywords": [
+            "programming",
+            "server technology"
+          ]
         },
         {
           "name": "Python",
           "level": "50",
-          "keywords": ["language"]
+          "keywords": [
+            "language"
+          ]
         }
       ]
     },
@@ -135,27 +152,39 @@
         {
           "name": "Angular",
           "level": "90",
-          "keywords": ["Angular 2", "Angular 4", "Angular 5"]
+          "keywords": [
+            "Angular 2",
+            "Angular 4",
+            "Angular 5"
+          ]
         },
         {
           "name": "Less / SCSS",
           "level": "80",
-          "keywords": ["css preprocessors"]
+          "keywords": [
+            "css preprocessors"
+          ]
         },
         {
           "name": "AngularJs",
           "level": "70",
-          "keywords": ["Angular 1.x"]
+          "keywords": [
+            "Angular 1.x"
+          ]
         },
         {
           "name": "React + Redux",
           "level": "60",
-          "keywords": ["library"]
+          "keywords": [
+            "library"
+          ]
         },
         {
           "name": "Express Js",
           "level": "60",
-          "keywords": ["framework"]
+          "keywords": [
+            "framework"
+          ]
         }
       ]
     },
@@ -166,7 +195,10 @@
         {
           "name": "Mongodb",
           "level": "50",
-          "keywords": ["mongo db", "mongoos"]
+          "keywords": [
+            "mongo db",
+            "mongoos"
+          ]
         }
       ]
     },
@@ -177,22 +209,30 @@
         {
           "name": "Git",
           "level": "80",
-          "keywords": ["version management tool"]
+          "keywords": [
+            "version management tool"
+          ]
         },
         {
           "name": "Webpack",
           "level": "70",
-          "keywords": ["bundler"]
+          "keywords": [
+            "bundler"
+          ]
         },
         {
           "name": "Gulp",
           "level": "70",
-          "keywords": ["build tool"]
+          "keywords": [
+            "build tool"
+          ]
         },
         {
           "name": "Cordova",
           "level": "50",
-          "keywords": ["mobile app development tool"]
+          "keywords": [
+            "mobile app development tool"
+          ]
         }
       ]
     }
@@ -213,16 +253,20 @@
   ],
   "references": [
     {
-      "name": "Albert Einstein",
-      "position": "",
-      "company": "",
-      "reference": "Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."
+      "name": "Carol Burnett",
+      "reference": "Only I can change my life. No one can do it for me."
     },
     {
       "name": "Walt Disney",
-      "position": "",
-      "company": "",
       "reference": "All our dreams can come true if we have the courage to pursue them."
+    },
+    {
+      "name": "Jim Rohn",
+      "reference": "Either you run the day, or the day runs you."
+    },
+    {
+      "name": "",
+      "reference": "Great things NEVER came from COMFORT ZONES."
     }
   ]
 }
