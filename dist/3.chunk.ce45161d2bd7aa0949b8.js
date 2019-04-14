@@ -2549,8 +2549,7 @@ function (_React$Component) {
       var touchEvents = this.getTouchEvents();
       var mouseEvents = this.getMouseEvents();
       var TransitionControl = all_transitions[this.props.transitionMode];
-      var validChildren = bootstrapping_utilities_addAccessibility(bootstrapping_utilities_getValidChildren(this.props.children), slidesToShow, currentSlide);
-      var transitionProps = getTransitionProps(this.props, this.state);
+      var validChildren = bootstrapping_utilities_getValidChildren(this.props.children);
       return react_default.a.createElement("div", {
         className: ['slider', this.props.className || ''].join(' '),
         style: _extends({}, getSliderStyles(this.props.width, this.state.slideWidth), this.props.style)
@@ -2595,8 +2594,7 @@ function (_React$Component) {
                     left: newLeft,
                     top: newTop,
                     isWrappingAround: false,
-                    resetWrapAroundPosition: true,
-                    dragging: false
+                    resetWrapAroundPosition: true
                   }, function () {
                     _this8.setState({
                       resetWrapAroundPosition: false
@@ -2610,10 +2608,10 @@ function (_React$Component) {
         children: function children(_ref2) {
           var tx = _ref2.tx,
               ty = _ref2.ty;
-          return react_default.a.createElement(TransitionControl, _extends({}, transitionProps, {
+          return react_default.a.createElement(TransitionControl, _extends({}, getTransitionProps(_this8.props, _this8.state), {
             deltaX: tx,
             deltaY: ty
-          }), validChildren);
+          }), bootstrapping_utilities_addAccessibility(validChildren, slidesToShow, currentSlide));
         }
       })), this.renderControls(), this.props.autoGenerateStyleTag && react_default.a.createElement("style", {
         type: "text/css",

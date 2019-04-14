@@ -11,6 +11,12 @@ const isLocalhost = Boolean(
 
 export default function registerWebWorker() {
     if (!isLocalhost && 'serviceWorker' in navigator) {
-        navigator.serviceWorker.register('dist/service-workers.js');
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('dist/sw.js').then(registration => {
+                console.log('SW registered: ', registration);
+            }).catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+        });
     }
 }

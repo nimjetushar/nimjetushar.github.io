@@ -8,9 +8,7 @@ class Entry extends Component {
             <div>
                 <blockquote>
                     <p>{this.props.entry.reference}</p>
-                    <cite>
-                        {this.props.entry.name}
-                    </cite>
+                    {(this.props.entry.name) ? <cite>{this.props.entry.name}</cite> : ""}
                 </blockquote>
             </div>
         );

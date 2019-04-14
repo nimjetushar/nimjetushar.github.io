@@ -174,7 +174,7 @@
         },
         {
           "name": "React + Redux",
-          "level": "60",
+          "level": "80",
           "keywords": [
             "library"
           ]
@@ -215,7 +215,7 @@
         },
         {
           "name": "Webpack",
-          "level": "70",
+          "level": "80",
           "keywords": [
             "bundler"
           ]
@@ -229,7 +229,7 @@
         },
         {
           "name": "Cordova",
-          "level": "50",
+          "level": "60",
           "keywords": [
             "mobile app development tool"
           ]
