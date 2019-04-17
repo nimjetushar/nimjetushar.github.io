@@ -14,7 +14,7 @@ module.exports = mode => {
     mode: 'production',
     output: {
       path: path.resolve(rootDir, "dist"),
-      publicPath: "./dist",
+      publicPath: "./dist/",
       filename: "[name].[hash].js",
       chunkFilename: "[id].chunk.[hash].js"
     },
@@ -30,7 +30,8 @@ module.exports = mode => {
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
         exclude: [/\.html$/],
-        globStrict: false
+        globStrict: false,
+        precacheManifestFilename: 'wb-manifest.[manifestHash].js'
       })
     ],
     optimization: {
