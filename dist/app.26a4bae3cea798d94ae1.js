@@ -1663,7 +1663,7 @@ window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?
 function registerWebWorker() {
   if (!isLocalhost && 'serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('dist/sw.js').then(function (registration) {
+      navigator.serviceWorker.register('sw.js').then(function (registration) {
         console.log('SW registered: ', registration);
       }).catch(function (registrationError) {
         console.log('SW registration failed: ', registrationError);

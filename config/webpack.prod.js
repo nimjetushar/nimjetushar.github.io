@@ -24,7 +24,7 @@ module.exports = mode => {
       }),
       new OptimizeCSSAssetsPlugin({}),
       new WorkboxPlugin.GenerateSW({
-        swDest: 'sw.js',
+        swDest: path.resolve(basePath, 'sw.js'),
         clientsClaim: true,
         skipWaiting: true,
         cleanupOutdatedCaches: true,
