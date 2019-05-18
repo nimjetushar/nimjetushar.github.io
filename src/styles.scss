@@ -1,7 +1,6 @@
 @import "./css/default.scss";
 @import "./css/layout.scss";
 @import "./css/media-queries.scss";
-// @import "../node_modules/font-awesome/css/font-awesome.css";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
@@ -20,6 +19,12 @@ footer .stackshare-logo {
     background-size: contain;
     display: block;
     border-radius: 4px;
+
+    &:hover {
+        background: #11abb0 url("./images/stackshare-logo-hover.png") no-repeat center;
+        background-size: contain;
+        opacity: 1;
+    }
 }
 
 html {
