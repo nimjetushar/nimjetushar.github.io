@@ -52,7 +52,7 @@ module.exports = mode => {
       {
         test: /\.css$/,
         include: /node_modules/,
-        use: ['css-loader']
+        use: [!mode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,

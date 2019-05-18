@@ -4,20 +4,15 @@ import PropTypes from 'prop-types';
 import { profiles } from '../prop_types';
 
 function mapIcon(socialMedia) {
-  const media = socialMedia.replace(/ /g, '-');
+  let media;
   switch (socialMedia) {
     case 'email':
-      return <i className={'fa fa-envelope'} />;
-    case 'quora':
-      return (
-        <i className="fa fa-fw">
-          <strong className="fa-quora">Q</strong>
-        </i>
-      );
+      return <i className='fas fa-envelope' />;
     case 'stackshare':
       return <i className="stackshare-logo" />;
     default:
-      return <i className={`fa fa-${media}`} />;
+      media = socialMedia.replace(/ /g, '-');
+      return <i className={`fab fa-${media}`} />;
   }
 }
 

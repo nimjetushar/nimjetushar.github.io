@@ -32,7 +32,7 @@ class References extends Component {
                     <div className="row">
                         <div className="two columns header-col">
                             <h1>
-                                <span>References</span>
+                                <i className="fas fa-quote-left" size='7'></i>
                             </h1>
                         </div>
                         <div className="columns flex-container">

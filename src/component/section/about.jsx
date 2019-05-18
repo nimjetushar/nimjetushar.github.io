@@ -30,10 +30,6 @@ class About extends Component {
                                     <br />
                                     <span>{props.content.location.countryCode}</span>
                                     <br />
-                                    {/* <a href={`skype:${props.content.phone}`}>
-                    <span>{props.content.phone}</span>
-                  </a>
-                  <br /> */}
                                     <a href={`mailto:${props.content.email}`}>
                                         <span>{props.content.email}</span>
                                     </a>
@@ -41,13 +37,11 @@ class About extends Component {
                             </div>
                             <div className="columns download">
                                 <p>
-                                    <a
-                                        className="button"
-                                        href={props.content.resumeUrl}
-                                    >
+                                    <a className="button"
+                                        href={props.content.resumeUrl} >
                                         <i className="fa fa-download" />
                                         Download Resume
-                  </a>
+                                    </a>
                                 </p>
                             </div>
                         </div>
