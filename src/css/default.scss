@@ -162,6 +162,7 @@ pre {
 /* blockquote, q { quotes: &#8220 &#8220; } */
 
 blockquote {
+
     &:before,
     &:after {
         content: '';
@@ -170,6 +171,7 @@ blockquote {
 }
 
 q {
+
     &:before,
     &:after {
         content: '';
@@ -217,6 +219,7 @@ table {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+
     &:before,
     &:after {
         -moz-box-sizing: border-box;
@@ -303,9 +306,11 @@ h6 {
 
 p {
     margin: 0 0 30px 0;
+
     img {
         margin: 0;
     }
+
     &.lead {
         font: 19px/36px 'opensans-light', sans-serif;
         margin-bottom: 18px;
@@ -331,6 +336,7 @@ blockquote {
     margin: 30px 0px;
     padding-left: 40px;
     position: relative;
+
     &:before {
         content: "\201C";
         opacity: 0.45;
@@ -342,23 +348,28 @@ blockquote {
         top: 30px;
         left: 0;
     }
+
     p {
         font-family: 'librebaskerville-italic', serif;
         padding: 0;
         font-size: 18px;
         line-height: 36px;
     }
+
     cite {
         display: block;
         font-size: 12px;
         font-style: normal;
         line-height: 18px;
+
         &:before {
             content: "\2014 \0020";
         }
+
         a {
             color: #8B9798;
             border: none;
+
             &:visited {
                 color: #8B9798;
                 border: none;
@@ -381,6 +392,7 @@ blockquote {
 .pull-quote {
     position: relative;
     padding: 18px 30px 18px 0px;
+
     &:before,
     &:after {
         height: 1em;
@@ -389,18 +401,22 @@ blockquote {
         font-size: 80px;
         font-family: Arial, Sans-Serif;
     }
+
     &:before {
         content: "\201C";
         top: 33px;
         left: 0;
     }
+
     &:after {
         content: '\201D';
         bottom: -33px;
         right: 0;
     }
+
     blockquote {
         margin: 0;
+
         &:before {
             content: none;
         }
@@ -415,6 +431,7 @@ abbr {
     text-transform: lowercase;
     letter-spacing: .5px;
     color: gray;
+
     &:hover {
         cursor: help;
     }
@@ -452,6 +469,7 @@ a {
     -moz-transition: color .3s ease-in-out;
     -o-transition: color .3s ease-in-out;
     transition: color .3s ease-in-out;
+
     &:visited {
         text-decoration: none;
         outline: 0;
@@ -461,6 +479,7 @@ a {
         -o-transition: color .3s ease-in-out;
         transition: color .3s ease-in-out;
     }
+
     &:hover,
     &:focus {
         color: #313131;
@@ -469,6 +488,7 @@ a {
 
 p a {
     line-height: inherit;
+
     &:visited {
         line-height: inherit;
     }
@@ -492,20 +512,25 @@ ol {
 }
 
 ul {
+
     &.square,
     &.circle,
     &.disc {
         margin-left: 30px;
     }
+
     &.square {
         list-style: square outside;
     }
+
     &.circle {
         list-style: circle outside;
     }
+
     &.disc {
         list-style: disc outside;
     }
+
     ul,
     ol {
         margin: 6px 0 6px 30px;
@@ -513,6 +538,7 @@ ul {
 }
 
 ol {
+
     ol,
     ul {
         margin: 6px 0 6px 30px;
@@ -520,6 +546,7 @@ ol {
 }
 
 ul {
+
     ul li,
     ol li {
         margin-bottom: 6px;
@@ -527,6 +554,7 @@ ul {
 }
 
 ol {
+
     ol li,
     ul li {
         margin-bottom: 6px;
@@ -555,25 +583,30 @@ li p {}
 .stats-tabs {
     padding: 0;
     margin: 24px 0;
+
     li {
         display: inline-block;
         margin: 0 10px 18px 0;
         padding: 0 10px 0 0;
         border-right: 1px solid #ccc;
+
         &:last-child {
             margin: 0;
             padding: 0;
             border: none;
         }
+
         a {
             display: inline-block;
             font-size: 22px;
             font-family: 'opensans-bold', sans-serif;
             border: none;
             color: #313131;
+
             &:hover {
                 color: #11ABB0;
             }
+
             b {
                 display: block;
                 margin: 6px 0 0 0;
@@ -603,25 +636,30 @@ dd {
 /* Lining Definition Style Markup */
 
 .lining {
+
     dt,
     dd {
         display: inline;
         margin: 0;
     }
+
     dt+dt:before {
         content: "\A";
         white-space: pre;
     }
+
     dd {
         + {
             dt:before {
                 content: "\A";
                 white-space: pre;
             }
+
             dd:before {
                 content: ", ";
             }
         }
+
         &:before {
             content: ": ";
             margin-left: -0.2em;
@@ -635,14 +673,17 @@ dd {
     dt {
         display: inline;
         counter-reset: definitions;
+
         +dt:before {
             content: ", ";
             margin-left: -0.2em;
         }
     }
+
     dd {
         display: block;
         counter-increment: definitions;
+
         &:before {
             content: counter(definitions, decimal) ". ";
         }
@@ -654,11 +695,13 @@ dd {
 .pagination {
     margin: 36px auto;
     text-align: center;
+
     ul li {
         display: inline-block;
         margin: 0;
         padding: 0;
     }
+
     .page-numbers {
         font: 15px/18px 'opensans-bold', sans-serif;
         display: inline-block;
@@ -676,27 +719,33 @@ dd {
         -webkit-border-radius: 3px;
         -khtml-border-radius: 3px;
         border-radius: 3px;
+
         &:hover {
             background: #838A91;
             color: #fff;
         }
     }
+
     .current {
         background-color: #11ABB0;
         color: #fff;
+
         &:hover {
             background-color: #11ABB0;
             color: #fff;
         }
     }
+
     .inactive {
         background-color: #E6E8EB;
         color: #A9ADB2;
+
         &:hover {
             background-color: #E6E8EB;
             color: #A9ADB2;
         }
     }
+
     .prev,
     .next {}
 }
@@ -706,9 +755,11 @@ dd {
 img {
     max-width: 100%;
     height: auto;
+
     &.pull-right {
         margin: 12px 0px 0px 18px;
     }
+
     &.pull-left {
         margin: 12px 18px 0px 0px;
     }
@@ -737,6 +788,7 @@ img {
     -webkit-border-radius: 3px;
     -khtml-border-radius: 3px;
     border-radius: 3px;
+
     &:visited {
         font: 16px/30px 'opensans-bold', sans-serif;
         background: #11ABB0;
@@ -785,6 +837,7 @@ button {
 }
 
 input {
+
     &[type="submit"],
     &[type="reset"],
     &[type="button"] {
@@ -818,6 +871,7 @@ button:hover {
 }
 
 input {
+
     &[type="submit"]:hover,
     &[type="reset"]:hover,
     &[type="button"]:hover {
@@ -833,6 +887,7 @@ button:active {
 }
 
 input {
+
     &[type="submit"]:active,
     &[type="reset"]:active,
     &[type="button"]:active {
@@ -850,6 +905,7 @@ button.full-width {
 }
 
 input {
+
     &[type="submit"].full-width,
     &[type="reset"].full-width,
     &[type="button"].full-width {
@@ -876,6 +932,7 @@ fieldset {
 }
 
 input {
+
     &[type="text"],
     &[type="password"],
     &[type="email"] {
@@ -915,6 +972,7 @@ select {
     } */
 
 input {
+
     &[type="text"]:focus,
     &[type="password"]:focus,
     &[type="email"]:focus {
@@ -928,6 +986,7 @@ textarea {
         color: #B3B7BC;
         background-color: #3d4145;
     }
+
     min-height: 220px;
 }
 
@@ -946,11 +1005,13 @@ legend span {
 }
 
 input {
+
     &[type="checkbox"],
     &[type="radio"] {
         font-size: 15px;
         color: #737373;
     }
+
     &[type="checkbox"] {
         display: inline;
     }
@@ -988,10 +1049,12 @@ input {
         max-width: none;
         margin: 0 -20px;
     }
+
     &:before {
         content: " ";
         display: table;
     }
+
     &:after {
         content: " ";
         display: table;
@@ -1018,6 +1081,7 @@ input {
 /* removed gutters */
 
 .row.collapsed> {
+
     .column,
     .columns {
         padding: 0;
@@ -1030,6 +1094,7 @@ input {
 }
 
 [class*="column"]+[class*="column"] {
+
     &:last-child,
     &.end {
         float: right;
@@ -1042,135 +1107,179 @@ input {
     .one {
         width: 8.33333%;
     }
+
     .two {
         width: 16.66667%;
     }
+
     .three {
         width: 25%;
     }
+
     .four {
         width: 33.33333%;
     }
+
     .five {
         width: 41.66667%;
     }
+
     .six {
         width: 50%;
     }
+
     .seven {
         width: 58.33333%;
     }
+
     .eight {
         width: 66.66667%;
     }
+
     .nine {
         width: 75%;
     }
+
     .ten {
         width: 83.33333%;
     }
+
     .eleven {
         width: 91.66667%;
     }
+
     .twelve {
         width: 100%;
     }
+
     .offset-1 {
         margin-left: 8.33333%;
     }
+
     .offset-2 {
         margin-left: 16.66667%;
     }
+
     .offset-3 {
         margin-left: 25%;
     }
+
     .offset-4 {
         margin-left: 33.33333%;
     }
+
     .offset-5 {
         margin-left: 41.66667%;
     }
+
     .offset-6 {
         margin-left: 50%;
     }
+
     .offset-7 {
         margin-left: 58.33333%;
     }
+
     .offset-8 {
         margin-left: 66.66667%;
     }
+
     .offset-9 {
         margin-left: 75%;
     }
+
     .offset-10 {
         margin-left: 83.33333%;
     }
+
     .offset-11 {
         margin-left: 91.66667%;
     }
+
     .push-1 {
         left: 8.33333%;
     }
+
     .pull-1 {
         right: 8.33333%;
     }
+
     .push-2 {
         left: 16.66667%;
     }
+
     .pull-2 {
         right: 16.66667%;
     }
+
     .push-3 {
         left: 25%;
     }
+
     .pull-3 {
         right: 25%;
     }
+
     .push-4 {
         left: 33.33333%;
     }
+
     .pull-4 {
         right: 33.33333%;
     }
+
     .push-5 {
         left: 41.66667%;
     }
+
     .pull-5 {
         right: 41.66667%;
     }
+
     .push-6 {
         left: 50%;
     }
+
     .pull-6 {
         right: 50%;
     }
+
     .push-7 {
         left: 58.33333%;
     }
+
     .pull-7 {
         right: 58.33333%;
     }
+
     .push-8 {
         left: 66.66667%;
     }
+
     .pull-8 {
         right: 66.66667%;
     }
+
     .push-9 {
         left: 75%;
     }
+
     .pull-9 {
         right: 75%;
     }
+
     .push-10 {
         left: 83.33333%;
     }
+
     .pull-10 {
         right: 83.33333%;
     }
+
     .push-11 {
         left: 91.66667%;
     }
+
     .pull-11 {
         right: 91.66667%;
     }
@@ -1224,23 +1333,29 @@ input {
  --------------------------------------------------------------- */
 
 @media only screen and (max-width: 900px) {
+
     /* block grids on small screens */
     .s-bgrid-sixths [class*="column"] {
         width: 16.66667%;
     }
+
     .s-bgrid-quarters [class*="column"] {
         width: 25%;
     }
+
     .s-bgrid-thirds [class*="column"] {
         width: 33.33333%;
     }
+
     .s-bgrid-halves [class*="column"] {
         width: 50%;
     }
+
     /* block grids left clearing */
     .first {
         clear: none;
     }
+
     .s-first {
         clear: left;
     }
@@ -1255,6 +1370,7 @@ input {
         margin: 0 auto;
         padding: 0;
     }
+
     .column,
     .columns {
         width: auto !important;
@@ -1263,17 +1379,21 @@ input {
         margin-right: 0;
         padding: 0 30px;
     }
+
     .row .row {
         width: auto;
         max-width: none;
         margin: 0 -30px;
     }
+
     [class*="column"]+[class*="column"]:last-child,
     [class*="bgrid"] [class*="column"]+[class*="column"]:last-child {
         float: none;
     }
+
     /* Offsets */
     .row {
+
         .offset-1,
         .offset-2,
         .offset-3,
@@ -1322,6 +1442,7 @@ input {
         content: " ";
         display: table;
     }
+
     &:after {
         content: " ";
         display: table;
