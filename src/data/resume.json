@@ -10,7 +10,7 @@
       "Software engineer with hands on experience in JavaScript and worked on various JavaScript technologies such as Angular, React and Nodejs. Experience of working in an Agile and Fast-paced product development environment. Excellent written and verbal communication skills. Interested in challenging technical roles in applications development.",
       "Conscientious, results-driven and analytical software engineer with years of professional exposure in software development. Strong in architectural research, software design and agile team."
     ],
-    "resumeUrl": "https://github.com/nimjetushar/Documents/raw/master/Tushar%20Nimje%20(JavaScript%20developer-3.10%20%20year).pdf",
+    "resumeUrl": "https://github.com/nimjetushar/resume/raw/master/Tushar%20Nimje.pdf",
     "location": {
       "address": "",
       "postalCode": "",
@@ -38,6 +38,11 @@
         "network": "StackShare",
         "username": "nimjetushar",
         "url": "https://stackshare.io/nimjetushar/my-stack"
+      },
+      {
+        "network": "HackerRank",
+        "username": "tusharnimje21",
+        "url": "https://www.hackerrank.com/tusharnimje21"
       }
     ]
   },

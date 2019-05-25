@@ -10,6 +10,8 @@ function mapIcon(socialMedia) {
       return <i className='fas fa-envelope' />;
     case 'stackshare':
       return <i className="stackshare-logo" />;
+    case 'hackerrank':
+      return <i className="fab fa-hackerrank" />
     default:
       media = socialMedia.replace(/ /g, '-');
       return <i className={`fab fa-${media}`} />;
@@ -25,7 +27,7 @@ class SocialMedia extends Component {
             const icon = mapIcon(profile.network.toLowerCase());
             return (
               <li key={index}>
-                <a href={profile.url}>{icon}</a>
+                <a href={profile.url} target='_blank' rel="noopener noreferrer">{icon}</a>
               </li>
             );
           })}
