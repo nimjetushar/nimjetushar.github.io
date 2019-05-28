@@ -7,7 +7,7 @@
 
 
 if (true) {
-  module.exports = __webpack_require__(292);
+  module.exports = __webpack_require__(317);
 } else {}
 
 
@@ -26,13 +26,13 @@ if (true) {
 if (false) { var throwOnDirectAccess, ReactIs; } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(296)();
+  module.exports = __webpack_require__(322)();
 }
 
 
 /***/ }),
 
-/***/ 119:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -130,7 +130,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 
-/***/ 120:
+/***/ 125:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -151,7 +151,7 @@ function numeric(beg, end) {
 
 /***/ }),
 
-/***/ 121:
+/***/ 126:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -180,13 +180,13 @@ if (true) {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(293);
+  module.exports = __webpack_require__(318);
 } else {}
 
 
 /***/ }),
 
-/***/ 122:
+/***/ 127:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -201,9 +201,9 @@ var _react = _interopRequireWildcard(__webpack_require__(0));
 
 var _propTypes = _interopRequireDefault(__webpack_require__(1));
 
-var _NodeGroup = _interopRequireDefault(__webpack_require__(298));
+var _NodeGroup = _interopRequireDefault(__webpack_require__(324));
 
-var _utils = __webpack_require__(120);
+var _utils = __webpack_require__(125);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -292,7 +292,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 123:
+/***/ 128:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -345,11 +345,11 @@ var prop_types = __webpack_require__(1);
 var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
 
 // EXTERNAL MODULE: ./node_modules/exenv/index.js
-var exenv = __webpack_require__(88);
+var exenv = __webpack_require__(90);
 var exenv_default = /*#__PURE__*/__webpack_require__.n(exenv);
 
 // EXTERNAL MODULE: ./node_modules/react-move/Animate/index.js
-var Animate = __webpack_require__(122);
+var Animate = __webpack_require__(127);
 var Animate_default = /*#__PURE__*/__webpack_require__.n(Animate);
 
 // CONCATENATED MODULE: ./node_modules/d3-ease/src/linear.js
@@ -605,9 +605,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
@@ -632,7 +636,7 @@ function (_React$Component) {
 
     _classCallCheck(this, PreviousButton);
 
-    _this = _possibleConstructorReturn(this, (PreviousButton.__proto__ || Object.getPrototypeOf(PreviousButton)).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(PreviousButton).apply(this, arguments));
     _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -668,7 +672,7 @@ function (_React$Component2) {
 
     _classCallCheck(this, NextButton);
 
-    _this2 = _possibleConstructorReturn(this, (NextButton.__proto__ || Object.getPrototypeOf(NextButton)).apply(this, arguments));
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(NextButton).apply(this, arguments));
     _this2.handleClick = _this2.handleClick.bind(_assertThisInitialized(_this2));
     _this2.nextButtonDisable = _this2.nextButtonDisabled.bind(_assertThisInitialized(_this2));
     return _this2;
@@ -718,12 +722,12 @@ function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      var _props = this.props,
-          wrapAround = _props.wrapAround,
-          slidesToShow = _props.slidesToShow,
-          currentSlide = _props.currentSlide,
-          cellAlign = _props.cellAlign,
-          slideCount = _props.slideCount;
+      var _this$props = this.props,
+          wrapAround = _this$props.wrapAround,
+          slidesToShow = _this$props.slidesToShow,
+          currentSlide = _this$props.currentSlide,
+          cellAlign = _this$props.cellAlign,
+          slideCount = _this$props.slideCount;
       var disabled = this.nextButtonDisabled({
         wrapAround: wrapAround,
         slidesToShow: slidesToShow,
@@ -750,7 +754,7 @@ function (_React$Component3) {
   function PagingDots() {
     _classCallCheck(this, PagingDots);
 
-    return _possibleConstructorReturn(this, (PagingDots.__proto__ || Object.getPrototypeOf(PagingDots)).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(PagingDots).apply(this, arguments));
   }
 
   _createClass(PagingDots, [{
@@ -799,13 +803,10 @@ function (_React$Component3) {
     key: "getButtonStyles",
     value: function getButtonStyles(active) {
       return {
-        border: 0,
-        background: 'transparent',
-        color: 'black',
         cursor: 'pointer',
-        padding: 10,
-        fontSize: 24,
-        opacity: active ? 1 : 0.5
+        opacity: active ? 1 : 0.5,
+        background: 'transparent',
+        border: 'none'
       };
     }
   }, {
@@ -819,12 +820,22 @@ function (_React$Component3) {
       }, indexes.map(function (index) {
         return react_default.a.createElement("li", {
           style: _this3.getListItemStyles(),
-          key: index
+          key: index,
+          className: _this3.props.currentSlide === index ? 'paging-item active' : 'paging-item'
         }, react_default.a.createElement("button", {
           style: _this3.getButtonStyles(_this3.props.currentSlide === index),
           onClick: _this3.props.goToSlide.bind(null, index),
           "aria-label": "slide ".concat(index + 1, " bullet")
-        }, "\u2022"));
+        }, react_default.a.createElement("span", {
+          className: "paging-dot",
+          style: {
+            display: 'inline-block',
+            borderRadius: '50%',
+            width: '6px',
+            height: '6px',
+            background: 'black'
+          }
+        })));
       }));
     }
   }]);
@@ -842,9 +853,13 @@ function scroll_transition_createClass(Constructor, protoProps, staticProps) { i
 
 function scroll_transition_possibleConstructorReturn(self, call) { if (call && (scroll_transition_typeof(call) === "object" || typeof call === "function")) { return call; } return scroll_transition_assertThisInitialized(self); }
 
-function scroll_transition_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function scroll_transition_getPrototypeOf(o) { scroll_transition_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return scroll_transition_getPrototypeOf(o); }
 
 function scroll_transition_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function scroll_transition_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) scroll_transition_setPrototypeOf(subClass, superClass); }
+
+function scroll_transition_setPrototypeOf(o, p) { scroll_transition_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return scroll_transition_setPrototypeOf(o, p); }
 
 
 
@@ -861,7 +876,7 @@ function (_React$Component) {
 
     scroll_transition_classCallCheck(this, ScrollTransition);
 
-    _this = scroll_transition_possibleConstructorReturn(this, (ScrollTransition.__proto__ || Object.getPrototypeOf(ScrollTransition)).call(this, props));
+    _this = scroll_transition_possibleConstructorReturn(this, scroll_transition_getPrototypeOf(ScrollTransition).call(this, props));
     _this.getListStyles = _this.getListStyles.bind(scroll_transition_assertThisInitialized(_this));
     return _this;
   }
@@ -926,11 +941,11 @@ function (_React$Component) {
     value: function formatChildren(children) {
       var _this2 = this;
 
-      var _props = this.props,
-          top = _props.top,
-          left = _props.left,
-          currentSlide = _props.currentSlide,
-          slidesToShow = _props.slidesToShow;
+      var _this$props = this.props,
+          top = _this$props.top,
+          left = _this$props.left,
+          currentSlide = _this$props.currentSlide,
+          slidesToShow = _this$props.slidesToShow;
       var positionValue = this.props.vertical ? top : left;
       return react_default.a.Children.map(children, function (child, index) {
         var visible = index >= currentSlide && index < currentSlide + slidesToShow;
@@ -1056,7 +1071,11 @@ function fade_transition_possibleConstructorReturn(self, call) { if (call && (fa
 
 function fade_transition_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-function fade_transition_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function fade_transition_getPrototypeOf(o) { fade_transition_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return fade_transition_getPrototypeOf(o); }
+
+function fade_transition_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) fade_transition_setPrototypeOf(subClass, superClass); }
+
+function fade_transition_setPrototypeOf(o, p) { fade_transition_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return fade_transition_setPrototypeOf(o, p); }
 
 
 
@@ -1071,7 +1090,7 @@ function (_React$Component) {
 
     fade_transition_classCallCheck(this, FadeTransition);
 
-    _this = fade_transition_possibleConstructorReturn(this, (FadeTransition.__proto__ || Object.getPrototypeOf(FadeTransition)).call(this, props));
+    _this = fade_transition_possibleConstructorReturn(this, fade_transition_getPrototypeOf(FadeTransition).call(this, props));
     _this.fadeFromSlide = props.currentSlide;
     return _this;
   }
@@ -1081,9 +1100,9 @@ function (_React$Component) {
     value: function formatChildren(children, opacity) {
       var _this2 = this;
 
-      var _props = this.props,
-          currentSlide = _props.currentSlide,
-          slidesToShow = _props.slidesToShow;
+      var _this$props = this.props,
+          currentSlide = _this$props.currentSlide,
+          slidesToShow = _this$props.slidesToShow;
       return react_default.a.Children.map(children, function (child, index) {
         var visible = index >= currentSlide && index < currentSlide + slidesToShow;
         return react_default.a.createElement("li", {
@@ -1224,12 +1243,264 @@ fade_transition_FadeTransition.defaultProps = {
   vertical: false,
   wrapAround: false
 };
+// CONCATENATED MODULE: ./node_modules/nuka-carousel/es/transitions/3d-scroll-transition.js
+function _3d_scroll_transition_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _3d_scroll_transition_typeof = function _typeof(obj) { return typeof obj; }; } else { _3d_scroll_transition_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _3d_scroll_transition_typeof(obj); }
+
+function _3d_scroll_transition_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _3d_scroll_transition_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _3d_scroll_transition_createClass(Constructor, protoProps, staticProps) { if (protoProps) _3d_scroll_transition_defineProperties(Constructor.prototype, protoProps); if (staticProps) _3d_scroll_transition_defineProperties(Constructor, staticProps); return Constructor; }
+
+function _3d_scroll_transition_possibleConstructorReturn(self, call) { if (call && (_3d_scroll_transition_typeof(call) === "object" || typeof call === "function")) { return call; } return _3d_scroll_transition_assertThisInitialized(self); }
+
+function _3d_scroll_transition_getPrototypeOf(o) { _3d_scroll_transition_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _3d_scroll_transition_getPrototypeOf(o); }
+
+function _3d_scroll_transition_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _3d_scroll_transition_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _3d_scroll_transition_setPrototypeOf(subClass, superClass); }
+
+function _3d_scroll_transition_setPrototypeOf(o, p) { _3d_scroll_transition_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _3d_scroll_transition_setPrototypeOf(o, p); }
+
+
+
+var _3d_scroll_transition_MIN_ZOOM_SCALE = 0;
+var _3d_scroll_transition_MAX_ZOOM_SCALE = 1;
+
+var _3d_scroll_transition_ScrollTransition3D =
+/*#__PURE__*/
+function (_React$Component) {
+  _3d_scroll_transition_inherits(ScrollTransition3D, _React$Component);
+
+  function ScrollTransition3D(props) {
+    var _this;
+
+    _3d_scroll_transition_classCallCheck(this, ScrollTransition3D);
+
+    _this = _3d_scroll_transition_possibleConstructorReturn(this, _3d_scroll_transition_getPrototypeOf(ScrollTransition3D).call(this, props));
+    _this.getListStyles = _this.getListStyles.bind(_3d_scroll_transition_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _3d_scroll_transition_createClass(ScrollTransition3D, [{
+    key: "getSlideDirection",
+    value: function getSlideDirection(start, end, isWrapping) {
+      var direction = 0;
+      if (start === end) return direction;
+
+      if (isWrapping) {
+        direction = start < end ? -1 : 1;
+      } else {
+        direction = start < end ? 1 : -1;
+      }
+
+      return direction;
+    }
+    /* eslint-disable complexity */
+
+  }, {
+    key: "getSlideTargetPosition",
+    value: function getSlideTargetPosition(index) {
+      var targetPosition = 0;
+      var offset = 0;
+
+      if (index !== this.props.currentSlide) {
+        var relativeDistanceToCurrentSlide = this.getRelativeDistanceToCurrentSlide(index);
+        targetPosition = (this.props.slideWidth + this.props.cellSpacing) * relativeDistanceToCurrentSlide - this.getZoomOffsetFor(relativeDistanceToCurrentSlide);
+        offset = 0;
+
+        if (this.props.animation === 'zoom' && (this.props.currentSlide === index + 1 || this.props.currentSlide === 0 && index === this.props.children.length - 1)) {
+          offset = this.props.slideOffset;
+        } else if (this.props.animation === 'zoom' && (this.props.currentSlide === index - 1 || this.props.currentSlide === this.props.children.length - 1 && index === 0)) {
+          offset = -this.props.slideOffset;
+        }
+      }
+
+      return targetPosition + offset;
+    }
+    /* eslint-enable complexity */
+
+  }, {
+    key: "formatChildren",
+    value: function formatChildren(children) {
+      var _this2 = this;
+
+      var _this$props = this.props,
+          top = _this$props.top,
+          left = _this$props.left,
+          currentSlide = _this$props.currentSlide,
+          slidesToShow = _this$props.slidesToShow;
+      var positionValue = this.props.vertical ? top : left;
+      return react_default.a.Children.map(children, function (child, index) {
+        var visible = _this2.getDistanceToCurrentSlide(index) <= slidesToShow / 2;
+        var current = currentSlide === index;
+        return react_default.a.createElement("li", {
+          className: "slider-slide".concat(visible ? ' slide-visible' : '').concat(current ? ' slide-current' : ''),
+          style: _this2.getSlideStyles(index, positionValue),
+          key: index
+        }, child);
+      });
+    }
+  }, {
+    key: "getZoomOffsetFor",
+    value: function getZoomOffsetFor(relativeDistanceToCurrent) {
+      if (relativeDistanceToCurrent === 0) {
+        return 0;
+      }
+
+      var marginGeneratedByZoom = (1 - Math.pow(this.props.zoomScale, Math.abs(relativeDistanceToCurrent))) * this.props.slideWidth;
+      var direction = relativeDistanceToCurrent < 0 ? -1 : 1;
+      var result = marginGeneratedByZoom * direction + this.getZoomOffsetFor(relativeDistanceToCurrent < 0 ? relativeDistanceToCurrent + 1 : relativeDistanceToCurrent - 1);
+      return result;
+    }
+  }, {
+    key: "getDistance",
+    value: function getDistance(index, referenceIndex) {
+      return Math.abs(index - referenceIndex);
+    }
+  }, {
+    key: "getDistanceToCurrentSlide",
+    value: function getDistanceToCurrentSlide(index) {
+      return this.props.wrapAround ? Math.min(Math.min(this.getDistance(index, 0) + this.getDistance(this.props.currentSlide, this.props.slideCount), this.getDistance(index, this.props.slideCount) + this.getDistance(this.props.currentSlide, 0)), this.getDistance(index, this.props.currentSlide)) : this.getDistance(index, this.props.currentSlide);
+    }
+  }, {
+    key: "getRelativeDistanceToCurrentSlide",
+    value: function getRelativeDistanceToCurrentSlide(index) {
+      if (this.props.wrapAround) {
+        var distanceByLeftEge = this.getDistance(index, 0) + this.getDistance(this.props.currentSlide, this.props.slideCount);
+        var distanceByRightEdge = this.getDistance(index, this.props.slideCount) + this.getDistance(this.props.currentSlide, 0);
+        var absoluteDirectDistance = this.getDistance(index, this.props.currentSlide);
+        var minimumDistance = Math.min(Math.min(distanceByLeftEge, distanceByRightEdge), absoluteDirectDistance);
+
+        switch (minimumDistance) {
+          case absoluteDirectDistance:
+            return index - this.props.currentSlide;
+
+          case distanceByLeftEge:
+            return distanceByLeftEge;
+
+          case distanceByRightEdge:
+            return -distanceByRightEdge;
+
+          default:
+            return 0;
+        }
+      } else {
+        return index - this.props.currentSlide;
+      }
+    }
+  }, {
+    key: "getTransformScale",
+    value: function getTransformScale(index) {
+      return this.props.currentSlide !== index ? Math.max(Math.min(Math.pow(this.props.zoomScale, this.getDistanceToCurrentSlide(index)), _3d_scroll_transition_MAX_ZOOM_SCALE), _3d_scroll_transition_MIN_ZOOM_SCALE) : 1.0;
+    }
+  }, {
+    key: "getOpacityScale",
+    value: function getOpacityScale(index) {
+      return this.props.currentSlide !== index ? Math.max(Math.min(Math.pow(this.props.opacityScale, this.getDistanceToCurrentSlide(index)), _3d_scroll_transition_MAX_ZOOM_SCALE), _3d_scroll_transition_MIN_ZOOM_SCALE) : 1.0;
+    }
+  }, {
+    key: "getSlideStyles",
+    value: function getSlideStyles(index, positionValue) {
+      var targetPosition = this.getSlideTargetPosition(index, positionValue);
+      var transformScale = this.getTransformScale(index);
+      return {
+        zIndex: this.props.slideCount - this.getDistanceToCurrentSlide(index),
+        boxSizing: 'border-box',
+        display: this.props.vertical ? 'block' : 'inline-block',
+        height: 'auto',
+        left: this.props.vertical ? 0 : targetPosition,
+        listStyleType: 'none',
+        marginBottom: this.props.vertical ? this.props.cellSpacing / 2 : 'auto',
+        marginLeft: this.props.vertical ? 'auto' : this.props.cellSpacing / 2,
+        marginRight: this.props.vertical ? 'auto' : this.props.cellSpacing / 2,
+        marginTop: this.props.vertical ? this.props.cellSpacing / 2 : 'auto',
+        MozBoxSizing: 'border-box',
+        position: 'absolute',
+        top: this.props.vertical ? targetPosition : 0,
+        transform: "scale(".concat(transformScale, ")"),
+        transition: 'left 0.4s ease-out, transform 0.4s ease-out, opacity 0.4s ease-out',
+        verticalAlign: 'top',
+        width: this.props.vertical ? '100%' : this.props.slideWidth,
+        opacity: this.getOpacityScale(index)
+      };
+    }
+  }, {
+    key: "getListStyles",
+    value: function getListStyles() {
+      var listWidth = this.props.slideWidth * react_default.a.Children.count(this.props.children);
+      var spacingOffset = this.props.cellSpacing * react_default.a.Children.count(this.props.children);
+      return {
+        left: "calc(50% - (".concat(this.props.slideWidth, "px / 2))"),
+        position: 'relative',
+        margin: this.props.vertical ? "".concat(this.props.cellSpacing / 2 * -1, "px 0px") : "".concat(this.props.slideListMargin, "px ").concat(this.props.cellSpacing / 2 * -1, "px"),
+        padding: 0,
+        height: this.props.vertical ? listWidth + spacingOffset : this.props.slideHeight,
+        width: this.props.vertical ? 'auto' : '100%',
+        cursor: this.props.dragging === true ? 'pointer' : 'inherit',
+        boxSizing: 'border-box',
+        MozBoxSizing: 'border-box',
+        touchAction: "pinch-zoom ".concat(this.props.vertical ? 'pan-x' : 'pan-y')
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var children = this.formatChildren(this.props.children);
+      return react_default.a.createElement("ul", {
+        className: "slider-list",
+        style: this.getListStyles()
+      }, children);
+    }
+  }]);
+
+  return ScrollTransition3D;
+}(react_default.a.Component);
+
+
+_3d_scroll_transition_ScrollTransition3D.propTypes = {
+  cellSpacing: prop_types_default.a.number,
+  currentSlide: prop_types_default.a.number,
+  dragging: prop_types_default.a.bool,
+  isWrappingAround: prop_types_default.a.bool,
+  left: prop_types_default.a.number,
+  slideCount: prop_types_default.a.number,
+  slideHeight: prop_types_default.a.number,
+  slideOffset: prop_types_default.a.number,
+  slideWidth: prop_types_default.a.number,
+  top: prop_types_default.a.number,
+  vertical: prop_types_default.a.bool,
+  wrapAround: prop_types_default.a.bool,
+  zoomScale: prop_types_default.a.number,
+  opacityScale: prop_types_default.a.number,
+  slidesToShow: prop_types_default.a.number,
+  slideListMargin: prop_types_default.a.number
+};
+_3d_scroll_transition_ScrollTransition3D.defaultProps = {
+  cellSpacing: 0,
+  currentSlide: 0,
+  dragging: false,
+  isWrappingAround: false,
+  left: 0,
+  slideCount: 0,
+  slideHeight: 0,
+  slideWidth: 0,
+  top: 0,
+  vertical: false,
+  wrapAround: true,
+  zoomScale: 0.75,
+  opacityScale: 0.65,
+  slidesToShow: 3,
+  slideListMargin: 10
+};
 // CONCATENATED MODULE: ./node_modules/nuka-carousel/es/all-transitions.js
+
 
 
 /* harmony default export */ var all_transitions = ({
   fade: fade_transition_FadeTransition,
-  scroll: scroll_transition_ScrollTransition
+  scroll: scroll_transition_ScrollTransition,
+  scroll3d: _3d_scroll_transition_ScrollTransition3D
 });
 // CONCATENATED MODULE: ./node_modules/nuka-carousel/es/announce-slide.js
 
@@ -1527,14 +1798,13 @@ var getDecoratorStyles = function getDecoratorStyles(position) {
       }
   }
 };
-var getSliderStyles = function getSliderStyles(propWidth, stateSlideWidth) {
+var getSliderStyles = function getSliderStyles(propWidth, propHeight) {
   return {
     boxSizing: 'border-box',
     display: 'block',
-    height: 'auto',
+    height: propHeight,
     MozBoxSizing: 'border-box',
     position: 'relative',
-    visibility: stateSlideWidth ? 'inherit' : 'hidden',
     width: propWidth
   };
 };
@@ -1570,7 +1840,9 @@ var getTransitionProps = function getTransitionProps(props, state) {
     top: state.top,
     vertical: props.vertical,
     wrapAround: props.wrapAround,
-    zoomScale: props.zoomScale
+    zoomScale: props.zoomScale,
+    opacityScale: props.opacityScale,
+    slideListMargin: props.slideListMargin
   };
 };
 // CONCATENATED MODULE: ./node_modules/nuka-carousel/es/utilities/bootstrapping-utilities.js
@@ -1672,9 +1944,13 @@ function es_createClass(Constructor, protoProps, staticProps) { if (protoProps) 
 
 function es_possibleConstructorReturn(self, call) { if (call && (es_typeof(call) === "object" || typeof call === "function")) { return call; } return es_assertThisInitialized(self); }
 
-function es_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function es_getPrototypeOf(o) { es_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return es_getPrototypeOf(o); }
 
 function es_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function es_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) es_setPrototypeOf(subClass, superClass); }
+
+function es_setPrototypeOf(o, p) { es_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return es_setPrototypeOf(o, p); }
 
 
 
@@ -1698,7 +1974,7 @@ function (_React$Component) {
 
     es_classCallCheck(this, Carousel);
 
-    _this = es_possibleConstructorReturn(this, (Carousel.__proto__ || Object.getPrototypeOf(Carousel)).apply(this, arguments));
+    _this = es_possibleConstructorReturn(this, es_getPrototypeOf(Carousel).apply(this, arguments));
     _this.displayName = 'Carousel';
     _this.clickDisabled = false;
     _this.isTransitioning = false;
@@ -1731,6 +2007,7 @@ function (_React$Component) {
       funcName: 'renderBottomRightControls',
       key: 'BottomRight'
     }];
+    _this.childNodesMutationObs = null;
     _this.state = es_objectSpread({
       currentSlide: _this.props.slideIndex,
       dragging: false,
@@ -1769,6 +2046,7 @@ function (_React$Component) {
     _this.setSlideHeightAndWidth = _this.setSlideHeightAndWidth.bind(es_assertThisInitialized(_this));
     _this.startAutoplay = _this.startAutoplay.bind(es_assertThisInitialized(_this));
     _this.stopAutoplay = _this.stopAutoplay.bind(es_assertThisInitialized(_this));
+    _this.establishChildNodesMutationObserver = _this.establishChildNodesMutationObserver.bind(es_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1780,6 +2058,7 @@ function (_React$Component) {
       this.setLeft();
       this.setDimensions();
       this.bindEvents();
+      this.establishChildNodesMutationObserver();
 
       if (this.props.autoplay) {
         this.startAutoplay();
@@ -1826,8 +2105,11 @@ function (_React$Component) {
     value: function componentDidUpdate(prevProps, prevState) {
       var slideChanged = prevState.currentSlide !== this.state.currentSlide;
       var heightModeChanged = prevProps.heightMode !== this.props.heightMode;
+      var axisChanged = prevProps.vertical !== this.props.vertical;
 
-      if (slideChanged || heightModeChanged) {
+      if (axisChanged) {
+        this.onResize();
+      } else if (slideChanged || heightModeChanged) {
         this.setSlideHeightAndWidth();
       }
     }
@@ -1835,123 +2117,94 @@ function (_React$Component) {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
       this.unbindEvents();
+      this.disconnectChildNodesMutationObserver();
       this.stopAutoplay(); // see https://github.com/facebook/react/issues/3417#issuecomment-121649937
 
       this.mounted = false;
     }
   }, {
+    key: "establishChildNodesMutationObserver",
+    value: function establishChildNodesMutationObserver() {
+      var _this2 = this;
+
+      var childNodes = this.getChildNodes();
+
+      if (childNodes.length && 'MutationObserver' in window) {
+        this.childNodesMutationObs = new MutationObserver(function (mutations) {
+          mutations.forEach(function () {
+            _this2.setSlideHeightAndWidth();
+          });
+        });
+
+        var observeChildNodeMutation = function observeChildNodeMutation(node) {
+          _this2.childNodesMutationObs.observe(node, {
+            attributes: true,
+            attributeFilter: ['style'],
+            attributeOldValue: false,
+            characterData: false,
+            characterDataOldValue: false,
+            childList: false,
+            subtree: false
+          });
+        };
+
+        var childNodesArray = Array.from(childNodes);
+
+        for (var _i = 0, _childNodesArray = childNodesArray; _i < _childNodesArray.length; _i++) {
+          var node = _childNodesArray[_i];
+          observeChildNodeMutation(node);
+        }
+      }
+    }
+  }, {
+    key: "disconnectChildNodesMutationObserver",
+    value: function disconnectChildNodesMutationObserver() {
+      if (this.childNodesMutationObs instanceof MutationObserver) {
+        this.childNodesMutationObs.disconnect();
+      }
+    }
+  }, {
     key: "getTouchEvents",
     value: function getTouchEvents() {
-      var _this2 = this;
+      var _this3 = this;
 
       if (this.props.swiping === false) {
         return {
-          onTouchStart: function onTouchStart() {
-            _this2.handleMouseOver();
-          },
-          onTouchEnd: function onTouchEnd() {
-            _this2.handleMouseOut();
-          }
+          onTouchStart: this.handleMouseOver,
+          onTouchEnd: this.handleMouseOut
         };
       }
 
       return {
         onTouchStart: function onTouchStart(e) {
-          _this2.touchObject = {
+          _this3.touchObject = {
             startX: e.touches[0].pageX,
             startY: e.touches[0].pageY
           };
 
-          _this2.handleMouseOver();
+          _this3.handleMouseOver();
 
-          _this2.setState({
-            dragging: true
-          });
-        },
-        onTouchMove: function onTouchMove(e) {
-          var direction = swipeDirection(_this2.touchObject.startX, e.touches[0].pageX, _this2.touchObject.startY, e.touches[0].pageY, _this2.props.vertical);
-
-          if (direction !== 0) {
-            e.preventDefault();
+          if (_this3.props.onDragStart) {
+            _this3.props.onDragStart();
           }
-
-          var length = _this2.props.vertical ? Math.round(Math.sqrt(Math.pow(e.touches[0].pageY - _this2.touchObject.startY, 2))) : Math.round(Math.sqrt(Math.pow(e.touches[0].pageX - _this2.touchObject.startX, 2)));
-          _this2.touchObject = {
-            startX: _this2.touchObject.startX,
-            startY: _this2.touchObject.startY,
-            endX: e.touches[0].pageX,
-            endY: e.touches[0].pageY,
-            length: length,
-            direction: direction
-          };
-
-          _this2.setState({
-            left: _this2.props.vertical ? 0 : _this2.getTargetLeft(_this2.touchObject.length * _this2.touchObject.direction),
-            top: _this2.props.vertical ? _this2.getTargetLeft(_this2.touchObject.length * _this2.touchObject.direction) : 0
-          });
-        },
-        onTouchEnd: function onTouchEnd(e) {
-          _this2.handleSwipe(e);
-
-          _this2.handleMouseOut();
-        },
-        onTouchCancel: function onTouchCancel(e) {
-          _this2.handleSwipe(e);
-        }
-      };
-    }
-  }, {
-    key: "getMouseEvents",
-    value: function getMouseEvents() {
-      var _this3 = this;
-
-      if (this.props.dragging === false) {
-        return {
-          onMouseOver: function onMouseOver() {
-            return _this3.handleMouseOver();
-          },
-          onMouseOut: function onMouseOut() {
-            return _this3.handleMouseOut();
-          }
-        };
-      }
-
-      return {
-        onMouseOver: function onMouseOver() {
-          return _this3.handleMouseOver();
-        },
-        onMouseOut: function onMouseOut() {
-          return _this3.handleMouseOut();
-        },
-        onMouseDown: function onMouseDown(e) {
-          _this3.touchObject = {
-            startX: e.clientX,
-            startY: e.clientY
-          };
 
           _this3.setState({
             dragging: true
           });
         },
-        onMouseMove: function onMouseMove(e) {
-          if (!_this3.state.dragging) {
-            return;
-          }
-
-          var direction = swipeDirection(_this3.touchObject.startX, e.clientX, _this3.touchObject.startY, e.clientY, _this3.props.vertical);
+        onTouchMove: function onTouchMove(e) {
+          var direction = swipeDirection(_this3.touchObject.startX, e.touches[0].pageX, _this3.touchObject.startY, e.touches[0].pageY, _this3.props.vertical);
 
           if (direction !== 0) {
             e.preventDefault();
           }
 
-          var length = _this3.props.vertical ? Math.round(Math.sqrt(Math.pow(e.clientY - _this3.touchObject.startY, 2))) : Math.round(Math.sqrt(Math.pow(e.clientX - _this3.touchObject.startX, 2))); // prevents disabling click just because mouse moves a fraction of a pixel
-
-          if (length >= 10) _this3.clickDisabled = true;
+          var length = _this3.props.vertical ? Math.round(Math.sqrt(Math.pow(e.touches[0].pageY - _this3.touchObject.startY, 2))) : Math.round(Math.sqrt(Math.pow(e.touches[0].pageX - _this3.touchObject.startX, 2)));
           _this3.touchObject = {
             startX: _this3.touchObject.startX,
             startY: _this3.touchObject.startY,
-            endX: e.clientX,
-            endY: e.clientY,
+            endX: e.touches[0].pageX,
+            endY: e.touches[0].pageY,
             length: length,
             direction: direction
           };
@@ -1961,23 +2214,90 @@ function (_React$Component) {
             top: _this3.props.vertical ? _this3.getTargetLeft(_this3.touchObject.length * _this3.touchObject.direction) : 0
           });
         },
+        onTouchEnd: function onTouchEnd(e) {
+          _this3.handleSwipe(e);
+
+          _this3.handleMouseOut();
+        },
+        onTouchCancel: function onTouchCancel(e) {
+          _this3.handleSwipe(e);
+        }
+      };
+    }
+  }, {
+    key: "getMouseEvents",
+    value: function getMouseEvents() {
+      var _this4 = this;
+
+      if (this.props.dragging === false) {
+        return {
+          onMouseOver: this.handleMouseOver,
+          onMouseOut: this.handleMouseOut
+        };
+      }
+
+      return {
+        onMouseOver: this.handleMouseOver,
+        onMouseOut: this.handleMouseOut,
+        onMouseDown: function onMouseDown(e) {
+          _this4.touchObject = {
+            startX: e.clientX,
+            startY: e.clientY
+          };
+
+          if (_this4.props.onDragStart) {
+            _this4.props.onDragStart();
+          }
+
+          _this4.setState({
+            dragging: true
+          });
+        },
+        onMouseMove: function onMouseMove(e) {
+          if (!_this4.state.dragging) {
+            return;
+          }
+
+          var direction = swipeDirection(_this4.touchObject.startX, e.clientX, _this4.touchObject.startY, e.clientY, _this4.props.vertical);
+
+          if (direction !== 0) {
+            e.preventDefault();
+          }
+
+          var length = _this4.props.vertical ? Math.round(Math.sqrt(Math.pow(e.clientY - _this4.touchObject.startY, 2))) : Math.round(Math.sqrt(Math.pow(e.clientX - _this4.touchObject.startX, 2))); // prevents disabling click just because mouse moves a fraction of a pixel
+
+          if (length >= 10) _this4.clickDisabled = true;
+          _this4.touchObject = {
+            startX: _this4.touchObject.startX,
+            startY: _this4.touchObject.startY,
+            endX: e.clientX,
+            endY: e.clientY,
+            length: length,
+            direction: direction
+          };
+
+          _this4.setState({
+            left: _this4.props.vertical ? 0 : _this4.getTargetLeft(_this4.touchObject.length * _this4.touchObject.direction),
+            top: _this4.props.vertical ? _this4.getTargetLeft(_this4.touchObject.length * _this4.touchObject.direction) : 0
+          });
+        },
         onMouseUp: function onMouseUp(e) {
-          if (_this3.touchObject.length === 0 || _this3.touchObject.length === undefined) {
-            _this3.setState({
+          if (_this4.touchObject.length === 0 || _this4.touchObject.length === undefined) {
+            _this4.setState({
               dragging: false
             });
 
             return;
           }
 
-          _this3.handleSwipe(e);
+          _this4.handleSwipe(e);
         },
         onMouseLeave: function onMouseLeave(e) {
-          if (!_this3.state.dragging) {
+          if (!_this4.state.dragging) {
             return;
           }
 
-          _this3.handleSwipe(e);
+          _this4.handleSwipe(e);
         }
       };
     }
@@ -2030,7 +2350,7 @@ function (_React$Component) {
   }, {
     key: "handleSwipe",
     value: function handleSwipe() {
-      var _this4 = this;
+      var _this5 = this;
 
       var slidesToShow = this.state.slidesToShow;
 
@@ -2062,7 +2382,7 @@ function (_React$Component) {
 
 
       setTimeout(function () {
-        _this4.clickDisabled = false;
+        _this5.clickDisabled = false;
       }, 0);
       this.touchObject = {};
       this.setState({
@@ -2222,7 +2542,7 @@ function (_React$Component) {
   }, {
     key: "goToSlide",
     value: function goToSlide(index, props) {
-      var _this5 = this;
+      var _this6 = this;
 
       if (props === undefined) {
         props = this.props;
@@ -2249,20 +2569,20 @@ function (_React$Component) {
           props.beforeSlide(this.state.currentSlide, 0);
           this.setState(function (prevState) {
             return {
-              left: props.vertical ? 0 : _this5.getTargetLeft(_this5.state.slideWidth, prevState.currentSlide),
-              top: props.vertical ? _this5.getTargetLeft(_this5.state.slideWidth, prevState.currentSlide) : 0,
+              left: props.vertical ? 0 : _this6.getTargetLeft(_this6.state.slideWidth, prevState.currentSlide),
+              top: props.vertical ? _this6.getTargetLeft(_this6.state.slideWidth, prevState.currentSlide) : 0,
               currentSlide: 0,
               isWrappingAround: true,
               wrapToIndex: index
             };
           }, function () {
             setTimeout(function () {
-              _this5.resetAutoplay();
+              _this6.resetAutoplay();
 
-              _this5.isTransitioning = false;
+              _this6.isTransitioning = false;
 
               if (index !== previousSlide) {
-                _this5.props.afterSlide(0);
+                _this6.props.afterSlide(0);
               }
             }, props.speed);
           });
@@ -2272,20 +2592,20 @@ function (_React$Component) {
           props.beforeSlide(this.state.currentSlide, endSlide);
           this.setState(function (prevState) {
             return {
-              left: props.vertical ? 0 : _this5.getTargetLeft(0, prevState.currentSlide),
-              top: props.vertical ? _this5.getTargetLeft(0, prevState.currentSlide) : 0,
+              left: props.vertical ? 0 : _this6.getTargetLeft(0, prevState.currentSlide),
+              top: props.vertical ? _this6.getTargetLeft(0, prevState.currentSlide) : 0,
               currentSlide: endSlide,
               isWrappingAround: true,
               wrapToIndex: index
             };
           }, function () {
             setTimeout(function () {
-              _this5.resetAutoplay();
+              _this6.resetAutoplay();
 
-              _this5.isTransitioning = false;
+              _this6.isTransitioning = false;
 
               if (index !== previousSlide) {
-                _this5.props.afterSlide(_this5.state.slideCount - 1);
+                _this6.props.afterSlide(_this6.state.slideCount - 1);
               }
             }, props.speed);
           });
@@ -2298,12 +2618,12 @@ function (_React$Component) {
         currentSlide: index
       }, function () {
         return setTimeout(function () {
-          _this5.resetAutoplay();
+          _this6.resetAutoplay();
 
-          _this5.isTransitioning = false;
+          _this6.isTransitioning = false;
 
           if (index !== previousSlide) {
-            _this5.props.afterSlide(index);
+            _this6.props.afterSlide(index);
           }
         }, props.speed);
       });
@@ -2429,7 +2749,7 @@ function (_React$Component) {
   }, {
     key: "setDimensions",
     value: function setDimensions(props) {
-      var _this6 = this;
+      var _this7 = this;
 
       var stateCb = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {};
       props = props || this.props;
@@ -2440,9 +2760,9 @@ function (_React$Component) {
 
       var frame = this.frame;
 
-      var _calcSlideHeightAndWi = this.calcSlideHeightAndWidth(props),
-          slideHeight = _calcSlideHeightAndWi.slideHeight,
-          slideWidth = _calcSlideHeightAndWi.slideWidth;
+      var _this$calcSlideHeight = this.calcSlideHeightAndWidth(props),
+          slideHeight = _this$calcSlideHeight.slideHeight,
+          slideWidth = _this$calcSlideHeight.slideWidth;
 
       var frameHeight = slideHeight + props.cellSpacing * (slidesToShow - 1);
       var frameWidth = props.vertical ? frameHeight : frame.offsetWidth;
@@ -2466,7 +2786,7 @@ function (_React$Component) {
       }, function () {
         stateCb();
 
-        _this6.setLeft();
+        _this7.setLeft();
       });
     }
   }, {
@@ -2490,7 +2810,7 @@ function (_React$Component) {
   }, {
     key: "renderControls",
     value: function renderControls() {
-      var _this7 = this;
+      var _this8 = this;
 
       if (this.props.withoutControls) {
         return this.controlsMap.map(function () {
@@ -2500,30 +2820,30 @@ function (_React$Component) {
         return this.controlsMap.map(function (_ref) {
           var funcName = _ref.funcName,
               key = _ref.key;
-          var func = _this7.props[funcName];
+          var func = _this8.props[funcName];
           return func && typeof func === 'function' && react_default.a.createElement("div", {
             className: "slider-control-".concat(key.toLowerCase()),
             style: getDecoratorStyles(key),
             key: key
           }, func({
-            cellAlign: _this7.props.cellAlign,
-            cellSpacing: _this7.props.cellSpacing,
-            currentSlide: _this7.state.currentSlide,
-            frameWidth: _this7.state.frameWidth,
+            cellAlign: _this8.props.cellAlign,
+            cellSpacing: _this8.props.cellSpacing,
+            currentSlide: _this8.state.currentSlide,
+            frameWidth: _this8.state.frameWidth,
             goToSlide: function goToSlide(index) {
-              return _this7.goToSlide(index);
+              return _this8.goToSlide(index);
             },
             nextSlide: function nextSlide() {
-              return _this7.nextSlide();
+              return _this8.nextSlide();
             },
             previousSlide: function previousSlide() {
-              return _this7.previousSlide();
+              return _this8.previousSlide();
             },
-            slideCount: _this7.state.slideCount,
-            slidesToScroll: _this7.state.slidesToScroll,
-            slidesToShow: _this7.state.slidesToShow,
-            slideWidth: _this7.state.slideWidth,
-            wrapAround: _this7.props.wrapAround
+            slideCount: _this8.state.slideCount,
+            slidesToScroll: _this8.state.slidesToScroll,
+            slidesToShow: _this8.state.slidesToShow,
+            slideWidth: _this8.state.slideWidth,
+            wrapAround: _this8.props.wrapAround
           }));
         });
       }
@@ -2531,19 +2851,19 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this8 = this;
+      var _this9 = this;
 
-      var _state = this.state,
-          currentSlide = _state.currentSlide,
-          slideCount = _state.slideCount,
-          frameWidth = _state.frameWidth;
-      var _props = this.props,
-          frameOverflow = _props.frameOverflow,
-          vertical = _props.vertical,
-          framePadding = _props.framePadding,
-          slidesToShow = _props.slidesToShow,
-          renderAnnounceSlideMessage = _props.renderAnnounceSlideMessage,
-          disableAnimation = _props.disableAnimation;
+      var _this$state = this.state,
+          currentSlide = _this$state.currentSlide,
+          slideCount = _this$state.slideCount,
+          frameWidth = _this$state.frameWidth;
+      var _this$props = this.props,
+          frameOverflow = _this$props.frameOverflow,
+          vertical = _this$props.vertical,
+          framePadding = _this$props.framePadding,
+          slidesToShow = _this$props.slidesToShow,
+          renderAnnounceSlideMessage = _this$props.renderAnnounceSlideMessage,
+          disableAnimation = _this$props.disableAnimation;
       var duration = this.state.dragging || !this.state.dragging && this.state.resetWrapAroundPosition && this.props.wrapAround || disableAnimation || !this.state.hasInteraction ? 0 : this.props.speed;
       var frameStyles = getFrameStyles(frameOverflow, vertical, framePadding, frameWidth);
       var touchEvents = this.getTouchEvents();
@@ -2552,7 +2872,7 @@ function (_React$Component) {
       var validChildren = bootstrapping_utilities_getValidChildren(this.props.children);
       return react_default.a.createElement("div", {
         className: ['slider', this.props.className || ''].join(' '),
-        style: _extends({}, getSliderStyles(this.props.width, this.state.slideWidth), this.props.style)
+        style: _extends({}, getSliderStyles(this.props.width, this.props.height), this.props.style)
       }, !this.props.autoplay && react_default.a.createElement(announce_slide, {
         message: renderAnnounceSlideMessage({
           currentSlide: currentSlide,
@@ -2561,7 +2881,7 @@ function (_React$Component) {
       }), react_default.a.createElement("div", _extends({
         className: "slider-frame",
         ref: function ref(frame) {
-          return _this8.frame = frame;
+          return _this9.frame = frame;
         },
         style: frameStyles
       }, touchEvents, mouseEvents, {
@@ -2573,30 +2893,30 @@ function (_React$Component) {
           ty: 0
         },
         update: function update() {
-          var _this8$getOffsetDelta = _this8.getOffsetDeltas(),
-              tx = _this8$getOffsetDelta.tx,
-              ty = _this8$getOffsetDelta.ty;
+          var _this9$getOffsetDelta = _this9.getOffsetDeltas(),
+              tx = _this9$getOffsetDelta.tx,
+              ty = _this9$getOffsetDelta.ty;
 
           return {
             tx: tx,
             ty: ty,
             timing: {
               duration: duration,
-              ease: _this8.state.easing
+              ease: _this9.state.easing
             },
             events: {
               end: function end() {
-                var newLeft = _this8.props.vertical ? 0 : _this8.getTargetLeft();
-                var newTop = _this8.props.vertical ? _this8.getTargetLeft() : 0;
+                var newLeft = _this9.props.vertical ? 0 : _this9.getTargetLeft();
+                var newTop = _this9.props.vertical ? _this9.getTargetLeft() : 0;
 
-                if (newLeft !== _this8.state.left || newTop !== _this8.state.top) {
-                  _this8.setState({
+                if (newLeft !== _this9.state.left || newTop !== _this9.state.top) {
+                  _this9.setState({
                     left: newLeft,
                     top: newTop,
                     isWrappingAround: false,
                     resetWrapAroundPosition: true
                   }, function () {
-                    _this8.setState({
+                    _this9.setState({
                       resetWrapAroundPosition: false
                     });
                   });
@@ -2608,7 +2928,7 @@ function (_React$Component) {
         children: function children(_ref2) {
           var tx = _ref2.tx,
               ty = _ref2.ty;
-          return react_default.a.createElement(TransitionControl, _extends({}, getTransitionProps(_this8.props, _this8.state), {
+          return react_default.a.createElement(TransitionControl, _extends({}, getTransitionProps(_this9.props, _this9.state), {
             deltaX: tx,
             deltaY: ty
           }), bootstrapping_utilities_addAccessibility(validChildren, slidesToShow, currentSlide));
@@ -2643,9 +2963,11 @@ es_Carousel.propTypes = {
   edgeEasing: prop_types_default.a.string,
   frameOverflow: prop_types_default.a.string,
   framePadding: prop_types_default.a.string,
+  height: prop_types_default.a.string,
   heightMode: prop_types_default.a.oneOf(['first', 'current', 'max']),
   initialSlideHeight: prop_types_default.a.number,
   initialSlideWidth: prop_types_default.a.number,
+  onDragStart: prop_types_default.a.func,
   onResize: prop_types_default.a.func,
   pauseOnHover: prop_types_default.a.bool,
   renderAnnounceSlideMessage: prop_types_default.a.func,
@@ -2665,11 +2987,13 @@ es_Carousel.propTypes = {
   slideWidth: prop_types_default.a.oneOfType([prop_types_default.a.string, prop_types_default.a.number]),
   speed: prop_types_default.a.number,
   swiping: prop_types_default.a.bool,
-  transitionMode: prop_types_default.a.oneOf(['scroll', 'fade']),
+  transitionMode: prop_types_default.a.oneOf(['scroll', 'fade', 'scroll3d']),
   vertical: prop_types_default.a.bool,
   width: prop_types_default.a.string,
   withoutControls: prop_types_default.a.bool,
-  wrapAround: prop_types_default.a.bool
+  wrapAround: prop_types_default.a.bool,
+  opacityScale: prop_types_default.a.number,
+  slideListMargin: prop_types_default.a.number
 };
 es_Carousel.defaultProps = {
   afterSlide: function afterSlide() {},
@@ -2687,6 +3011,7 @@ es_Carousel.defaultProps = {
   edgeEasing: 'easeElasticOut',
   frameOverflow: 'hidden',
   framePadding: '0px',
+  height: 'auto',
   heightMode: 'max',
   onResize: function onResize() {},
   pauseOnHover: true,
@@ -2712,17 +3037,18 @@ es_Carousel.defaultProps = {
   vertical: false,
   width: '100%',
   withoutControls: false,
-  wrapAround: false
+  wrapAround: false,
+  slideListMargin: 10
 };
 
 
 /***/ }),
 
-/***/ 292:
+/***/ 317:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.4
+/** @license React v16.8.6
  * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2731,7 +3057,7 @@ es_Carousel.defaultProps = {
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(119),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,aa=n?Symbol.for("react.memo"):
+var k=__webpack_require__(124),n="function"===typeof Symbol&&Symbol.for,p=n?Symbol.for("react.element"):60103,q=n?Symbol.for("react.portal"):60106,r=n?Symbol.for("react.fragment"):60107,t=n?Symbol.for("react.strict_mode"):60108,u=n?Symbol.for("react.profiler"):60114,v=n?Symbol.for("react.provider"):60109,w=n?Symbol.for("react.context"):60110,x=n?Symbol.for("react.concurrent_mode"):60111,y=n?Symbol.for("react.forward_ref"):60112,z=n?Symbol.for("react.suspense"):60113,aa=n?Symbol.for("react.memo"):
 60115,ba=n?Symbol.for("react.lazy"):60116,A="function"===typeof Symbol&&Symbol.iterator;function ca(a,b,d,c,e,g,h,f){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[d,c,e,g,h,f],m=0;a=Error(b.replace(/%s/g,function(){return l[m++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function B(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}var C={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},D={};
 function E(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}E.prototype.isReactComponent={};E.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?B("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function F(){}F.prototype=E.prototype;function G(a,b,d){this.props=a;this.context=b;this.refs=D;this.updater=d||C}var H=G.prototype=new F;
@@ -2741,21 +3067,21 @@ function da(a,b){return{$$typeof:p,type:a.type,key:b,ref:a.ref,props:a.props,_ow
 function R(a){a.result=null;a.keyPrefix=null;a.func=null;a.context=null;a.count=0;10>P.length&&P.push(a)}
 function S(a,b,d,c){var e=typeof a;if("undefined"===e||"boolean"===e)a=null;var g=!1;if(null===a)g=!0;else switch(e){case "string":case "number":g=!0;break;case "object":switch(a.$$typeof){case p:case q:g=!0}}if(g)return d(c,a,""===b?"."+T(a,0):b),1;g=0;b=""===b?".":b+":";if(Array.isArray(a))for(var h=0;h<a.length;h++){e=a[h];var f=b+T(e,h);g+=S(e,f,d,c)}else if(null===a||"object"!==typeof a?f=null:(f=A&&a[A]||a["@@iterator"],f="function"===typeof f?f:null),"function"===typeof f)for(a=f.call(a),h=
 0;!(e=a.next()).done;)e=e.value,f=b+T(e,h++),g+=S(e,f,d,c);else"object"===e&&(d=""+a,B("31","[object Object]"===d?"object with keys {"+Object.keys(a).join(", ")+"}":d,""));return g}function U(a,b,d){return null==a?0:S(a,"",b,d)}function T(a,b){return"object"===typeof a&&null!==a&&null!=a.key?escape(a.key):b.toString(36)}function ea(a,b){a.func.call(a.context,b,a.count++)}
-function fa(a,b,d){var c=a.result,e=a.keyPrefix;a=a.func.call(a.context,b,a.count++);Array.isArray(a)?V(a,c,d,function(a){return a}):null!=a&&(N(a)&&(a=da(a,e+(!a.key||b&&b.key===a.key?"":(""+a.key).replace(O,"$&/")+"/")+d)),c.push(a))}function V(a,b,d,c,e){var g="";null!=d&&(g=(""+d).replace(O,"$&/")+"/");b=Q(b,g,c,e);U(a,fa,b);R(b)}function W(){var a=I.current;null===a?B("307"):void 0;return a}
+function fa(a,b,d){var c=a.result,e=a.keyPrefix;a=a.func.call(a.context,b,a.count++);Array.isArray(a)?V(a,c,d,function(a){return a}):null!=a&&(N(a)&&(a=da(a,e+(!a.key||b&&b.key===a.key?"":(""+a.key).replace(O,"$&/")+"/")+d)),c.push(a))}function V(a,b,d,c,e){var g="";null!=d&&(g=(""+d).replace(O,"$&/")+"/");b=Q(b,g,c,e);U(a,fa,b);R(b)}function W(){var a=I.current;null===a?B("321"):void 0;return a}
 var X={Children:{map:function(a,b,d){if(null==a)return a;var c=[];V(a,c,null,b,d);return c},forEach:function(a,b,d){if(null==a)return a;b=Q(null,null,b,d);U(a,ea,b);R(b)},count:function(a){return U(a,function(){return null},null)},toArray:function(a){var b=[];V(a,b,null,function(a){return a});return b},only:function(a){N(a)?void 0:B("143");return a}},createRef:function(){return{current:null}},Component:E,PureComponent:G,createContext:function(a,b){void 0===b&&(b=null);a={$$typeof:w,_calculateChangedBits:b,
 _currentValue:a,_currentValue2:a,_threadCount:0,Provider:null,Consumer:null};a.Provider={$$typeof:v,_context:a};return a.Consumer=a},forwardRef:function(a){return{$$typeof:y,render:a}},lazy:function(a){return{$$typeof:ba,_ctor:a,_status:-1,_result:null}},memo:function(a,b){return{$$typeof:aa,type:a,compare:void 0===b?null:b}},useCallback:function(a,b){return W().useCallback(a,b)},useContext:function(a,b){return W().useContext(a,b)},useEffect:function(a,b){return W().useEffect(a,b)},useImperativeHandle:function(a,
 b,d){return W().useImperativeHandle(a,b,d)},useDebugValue:function(){},useLayoutEffect:function(a,b){return W().useLayoutEffect(a,b)},useMemo:function(a,b){return W().useMemo(a,b)},useReducer:function(a,b,d){return W().useReducer(a,b,d)},useRef:function(a){return W().useRef(a)},useState:function(a){return W().useState(a)},Fragment:r,StrictMode:t,Suspense:z,createElement:M,cloneElement:function(a,b,d){null===a||void 0===a?B("267",a):void 0;var c=void 0,e=k({},a.props),g=a.key,h=a.ref,f=a._owner;if(null!=
-b){void 0!==b.ref&&(h=b.ref,f=J.current);void 0!==b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)K.call(b,c)&&!L.hasOwnProperty(c)&&(e[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)e.children=d;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];e.children=l}return{$$typeof:p,type:a.type,key:g,ref:h,props:e,_owner:f}},createFactory:function(a){var b=M.bind(null,a);b.type=a;return b},isValidElement:N,version:"16.8.4",
+b){void 0!==b.ref&&(h=b.ref,f=J.current);void 0!==b.key&&(g=""+b.key);var l=void 0;a.type&&a.type.defaultProps&&(l=a.type.defaultProps);for(c in b)K.call(b,c)&&!L.hasOwnProperty(c)&&(e[c]=void 0===b[c]&&void 0!==l?l[c]:b[c])}c=arguments.length-2;if(1===c)e.children=d;else if(1<c){l=Array(c);for(var m=0;m<c;m++)l[m]=arguments[m+2];e.children=l}return{$$typeof:p,type:a.type,key:g,ref:h,props:e,_owner:f}},createFactory:function(a){var b=M.bind(null,a);b.type=a;return b},isValidElement:N,version:"16.8.6",
 unstable_ConcurrentMode:x,unstable_Profiler:u,__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentDispatcher:I,ReactCurrentOwner:J,assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
 
 
 /***/ }),
 
-/***/ 293:
+/***/ 318:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.4
+/** @license React v16.8.6
  * react-dom.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -2767,7 +3093,7 @@ unstable_ConcurrentMode:x,unstable_Profiler:u,__SECRET_INTERNALS_DO_NOT_USE_OR_Y
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),n=__webpack_require__(119),r=__webpack_require__(294);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(0),n=__webpack_require__(124),r=__webpack_require__(319);function ba(a,b,c,d,e,f,g,h){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var l=[c,d,e,f,g,h],k=0;a=Error(b.replace(/%s/g,function(){return l[k++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function x(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ba(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:x("227");function ca(a,b,c,d,e,f,g,h,l){var k=Array.prototype.slice.call(arguments,3);try{b.apply(c,k)}catch(m){this.onError(m)}}
 var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,l){da=!1;ea=null;ca.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,l){ja.apply(this,arguments);if(da){if(da){var k=ea;da=!1;ea=null}else x("198"),k=void 0;fa||(fa=!0,ha=k)}}var la=null,ma={};
 function na(){if(la)for(var a in ma){var b=ma[a],c=la.indexOf(a);-1<c?void 0:x("96",a);if(!oa[c]){b.extractEvents?void 0:x("97",a);oa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;pa.hasOwnProperty(h)?x("99",h):void 0;pa[h]=f;var l=f.phasedRegistrationNames;if(l){for(e in l)l.hasOwnProperty(e)&&qa(l[e],g,h);e=!0}else f.registrationName?(qa(f.registrationName,g,h),e=!0):e=!1;e?void 0:x("98",d,a)}}}}
@@ -2843,7 +3169,7 @@ function E(a,b){if(!b)return null;var c=(yd(a)?Cd:Dd).bind(null,a);b.addEventLis
 function Dd(a,b){if(Bd){var c=Nb(b);c=Ha(c);null===c||"number"!==typeof c.tag||2===ed(c)||(c=null);if(zd.length){var d=zd.pop();d.topLevelType=a;d.nativeEvent=b;d.targetInst=c;a=d}else a={topLevelType:a,nativeEvent:b,targetInst:c,ancestors:[]};try{Kb(Ad,a)}finally{a.topLevelType=null,a.nativeEvent=null,a.targetInst=null,a.ancestors.length=0,10>zd.length&&zd.push(a)}}}var Fd={},Gd=0,Hd="_reactListenersID"+(""+Math.random()).slice(2);
 function Id(a){Object.prototype.hasOwnProperty.call(a,Hd)||(a[Hd]=Gd++,Fd[a[Hd]]={});return Fd[a[Hd]]}function Jd(a){a=a||("undefined"!==typeof document?document:void 0);if("undefined"===typeof a)return null;try{return a.activeElement||a.body}catch(b){return a.body}}function Kd(a){for(;a&&a.firstChild;)a=a.firstChild;return a}
 function Ld(a,b){var c=Kd(a);a=0;for(var d;c;){if(3===c.nodeType){d=a+c.textContent.length;if(a<=b&&d>=b)return{node:c,offset:b-a};a=d}a:{for(;c;){if(c.nextSibling){c=c.nextSibling;break a}c=c.parentNode}c=void 0}c=Kd(c)}}function Md(a,b){return a&&b?a===b?!0:a&&3===a.nodeType?!1:b&&3===b.nodeType?Md(a,b.parentNode):"contains"in a?a.contains(b):a.compareDocumentPosition?!!(a.compareDocumentPosition(b)&16):!1:!1}
-function Nd(){for(var a=window,b=Jd();b instanceof a.HTMLIFrameElement;){try{a=b.contentDocument.defaultView}catch(c){break}b=Jd(a.document)}return b}function Od(a){var b=a&&a.nodeName&&a.nodeName.toLowerCase();return b&&("input"===b&&("text"===a.type||"search"===a.type||"tel"===a.type||"url"===a.type||"password"===a.type)||"textarea"===b||"true"===a.contentEditable)}
+function Nd(){for(var a=window,b=Jd();b instanceof a.HTMLIFrameElement;){try{var c="string"===typeof b.contentWindow.location.href}catch(d){c=!1}if(c)a=b.contentWindow;else break;b=Jd(a.document)}return b}function Od(a){var b=a&&a.nodeName&&a.nodeName.toLowerCase();return b&&("input"===b&&("text"===a.type||"search"===a.type||"tel"===a.type||"url"===a.type||"password"===a.type)||"textarea"===b||"true"===a.contentEditable)}
 function Pd(){var a=Nd();if(Od(a)){if("selectionStart"in a)var b={start:a.selectionStart,end:a.selectionEnd};else a:{b=(b=a.ownerDocument)&&b.defaultView||window;var c=b.getSelection&&b.getSelection();if(c&&0!==c.rangeCount){b=c.anchorNode;var d=c.anchorOffset,e=c.focusNode;c=c.focusOffset;try{b.nodeType,e.nodeType}catch(A){b=null;break a}var f=0,g=-1,h=-1,l=0,k=0,m=a,p=null;b:for(;;){for(var t;;){m!==b||0!==d&&3!==m.nodeType||(g=f+d);m!==e||0!==c&&3!==m.nodeType||(h=f+c);3===m.nodeType&&(f+=m.nodeValue.length);
 if(null===(t=m.firstChild))break;p=m;m=t}for(;;){if(m===a)break b;p===b&&++l===d&&(g=f);p===e&&++k===c&&(h=f);if(null!==(t=m.nextSibling))break;m=p;p=m.parentNode}m=t}b=-1===g||-1===h?null:{start:g,end:h}}else b=null}b=b||{start:0,end:0}}else b=null;return{focusedElem:a,selectionRange:b}}
 function Qd(a){var b=Nd(),c=a.focusedElem,d=a.selectionRange;if(b!==c&&c&&c.ownerDocument&&Md(c.ownerDocument.documentElement,c)){if(null!==d&&Od(c))if(b=d.start,a=d.end,void 0===a&&(a=b),"selectionStart"in c)c.selectionStart=b,c.selectionEnd=Math.min(a,c.value.length);else if(a=(b=c.ownerDocument||document)&&b.defaultView||window,a.getSelection){a=a.getSelection();var e=c.textContent.length,f=Math.min(d.start,e);d=void 0===d.end?f:Math.min(d.end,e);!a.extend&&f>d&&(e=d,d=f,f=e);e=Ld(c,f);var g=Ld(c,
@@ -2903,19 +3229,19 @@ w.key),g=f(w,g,u),null===m?l=w:m.sibling=w,m=w);a&&q.forEach(function(a){return 
 k.sibling}f.type===Xb?(d=Ze(f.props.children,a.mode,h,f.key),d.return=a,a=d):(h=Ye(f.type,f.key,f.props,null,a.mode,h),h.ref=Af(a,d,f),h.return=a,a=h)}return g(a);case Wb:a:{for(k=f.key;null!==d;){if(d.key===k)if(4===d.tag&&d.stateNode.containerInfo===f.containerInfo&&d.stateNode.implementation===f.implementation){c(a,d.sibling);d=e(d,f.children||[],h);d.return=a;a=d;break a}else{c(a,d);break}else b(a,d);d=d.sibling}d=bf(f,a.mode,h);d.return=a;a=d}return g(a)}if("string"===typeof f||"number"===typeof f)return f=
 ""+f,null!==d&&6===d.tag?(c(a,d.sibling),d=e(d,f,h),d.return=a,a=d):(c(a,d),d=af(f,a.mode,h),d.return=a,a=d),g(a);if(zf(f))return v(a,d,f,h);if(hc(f))return R(a,d,f,h);l&&Bf(a,f);if("undefined"===typeof f&&!k)switch(a.tag){case 1:case 0:h=a.type,x("152",h.displayName||h.name||"Component")}return c(a,d)}}var Df=Cf(!0),Ef=Cf(!1),Ff={},N={current:Ff},Gf={current:Ff},Hf={current:Ff};function If(a){a===Ff?x("174"):void 0;return a}
 function Jf(a,b){G(Hf,b,a);G(Gf,a,a);G(N,Ff,a);var c=b.nodeType;switch(c){case 9:case 11:b=(b=b.documentElement)?b.namespaceURI:he(null,"");break;default:c=8===c?b.parentNode:b,b=c.namespaceURI||null,c=c.tagName,b=he(b,c)}F(N,a);G(N,b,a)}function Kf(a){F(N,a);F(Gf,a);F(Hf,a)}function Lf(a){If(Hf.current);var b=If(N.current);var c=he(b,a.type);b!==c&&(G(Gf,a,a),G(N,c,a))}function Mf(a){Gf.current===a&&(F(N,a),F(Gf,a))}
-var Nf=0,Of=2,Pf=4,Qf=8,Rf=16,Sf=32,Tf=64,Uf=128,Vf=Tb.ReactCurrentDispatcher,Wf=0,Xf=null,O=null,P=null,Yf=null,Q=null,Zf=null,$f=0,ag=null,bg=0,cg=!1,dg=null,eg=0;function fg(){x("307")}function gg(a,b){if(null===b)return!1;for(var c=0;c<b.length&&c<a.length;c++)if(!bd(a[c],b[c]))return!1;return!0}
+var Nf=0,Of=2,Pf=4,Qf=8,Rf=16,Sf=32,Tf=64,Uf=128,Vf=Tb.ReactCurrentDispatcher,Wf=0,Xf=null,O=null,P=null,Yf=null,Q=null,Zf=null,$f=0,ag=null,bg=0,cg=!1,dg=null,eg=0;function fg(){x("321")}function gg(a,b){if(null===b)return!1;for(var c=0;c<b.length&&c<a.length;c++)if(!bd(a[c],b[c]))return!1;return!0}
 function hg(a,b,c,d,e,f){Wf=f;Xf=b;P=null!==a?a.memoizedState:null;Vf.current=null===P?ig:jg;b=c(d,e);if(cg){do cg=!1,eg+=1,P=null!==a?a.memoizedState:null,Zf=Yf,ag=Q=O=null,Vf.current=jg,b=c(d,e);while(cg);dg=null;eg=0}Vf.current=kg;a=Xf;a.memoizedState=Yf;a.expirationTime=$f;a.updateQueue=ag;a.effectTag|=bg;a=null!==O&&null!==O.next;Wf=0;Zf=Q=Yf=P=O=Xf=null;$f=0;ag=null;bg=0;a?x("300"):void 0;return b}function lg(){Vf.current=kg;Wf=0;Zf=Q=Yf=P=O=Xf=null;$f=0;ag=null;bg=0;cg=!1;dg=null;eg=0}
 function mg(){var a={memoizedState:null,baseState:null,queue:null,baseUpdate:null,next:null};null===Q?Yf=Q=a:Q=Q.next=a;return Q}function ng(){if(null!==Zf)Q=Zf,Zf=Q.next,O=P,P=null!==O?O.next:null;else{null===P?x("310"):void 0;O=P;var a={memoizedState:O.memoizedState,baseState:O.baseState,queue:O.queue,baseUpdate:O.baseUpdate,next:null};Q=null===Q?Yf=a:Q.next=a;P=O.next}return Q}function og(a,b){return"function"===typeof b?b(a):b}
-function pg(a){var b=ng(),c=b.queue;null===c?x("311"):void 0;if(0<eg){var d=c.dispatch;if(null!==dg){var e=dg.get(c);if(void 0!==e){dg.delete(c);var f=b.memoizedState;do f=a(f,e.action),e=e.next;while(null!==e);bd(f,b.memoizedState)||(qg=!0);b.memoizedState=f;b.baseUpdate===c.last&&(b.baseState=f);c.eagerReducer=a;c.eagerState=f;return[f,d]}}return[b.memoizedState,d]}d=c.last;var g=b.baseUpdate;f=b.baseState;null!==g?(null!==d&&(d.next=null),d=g.next):d=null!==d?d.next:null;if(null!==d){var h=e=null,
-l=d,k=!1;do{var m=l.expirationTime;m<Wf?(k||(k=!0,h=g,e=f),m>$f&&($f=m)):f=l.eagerReducer===a?l.eagerState:a(f,l.action);g=l;l=l.next}while(null!==l&&l!==d);k||(h=g,e=f);bd(f,b.memoizedState)||(qg=!0);b.memoizedState=f;b.baseUpdate=h;b.baseState=e;c.eagerReducer=a;c.eagerState=f}return[b.memoizedState,c.dispatch]}
+function pg(a){var b=ng(),c=b.queue;null===c?x("311"):void 0;c.lastRenderedReducer=a;if(0<eg){var d=c.dispatch;if(null!==dg){var e=dg.get(c);if(void 0!==e){dg.delete(c);var f=b.memoizedState;do f=a(f,e.action),e=e.next;while(null!==e);bd(f,b.memoizedState)||(qg=!0);b.memoizedState=f;b.baseUpdate===c.last&&(b.baseState=f);c.lastRenderedState=f;return[f,d]}}return[b.memoizedState,d]}d=c.last;var g=b.baseUpdate;f=b.baseState;null!==g?(null!==d&&(d.next=null),d=g.next):d=null!==d?d.next:null;if(null!==
+d){var h=e=null,l=d,k=!1;do{var m=l.expirationTime;m<Wf?(k||(k=!0,h=g,e=f),m>$f&&($f=m)):f=l.eagerReducer===a?l.eagerState:a(f,l.action);g=l;l=l.next}while(null!==l&&l!==d);k||(h=g,e=f);bd(f,b.memoizedState)||(qg=!0);b.memoizedState=f;b.baseUpdate=h;b.baseState=e;c.lastRenderedState=f}return[b.memoizedState,c.dispatch]}
 function rg(a,b,c,d){a={tag:a,create:b,destroy:c,deps:d,next:null};null===ag?(ag={lastEffect:null},ag.lastEffect=a.next=a):(b=ag.lastEffect,null===b?ag.lastEffect=a.next=a:(c=b.next,b.next=a,a.next=c,ag.lastEffect=a));return a}function sg(a,b,c,d){var e=mg();bg|=a;e.memoizedState=rg(b,c,void 0,void 0===d?null:d)}
 function tg(a,b,c,d){var e=ng();d=void 0===d?null:d;var f=void 0;if(null!==O){var g=O.memoizedState;f=g.destroy;if(null!==d&&gg(d,g.deps)){rg(Nf,c,f,d);return}}bg|=a;e.memoizedState=rg(b,c,f,d)}function ug(a,b){if("function"===typeof b)return a=a(),b(a),function(){b(null)};if(null!==b&&void 0!==b)return a=a(),b.current=a,function(){b.current=null}}function vg(){}
 function wg(a,b,c){25>eg?void 0:x("301");var d=a.alternate;if(a===Xf||null!==d&&d===Xf)if(cg=!0,a={expirationTime:Wf,action:c,eagerReducer:null,eagerState:null,next:null},null===dg&&(dg=new Map),c=dg.get(b),void 0===c)dg.set(b,a);else{for(b=c;null!==b.next;)b=b.next;b.next=a}else{of();var e=lf();e=mf(e,a);var f={expirationTime:e,action:c,eagerReducer:null,eagerState:null,next:null},g=b.last;if(null===g)f.next=f;else{var h=g.next;null!==h&&(f.next=h);g.next=f}b.last=f;if(0===a.expirationTime&&(null===
-d||0===d.expirationTime)&&(d=b.eagerReducer,null!==d))try{var l=b.eagerState,k=d(l,c);f.eagerReducer=d;f.eagerState=k;if(bd(k,l))return}catch(m){}finally{}qf(a,e)}}
+d||0===d.expirationTime)&&(d=b.lastRenderedReducer,null!==d))try{var l=b.lastRenderedState,k=d(l,c);f.eagerReducer=d;f.eagerState=k;if(bd(k,l))return}catch(m){}finally{}qf(a,e)}}
 var kg={readContext:M,useCallback:fg,useContext:fg,useEffect:fg,useImperativeHandle:fg,useLayoutEffect:fg,useMemo:fg,useReducer:fg,useRef:fg,useState:fg,useDebugValue:fg},ig={readContext:M,useCallback:function(a,b){mg().memoizedState=[a,void 0===b?null:b];return a},useContext:M,useEffect:function(a,b){return sg(516,Uf|Tf,a,b)},useImperativeHandle:function(a,b,c){c=null!==c&&void 0!==c?c.concat([a]):null;return sg(4,Pf|Sf,ug.bind(null,b,a),c)},useLayoutEffect:function(a,b){return sg(4,Pf|Sf,a,b)},
-useMemo:function(a,b){var c=mg();b=void 0===b?null:b;a=a();c.memoizedState=[a,b];return a},useReducer:function(a,b,c){var d=mg();b=void 0!==c?c(b):b;d.memoizedState=d.baseState=b;a=d.queue={last:null,dispatch:null,eagerReducer:a,eagerState:b};a=a.dispatch=wg.bind(null,Xf,a);return[d.memoizedState,a]},useRef:function(a){var b=mg();a={current:a};return b.memoizedState=a},useState:function(a){var b=mg();"function"===typeof a&&(a=a());b.memoizedState=b.baseState=a;a=b.queue={last:null,dispatch:null,eagerReducer:og,
-eagerState:a};a=a.dispatch=wg.bind(null,Xf,a);return[b.memoizedState,a]},useDebugValue:vg},jg={readContext:M,useCallback:function(a,b){var c=ng();b=void 0===b?null:b;var d=c.memoizedState;if(null!==d&&null!==b&&gg(b,d[1]))return d[0];c.memoizedState=[a,b];return a},useContext:M,useEffect:function(a,b){return tg(516,Uf|Tf,a,b)},useImperativeHandle:function(a,b,c){c=null!==c&&void 0!==c?c.concat([a]):null;return tg(4,Pf|Sf,ug.bind(null,b,a),c)},useLayoutEffect:function(a,b){return tg(4,Pf|Sf,a,b)},
-useMemo:function(a,b){var c=ng();b=void 0===b?null:b;var d=c.memoizedState;if(null!==d&&null!==b&&gg(b,d[1]))return d[0];a=a();c.memoizedState=[a,b];return a},useReducer:pg,useRef:function(){return ng().memoizedState},useState:function(a){return pg(og,a)},useDebugValue:vg},xg=null,yg=null,zg=!1;
+useMemo:function(a,b){var c=mg();b=void 0===b?null:b;a=a();c.memoizedState=[a,b];return a},useReducer:function(a,b,c){var d=mg();b=void 0!==c?c(b):b;d.memoizedState=d.baseState=b;a=d.queue={last:null,dispatch:null,lastRenderedReducer:a,lastRenderedState:b};a=a.dispatch=wg.bind(null,Xf,a);return[d.memoizedState,a]},useRef:function(a){var b=mg();a={current:a};return b.memoizedState=a},useState:function(a){var b=mg();"function"===typeof a&&(a=a());b.memoizedState=b.baseState=a;a=b.queue={last:null,dispatch:null,
+lastRenderedReducer:og,lastRenderedState:a};a=a.dispatch=wg.bind(null,Xf,a);return[b.memoizedState,a]},useDebugValue:vg},jg={readContext:M,useCallback:function(a,b){var c=ng();b=void 0===b?null:b;var d=c.memoizedState;if(null!==d&&null!==b&&gg(b,d[1]))return d[0];c.memoizedState=[a,b];return a},useContext:M,useEffect:function(a,b){return tg(516,Uf|Tf,a,b)},useImperativeHandle:function(a,b,c){c=null!==c&&void 0!==c?c.concat([a]):null;return tg(4,Pf|Sf,ug.bind(null,b,a),c)},useLayoutEffect:function(a,
+b){return tg(4,Pf|Sf,a,b)},useMemo:function(a,b){var c=ng();b=void 0===b?null:b;var d=c.memoizedState;if(null!==d&&null!==b&&gg(b,d[1]))return d[0];a=a();c.memoizedState=[a,b];return a},useReducer:pg,useRef:function(){return ng().memoizedState},useState:function(a){return pg(og,a)},useDebugValue:vg},xg=null,yg=null,zg=!1;
 function Ag(a,b){var c=K(5,null,null,0);c.elementType="DELETED";c.type="DELETED";c.stateNode=b;c.return=a;c.effectTag=8;null!==a.lastEffect?(a.lastEffect.nextEffect=c,a.lastEffect=c):a.firstEffect=a.lastEffect=c}function Bg(a,b){switch(a.tag){case 5:var c=a.type;b=1!==b.nodeType||c.toLowerCase()!==b.nodeName.toLowerCase()?null:b;return null!==b?(a.stateNode=b,!0):!1;case 6:return b=""===a.pendingProps||3!==b.nodeType?null:b,null!==b?(a.stateNode=b,!0):!1;case 13:return!1;default:return!1}}
 function Cg(a){if(zg){var b=yg;if(b){var c=b;if(!Bg(a,b)){b=De(c);if(!b||!Bg(a,b)){a.effectTag|=2;zg=!1;xg=a;return}Ag(xg,c)}xg=a;yg=Ee(b)}else a.effectTag|=2,zg=!1,xg=a}}function Dg(a){for(a=a.return;null!==a&&5!==a.tag&&3!==a.tag&&18!==a.tag;)a=a.return;xg=a}function Eg(a){if(a!==xg)return!1;if(!zg)return Dg(a),zg=!0,!1;var b=a.type;if(5!==a.tag||"head"!==b&&"body"!==b&&!xe(b,a.memoizedProps))for(b=yg;b;)Ag(a,b),b=De(b);Dg(a);yg=xg?De(a.stateNode):null;return!0}function Fg(){yg=xg=null;zg=!1}
 var Gg=Tb.ReactCurrentOwner,qg=!1;function S(a,b,c,d){b.child=null===a?Ef(b,null,c,d):Df(b,a.child,c,d)}function Hg(a,b,c,d,e){c=c.render;var f=b.ref;Ig(b,e);d=hg(a,b,c,d,f,e);if(null!==a&&!qg)return b.updateQueue=a.updateQueue,b.effectTag&=-517,a.expirationTime<=e&&(a.expirationTime=0),Jg(a,b,e);b.effectTag|=1;S(a,b,d,e);return b.child}
@@ -2979,7 +3305,7 @@ b>c?b:c;0===b&&(Fh=null);$h(a,b)}
 function ai(a){for(;;){var b=a.alternate,c=a.return,d=a.sibling;if(0===(a.effectTag&1024)){T=a;a:{var e=b;b=a;var f=U;var g=b.pendingProps;switch(b.tag){case 2:break;case 16:break;case 15:case 0:break;case 1:J(b.type)&&Ke(b);break;case 3:Kf(b);Le(b);g=b.stateNode;g.pendingContext&&(g.context=g.pendingContext,g.pendingContext=null);if(null===e||null===e.child)Eg(b),b.effectTag&=-3;mh(b);break;case 5:Mf(b);var h=If(Hf.current);f=b.type;if(null!==e&&null!=b.stateNode)nh(e,b,f,g,h),e.ref!==b.ref&&(b.effectTag|=
 128);else if(g){var l=If(N.current);if(Eg(b)){g=b;e=g.stateNode;var k=g.type,m=g.memoizedProps,p=h;e[Fa]=g;e[Ga]=m;f=void 0;h=k;switch(h){case "iframe":case "object":E("load",e);break;case "video":case "audio":for(k=0;k<ab.length;k++)E(ab[k],e);break;case "source":E("error",e);break;case "img":case "image":case "link":E("error",e);E("load",e);break;case "form":E("reset",e);E("submit",e);break;case "details":E("toggle",e);break;case "input":wc(e,m);E("invalid",e);se(p,"onChange");break;case "select":e._wrapperState=
 {wasMultiple:!!m.multiple};E("invalid",e);se(p,"onChange");break;case "textarea":ce(e,m),E("invalid",e),se(p,"onChange")}qe(h,m);k=null;for(f in m)m.hasOwnProperty(f)&&(l=m[f],"children"===f?"string"===typeof l?e.textContent!==l&&(k=["children",l]):"number"===typeof l&&e.textContent!==""+l&&(k=["children",""+l]):ra.hasOwnProperty(f)&&null!=l&&se(p,f));switch(h){case "input":Rb(e);Ac(e,m,!0);break;case "textarea":Rb(e);ee(e,m);break;case "select":case "option":break;default:"function"===typeof m.onClick&&
-(e.onclick=te)}f=k;g.updateQueue=f;g=null!==f?!0:!1;g&&kh(b)}else{m=b;e=f;p=g;k=9===h.nodeType?h:h.ownerDocument;l===fe.html&&(l=ge(e));l===fe.html?"script"===e?(e=k.createElement("div"),e.innerHTML="<script>\x3c/script>",k=e.removeChild(e.firstChild)):"string"===typeof p.is?k=k.createElement(e,{is:p.is}):(k=k.createElement(e),"select"===e&&p.multiple&&(k.multiple=!0)):k=k.createElementNS(l,e);e=k;e[Fa]=m;e[Ga]=g;lh(e,b,!1,!1);p=e;k=f;m=g;var t=h,A=re(k,m);switch(k){case "iframe":case "object":E("load",
+(e.onclick=te)}f=k;g.updateQueue=f;g=null!==f?!0:!1;g&&kh(b)}else{m=b;p=f;e=g;k=9===h.nodeType?h:h.ownerDocument;l===fe.html&&(l=ge(p));l===fe.html?"script"===p?(e=k.createElement("div"),e.innerHTML="<script>\x3c/script>",k=e.removeChild(e.firstChild)):"string"===typeof e.is?k=k.createElement(p,{is:e.is}):(k=k.createElement(p),"select"===p&&(p=k,e.multiple?p.multiple=!0:e.size&&(p.size=e.size))):k=k.createElementNS(l,p);e=k;e[Fa]=m;e[Ga]=g;lh(e,b,!1,!1);p=e;k=f;m=g;var t=h,A=re(k,m);switch(k){case "iframe":case "object":E("load",
 p);h=m;break;case "video":case "audio":for(h=0;h<ab.length;h++)E(ab[h],p);h=m;break;case "source":E("error",p);h=m;break;case "img":case "image":case "link":E("error",p);E("load",p);h=m;break;case "form":E("reset",p);E("submit",p);h=m;break;case "details":E("toggle",p);h=m;break;case "input":wc(p,m);h=vc(p,m);E("invalid",p);se(t,"onChange");break;case "option":h=$d(p,m);break;case "select":p._wrapperState={wasMultiple:!!m.multiple};h=n({},m,{value:void 0});E("invalid",p);se(t,"onChange");break;case "textarea":ce(p,
 m);h=be(p,m);E("invalid",p);se(t,"onChange");break;default:h=m}qe(k,h);l=void 0;var v=k,R=p,u=h;for(l in u)if(u.hasOwnProperty(l)){var q=u[l];"style"===l?oe(R,q):"dangerouslySetInnerHTML"===l?(q=q?q.__html:void 0,null!=q&&je(R,q)):"children"===l?"string"===typeof q?("textarea"!==v||""!==q)&&ke(R,q):"number"===typeof q&&ke(R,""+q):"suppressContentEditableWarning"!==l&&"suppressHydrationWarning"!==l&&"autoFocus"!==l&&(ra.hasOwnProperty(l)?null!=q&&se(t,l):null!=q&&tc(R,l,q,A))}switch(k){case "input":Rb(p);
 Ac(p,m,!1);break;case "textarea":Rb(p);ee(p,m);break;case "option":null!=m.value&&p.setAttribute("value",""+uc(m.value));break;case "select":h=p;h.multiple=!!m.multiple;p=m.value;null!=p?ae(h,!!m.multiple,p,!1):null!=m.defaultValue&&ae(h,!!m.multiple,m.defaultValue,!0);break;default:"function"===typeof h.onClick&&(p.onclick=te)}(g=we(f,g))&&kh(b);b.stateNode=e}null!==b.ref&&(b.effectTag|=128)}else null===b.stateNode?x("166"):void 0;break;case 6:e&&null!=b.stateNode?oh(e,b,e.memoizedProps,g):("string"!==
@@ -3023,29 +3349,29 @@ function Ti(a,b){var c=2<arguments.length&&void 0!==arguments[2]?arguments[2]:nu
 var Vi={createPortal:Ti,findDOMNode:function(a){if(null==a)return null;if(1===a.nodeType)return a;var b=a._reactInternalFiber;void 0===b&&("function"===typeof a.render?x("188"):x("268",Object.keys(a)));a=hd(b);a=null===a?null:a.stateNode;return a},hydrate:function(a,b,c){Qi(b)?void 0:x("200");return Si(null,a,b,!0,c)},render:function(a,b,c){Qi(b)?void 0:x("200");return Si(null,a,b,!1,c)},unstable_renderSubtreeIntoContainer:function(a,b,c,d){Qi(c)?void 0:x("200");null==a||void 0===a._reactInternalFiber?
 x("38"):void 0;return Si(a,b,c,!1,d)},unmountComponentAtNode:function(a){Qi(a)?void 0:x("40");return a._reactRootContainer?(Hi(function(){Si(null,null,a,!1,function(){a._reactRootContainer=null})}),!0):!1},unstable_createPortal:function(){return Ti.apply(void 0,arguments)},unstable_batchedUpdates:Gi,unstable_interactiveUpdates:Ii,flushSync:function(a,b){W?x("187"):void 0;var c=X;X=!0;try{return ki(a,b)}finally{X=c,Yh(1073741823,!1)}},unstable_createRoot:Ui,unstable_flushControlled:function(a){var b=
 X;X=!0;try{ki(a)}finally{(X=b)||W||Yh(1073741823,!1)}},__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{Events:[Ia,Ja,Ka,Ba.injectEventPluginsByName,pa,Qa,function(a){ya(a,Pa)},Eb,Fb,Dd,Da]}};function Ui(a,b){Qi(a)?void 0:x("299","unstable_createRoot");return new Pi(a,!0,null!=b&&!0===b.hydrate)}
-(function(a){var b=a.findFiberByHostInstance;return Te(n({},a,{overrideProps:null,currentDispatcherRef:Tb.ReactCurrentDispatcher,findHostInstanceByFiber:function(a){a=hd(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))})({findFiberByHostInstance:Ha,bundleType:0,version:"16.8.4",rendererPackageName:"react-dom"});var Wi={default:Vi},Xi=Wi&&Vi||Wi;module.exports=Xi.default||Xi;
+(function(a){var b=a.findFiberByHostInstance;return Te(n({},a,{overrideProps:null,currentDispatcherRef:Tb.ReactCurrentDispatcher,findHostInstanceByFiber:function(a){a=hd(a);return null===a?null:a.stateNode},findFiberByHostInstance:function(a){return b?b(a):null}}))})({findFiberByHostInstance:Ha,bundleType:0,version:"16.8.6",rendererPackageName:"react-dom"});var Wi={default:Vi},Xi=Wi&&Vi||Wi;module.exports=Xi.default||Xi;
 
 
 /***/ }),
 
-/***/ 294:
+/***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 if (true) {
-  module.exports = __webpack_require__(295);
+  module.exports = __webpack_require__(320);
 } else {}
 
 
 /***/ }),
 
-/***/ 295:
+/***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.13.4
+/* WEBPACK VAR INJECTION */(function(global) {/** @license React v0.13.6
  * scheduler.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -3067,11 +3393,38 @@ exports.unstable_scheduleCallback=function(a,b){var c=-1!==k?k:exports.unstable_
 b=c.previous;b.next=c.previous=a;a.next=c;a.previous=b}return a};exports.unstable_cancelCallback=function(a){var b=a.next;if(null!==b){if(b===a)d=null;else{a===d&&(d=b);var c=a.previous;c.next=b;b.previous=c}a.next=a.previous=null}};exports.unstable_wrapCallback=function(a){var b=g;return function(){var c=g,f=k;g=b;k=exports.unstable_now();try{return a.apply(this,arguments)}finally{g=c,k=f,v()}}};exports.unstable_getCurrentPriorityLevel=function(){return g};
 exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l||w())};exports.unstable_continueExecution=function(){null!==d&&p()};exports.unstable_pauseExecution=function(){};exports.unstable_getFirstCallbackNode=function(){return d};
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(61)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(321)))
 
 /***/ }),
 
-/***/ 296:
+/***/ 321:
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 322:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3084,7 +3437,7 @@ exports.unstable_shouldYield=function(){return!e&&(null!==d&&d.expirationTime<l|
 
 
 
-var ReactPropTypesSecret = __webpack_require__(297);
+var ReactPropTypesSecret = __webpack_require__(323);
 
 function emptyFunction() {}
 function emptyFunctionWithReset() {}
@@ -3143,7 +3496,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 297:
+/***/ 323:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3163,7 +3516,7 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ 298:
+/***/ 324:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3176,17 +3529,17 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(__webpack_require__(0));
 
-var _reactLifecyclesCompat = __webpack_require__(299);
+var _reactLifecyclesCompat = __webpack_require__(325);
 
 var _propTypes = _interopRequireDefault(__webpack_require__(1));
 
-var _kapellmeister = __webpack_require__(305);
+var _kapellmeister = __webpack_require__(331);
 
-var _mergeKeys = _interopRequireDefault(__webpack_require__(300));
+var _mergeKeys = _interopRequireDefault(__webpack_require__(326));
 
-var _types = __webpack_require__(301);
+var _types = __webpack_require__(327);
 
-var _utils = __webpack_require__(120);
+var _utils = __webpack_require__(125);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3442,7 +3795,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 299:
+/***/ 325:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3610,7 +3963,7 @@ function polyfill(Component) {
 
 /***/ }),
 
-/***/ 300:
+/***/ 326:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3685,7 +4038,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 301:
+/***/ 327:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3704,7 +4057,7 @@ exports.LEAVE = LEAVE;
 
 /***/ }),
 
-/***/ 305:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4278,34 +4631,7 @@ var BaseNode_BaseNode = function () {
 
 /***/ }),
 
-/***/ 61:
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 88:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*!

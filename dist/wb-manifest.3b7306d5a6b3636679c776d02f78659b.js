@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "url": "./dist/3.chunk.26a4bae3cea798d94ae1.js"
+    "url": "./dist/3.chunk.c3250d900ffb179e6cf8.js"
   },
   {
-    "url": "./dist/4.chunk.26a4bae3cea798d94ae1.js"
+    "url": "./dist/4.chunk.c3250d900ffb179e6cf8.js"
   },
   {
-    "url": "./dist/5.chunk.26a4bae3cea798d94ae1.js"
+    "url": "./dist/5.chunk.c3250d900ffb179e6cf8.js"
   },
   {
-    "url": "./dist/app.26a4bae3cea798d94ae1.js"
+    "url": "./dist/app.c3250d900ffb179e6cf8.js"
   },
   {
     "revision": "1d9c7945c7bc7dd0909105119bfbc191",
@@ -76,24 +76,64 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./dist/font/OpenSans-Semibold-webfont.woff"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "./dist/font/fontawesome-webfont.eot"
+    "revision": "8e49b728413079dfd9ee45d0c58d54e4",
+    "url": "./dist/font/fa-brands-400.eot"
   },
   {
-    "revision": "912ec66d7572ff821749319396470bde",
-    "url": "./dist/font/fontawesome-webfont.svg"
+    "revision": "38975343b586296e9b73e6b56cc3ec5d",
+    "url": "./dist/font/fa-brands-400.svg"
   },
   {
-    "revision": "b06871f281fee6b241d60582ae9369b9",
-    "url": "./dist/font/fontawesome-webfont.ttf"
+    "revision": "b7d071b9c3c197bff4af902070622423",
+    "url": "./dist/font/fa-brands-400.ttf"
   },
   {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "./dist/font/fontawesome-webfont.woff"
+    "revision": "9f018d1025561e96439f7c0e9026301a",
+    "url": "./dist/font/fa-brands-400.woff"
   },
   {
-    "revision": "af7ae505a9eed503f8b8e6982036873e",
-    "url": "./dist/font/fontawesome-webfont.woff2"
+    "revision": "9f4ce3dc689981a1b87faab0f5484f9e",
+    "url": "./dist/font/fa-brands-400.woff2"
+  },
+  {
+    "revision": "859001f6ae8eb0bb3878aaa971b50fc6",
+    "url": "./dist/font/fa-regular-400.eot"
+  },
+  {
+    "revision": "da8a235bb207c74eea21507f3a86a53b",
+    "url": "./dist/font/fa-regular-400.svg"
+  },
+  {
+    "revision": "f33342516f7cbe46f1d6b68f9e7bbeda",
+    "url": "./dist/font/fa-regular-400.ttf"
+  },
+  {
+    "revision": "7aaf5675efd6339e9aba53ecbe5f1e36",
+    "url": "./dist/font/fa-regular-400.woff"
+  },
+  {
+    "revision": "7980a6361c25b4665dbbe92d4488783c",
+    "url": "./dist/font/fa-regular-400.woff2"
+  },
+  {
+    "revision": "e2675a616b68f446fa6284c111554c7f",
+    "url": "./dist/font/fa-solid-900.eot"
+  },
+  {
+    "revision": "7726a281c1d436eb038f78c6e9048c96",
+    "url": "./dist/font/fa-solid-900.svg"
+  },
+  {
+    "revision": "f14c3b2ff7c821a4c838debbffd6ad2d",
+    "url": "./dist/font/fa-solid-900.ttf"
+  },
+  {
+    "revision": "0be94a07755ba9b88f2ebcac0f23a3da",
+    "url": "./dist/font/fa-solid-900.woff"
+  },
+  {
+    "revision": "64b3e814a66c2719b15abf8f7998bd73",
+    "url": "./dist/font/fa-solid-900.woff2"
   },
   {
     "revision": "ce25cd5bdc97f3162b5ed8d9facb3005",
@@ -152,23 +192,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./dist/image/loader.gif"
   },
   {
-    "revision": "9176109b8b53b0cd9be8b698b720be5e",
-    "url": "./dist/image/overlay-bg.png"
+    "revision": "4fda48c686bf4bf1463e8fcf65638549",
+    "url": "./dist/image/stackshare-logo-hover.png"
   },
   {
     "revision": "cbafeb39e312482ccbdff2eb915eb03f",
     "url": "./dist/image/stackshare-logo.png"
   },
   {
-    "url": "./dist/polyfills.26a4bae3cea798d94ae1.js"
+    "url": "./dist/polyfills.c3250d900ffb179e6cf8.js"
   },
   {
-    "url": "./dist/styles.26a4bae3cea798d94ae1.css"
+    "url": "./dist/styles.c3250d900ffb179e6cf8.css"
   },
   {
-    "url": "./dist/styles.26a4bae3cea798d94ae1.js"
+    "url": "./dist/styles.c3250d900ffb179e6cf8.js"
   },
   {
-    "url": "./dist/vendors~styles.26a4bae3cea798d94ae1.css"
+    "url": "./dist/vendors~styles.c3250d900ffb179e6cf8.css"
   }
 ]);
