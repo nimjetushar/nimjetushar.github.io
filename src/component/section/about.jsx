@@ -27,6 +27,7 @@ class About extends Component {
                                 <h2>Contact Details</h2>
                                 <p className="address">
                                     <span>{props.content.location.city}</span>
+                                    {props.content.location.region && <span>, {props.content.location.region}</span>}
                                     <br />
                                     <span>{props.content.location.countryCode}</span>
                                     <br />
