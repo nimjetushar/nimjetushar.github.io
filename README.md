@@ -7,6 +7,7 @@
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=nimjetushar/nimjetushar.github.io)](https://dependabot.com)
 <br/>
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/nimjetushar/nimjetushar-github-io)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/nimjetushar/nimjetushar.github.io.svg)
 
 This project is for github profile. The project is deployed on following link [`https://nimjetushar.github.io/`](https://nimjetushar.github.io/)
 
