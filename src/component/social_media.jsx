@@ -11,7 +11,9 @@ function mapIcon(socialMedia) {
     case 'stackshare':
       return <i className="stackshare-logo" />;
     case 'hackerrank':
-      return <i className="fab fa-hackerrank" />
+      return <i className="fab fa-hackerrank" />;
+    case 'npm':
+      return <i className="fab fa-npm" />;
     default:
       media = socialMedia.replace(/ /g, '-');
       return <i className={`fab fa-${media}`} />;
