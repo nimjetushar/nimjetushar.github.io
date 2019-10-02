@@ -4,7 +4,7 @@
   "author": "Tushar Nimje",
   "license": "apache-2.0",
   "dependencies": {
-    "@babel/polyfill": "7.4.4",
+    "@babel/polyfill": "7.6.0",
     "@fortawesome/fontawesome-free": "5.9.0",
     "nuka-carousel": "4.5.8",
     "react": "16.8.6",
