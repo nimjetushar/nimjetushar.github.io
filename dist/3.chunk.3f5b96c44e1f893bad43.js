@@ -823,6 +823,7 @@ function (_React$Component3) {
           key: index,
           className: _this3.props.currentSlide === index ? 'paging-item active' : 'paging-item'
         }, react_default.a.createElement("button", {
+          type: "button",
           style: _this3.getButtonStyles(_this3.props.currentSlide === index),
           onClick: _this3.props.goToSlide.bind(null, index),
           "aria-label": "slide ".concat(index + 1, " bullet")
@@ -2537,6 +2538,19 @@ function (_React$Component) {
         tx: [this.props.vertical ? 0 : offset],
         ty: [this.props.vertical ? offset : 0]
       };
+    }
+  }, {
+    key: "isEdgeSwiping",
+    value: function isEdgeSwiping() {
+      var _this$state = this.state,
+          slideCount = _this$state.slideCount,
+          slideWidth = _this$state.slideWidth;
+
+      var _this$getOffsetDeltas = this.getOffsetDeltas(),
+          tx = _this$getOffsetDeltas.tx; // returns true if tx offset is outside first or last slide
+
+
+      return tx > 0 || -tx > slideWidth * (slideCount - 1);
     } // Action Methods
 
   }, {
@@ -2853,10 +2867,10 @@ function (_React$Component) {
     value: function render() {
       var _this9 = this;
 
-      var _this$state = this.state,
-          currentSlide = _this$state.currentSlide,
-          slideCount = _this$state.slideCount,
-          frameWidth = _this$state.frameWidth;
+      var _this$state2 = this.state,
+          currentSlide = _this$state2.currentSlide,
+          slideCount = _this$state2.slideCount,
+          frameWidth = _this$state2.frameWidth;
       var _this$props = this.props,
           frameOverflow = _this$props.frameOverflow,
           vertical = _this$props.vertical,
@@ -2897,33 +2911,37 @@ function (_React$Component) {
               tx = _this9$getOffsetDelta.tx,
               ty = _this9$getOffsetDelta.ty;
 
-          return {
-            tx: tx,
-            ty: ty,
-            timing: {
-              duration: duration,
-              ease: _this9.state.easing
-            },
-            events: {
-              end: function end() {
-                var newLeft = _this9.props.vertical ? 0 : _this9.getTargetLeft();
-                var newTop = _this9.props.vertical ? _this9.getTargetLeft() : 0;
+          if (_this9.props.disableEdgeSwiping && !_this9.props.wrapAround && _this9.isEdgeSwiping()) {
+            return {};
+          } else {
+            return {
+              tx: tx,
+              ty: ty,
+              timing: {
+                duration: duration,
+                ease: _this9.state.easing
+              },
+              events: {
+                end: function end() {
+                  var newLeft = _this9.props.vertical ? 0 : _this9.getTargetLeft();
+                  var newTop = _this9.props.vertical ? _this9.getTargetLeft() : 0;
 
-                if (newLeft !== _this9.state.left || newTop !== _this9.state.top) {
-                  _this9.setState({
-                    left: newLeft,
-                    top: newTop,
-                    isWrappingAround: false,
-                    resetWrapAroundPosition: true
-                  }, function () {
+                  if (newLeft !== _this9.state.left || newTop !== _this9.state.top) {
                     _this9.setState({
-                      resetWrapAroundPosition: false
+                      left: newLeft,
+                      top: newTop,
+                      isWrappingAround: false,
+                      resetWrapAroundPosition: true
+                    }, function () {
+                      _this9.setState({
+                        resetWrapAroundPosition: false
+                      });
                     });
-                  });
+                  }
                 }
               }
-            }
-          };
+            };
+          }
         },
         children: function children(_ref2) {
           var tx = _ref2.tx,
@@ -2958,6 +2976,7 @@ es_Carousel.propTypes = {
   cellSpacing: prop_types_default.a.number,
   enableKeyboardControls: prop_types_default.a.bool,
   disableAnimation: prop_types_default.a.bool,
+  disableEdgeSwiping: prop_types_default.a.bool,
   dragging: prop_types_default.a.bool,
   easing: prop_types_default.a.string,
   edgeEasing: prop_types_default.a.string,
@@ -3006,6 +3025,7 @@ es_Carousel.defaultProps = {
   cellSpacing: 0,
   enableKeyboardControls: false,
   disableAnimation: false,
+  disableEdgeSwiping: false,
   dragging: true,
   easing: 'easeCircleOut',
   edgeEasing: 'easeElasticOut',
