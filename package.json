@@ -38,7 +38,7 @@
   "scripts": {
     "start": "webpack-dev-server --env.development --hot",
     "build": "webpack --env.production",
-    "lint": "eslint --ext .js,.jsx src/**"
+    "lint": "eslint --ext .js,.jsx src/**/*.js"
   },
   "description": "Github profile (https://nimjetushar.github.io/)",
   "repository": {
