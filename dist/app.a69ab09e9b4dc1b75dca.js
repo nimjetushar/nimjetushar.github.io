@@ -10,7 +10,7 @@
 /******/ 		var moduleId, chunkId, i = 0, resolves = [];
 /******/ 		for(;i < chunkIds.length; i++) {
 /******/ 			chunkId = chunkIds[i];
-/******/ 			if(installedChunks[chunkId]) {
+/******/ 			if(Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
 /******/ 				resolves.push(installedChunks[chunkId][0]);
 /******/ 			}
 /******/ 			installedChunks[chunkId] = 0;
@@ -148,21 +148,21 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([330,3]);
+/******/ 	deferredModules.push([329,3]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 328:
+/***/ 327:
 /***/ (function(module) {
 
-module.exports = {"basics":{"name":"Tushar Nimje","label":"Software Engineer","picture":"https://avatars2.githubusercontent.com/u/16893368?s=460&v=4","email":"tusharnimje21@gmail.com","phone":"","website":"https://nimjetushar.github.io","summary":["Software engineer with hands on experience in JavaScript and worked on various JavaScript technologies such as Angular, React and Nodejs. Experience of working in an Agile and Fast-paced product development environment. Excellent written and verbal communication skills. Interested in challenging technical roles in applications development.","Conscientious, results-driven and analytical software engineer with years of professional exposure in software development. Strong in architectural research, software design and agile team."],"resumeUrl":"https://github.com/nimjetushar/resume/raw/master/Tushar%20Nimje.pdf","location":{"address":"","postalCode":"","city":"Pune","countryCode":"India","region":"Maharashtra"},"profiles":[{"network":"Email","username":"tusharnimje21@gmail.com","url":"mailto:tusharnimje21@gmail.com"},{"network":"LinkedIn","username":"tushar","url":"https://www.linkedin.com/in/tushar-nimje"},{"network":"GitHub","username":"nimjetushar","url":"https://github.com/nimjetushar"},{"network":"StackShare","username":"nimjetushar","url":"https://stackshare.io/nimjetushar/my-stack"},{"network":"HackerRank","username":"tusharnimje21","url":"https://www.hackerrank.com/tusharnimje21"},{"network":"npm","username":"tusharnimje","url":"https://www.npmjs.com/~tusharnimje"}]},"work":[{"company":"Synechron Inc.","position":"Sr. Associate Technology","website":"https://www.synechron.com","startDate":"Mar 2017","endDate":"Oct 2018","summary":"Pune, India","highlights":["Involved in the development of the company’s 2 main projects in the finance domain using Angular, javascript, HTML, CSS technology.","Responsible for architecture design, core development and deployment of application.","Implemented CI/CD pipeline for all the microservices using Jenkins with PCF deployment.","Delivered project using Agile methodology."]},{"company":"GlobalLogic India Pvt Ltd.","position":"Software Engineer","website":"https://www.globallogic.com","startDate":"Oct 2014","endDate":"Mar 2017","summary":"Nagpur, India","highlights":["Involved in development and issue fixing of project.","Responsible for different modules of application."]}],"education":[{"institution":"G.H Raisoni College of Engineering","area":"Electronic and Telecommunication (ETC)","studyType":"Graduation","startDate":"July 2009","endDate":"June 2013","gpa":"First class","summary":"Nagpur, India","courses":["B.E","Electronics","Telecommunication"]},{"institution":"Hadas Jr. College","area":"Science","studyType":"HSC","startDate":"July 2008","endDate":"June 2009","gpa":"Distinction","summary":"Nagpur, India","courses":["Physic","Chemistry","Maths"]},{"institution":"Saraswati Vidyalaya","area":"Science","studyType":"SSC","startDate":"July 2006","endDate":"June 2007","gpa":"Distinction","summary":"Nagpur, India","courses":[]}],"skills":[{"title":"Programming Languages","description":[],"skillDetails":[{"name":"JavaScript","level":"90","keywords":["programming"]},{"name":"HTML + CSS","level":"90","keywords":["programming"]},{"name":"TypeScript","level":"90","keywords":["programming"]},{"name":"Node Js","level":"80","keywords":["programming","server technology"]},{"name":"Python","level":"50","keywords":["language"]},{"name":"React Native","level":"50","keywords":["programming","Mobile Development"]}]},{"title":"Frameworks / Libraies","description":[],"skillDetails":[{"name":"Angular","level":"90","keywords":["Angular 2","Angular 4","Angular 5"]},{"name":"Less / SCSS","level":"80","keywords":["css preprocessors"]},{"name":"AngularJs","level":"70","keywords":["Angular 1.x"]},{"name":"React + Redux","level":"80","keywords":["library"]},{"name":"Express Js","level":"60","keywords":["framework"]}]},{"title":"Database","description":[],"skillDetails":[{"name":"Mongodb","level":"50","keywords":["mongo db","mongoos"]}]},{"title":"Tools","description":[],"skillDetails":[{"name":"Git","level":"80","keywords":["version management tool"]},{"name":"Webpack","level":"80","keywords":["bundler"]},{"name":"Gulp","level":"70","keywords":["build tool"]},{"name":"Cordova","level":"60","keywords":["mobile app development tool"]}]}],"languages":[{"name":"English","level":"90"},{"name":"Hindi","level":"90"},{"name":"Marathi","level":"90"}],"references":[{"name":"Carol Burnett","reference":"Only I can change my life. No one can do it for me."},{"name":"Walt Disney","reference":"All our dreams can come true if we have the courage to pursue them."},{"name":"Jim Rohn","reference":"Either you run the day, or the day runs you."},{"name":"","reference":"Great things NEVER came from COMFORT ZONES."}]};
+module.exports = JSON.parse("{\"basics\":{\"name\":\"Tushar Nimje\",\"label\":\"Software Engineer\",\"picture\":\"https://avatars2.githubusercontent.com/u/16893368?s=460&v=4\",\"email\":\"tusharnimje21@gmail.com\",\"phone\":\"\",\"website\":\"https://nimjetushar.github.io\",\"summary\":[\"Software engineer with hands on experience in JavaScript and worked on various JavaScript technologies such as Angular, React and Nodejs. Experience of working in an Agile and Fast-paced product development environment. Excellent written and verbal communication skills. Interested in challenging technical roles in applications development.\",\"Conscientious, results-driven and analytical software engineer with years of professional exposure in software development. Strong in architectural research, software design and agile team.\"],\"resumeUrl\":\"https://github.com/nimjetushar/resume/raw/master/Tushar%20Nimje.pdf\",\"location\":{\"address\":\"\",\"postalCode\":\"\",\"city\":\"Pune\",\"countryCode\":\"India\",\"region\":\"Maharashtra\"},\"profiles\":[{\"network\":\"Email\",\"username\":\"tusharnimje21@gmail.com\",\"url\":\"mailto:tusharnimje21@gmail.com\"},{\"network\":\"LinkedIn\",\"username\":\"tushar\",\"url\":\"https://www.linkedin.com/in/tushar-nimje\"},{\"network\":\"GitHub\",\"username\":\"nimjetushar\",\"url\":\"https://github.com/nimjetushar\"},{\"network\":\"StackShare\",\"username\":\"nimjetushar\",\"url\":\"https://stackshare.io/nimjetushar/my-stack\"},{\"network\":\"HackerRank\",\"username\":\"tusharnimje21\",\"url\":\"https://www.hackerrank.com/tusharnimje21\"},{\"network\":\"npm\",\"username\":\"tusharnimje\",\"url\":\"https://www.npmjs.com/~tusharnimje\"}]},\"work\":[{\"company\":\"Synechron Inc.\",\"position\":\"Sr. Associate Technology\",\"website\":\"https://www.synechron.com\",\"startDate\":\"Mar 2017\",\"endDate\":\"Oct 2018\",\"summary\":\"Pune, India\",\"highlights\":[\"Involved in the development of the company’s 2 main projects in the finance domain using Angular, javascript, HTML, CSS technology.\",\"Responsible for architecture design, core development and deployment of application.\",\"Implemented CI/CD pipeline for all the microservices using Jenkins with PCF deployment.\",\"Delivered project using Agile methodology.\"]},{\"company\":\"GlobalLogic India Pvt Ltd.\",\"position\":\"Software Engineer\",\"website\":\"https://www.globallogic.com\",\"startDate\":\"Oct 2014\",\"endDate\":\"Mar 2017\",\"summary\":\"Nagpur, India\",\"highlights\":[\"Involved in development and issue fixing of project.\",\"Responsible for different modules of application.\"]}],\"education\":[{\"institution\":\"G.H Raisoni College of Engineering\",\"area\":\"Electronic and Telecommunication (ETC)\",\"studyType\":\"Graduation\",\"startDate\":\"July 2009\",\"endDate\":\"June 2013\",\"gpa\":\"First class\",\"summary\":\"Nagpur, India\",\"courses\":[\"B.E\",\"Electronics\",\"Telecommunication\"]},{\"institution\":\"Hadas Jr. College\",\"area\":\"Science\",\"studyType\":\"HSC\",\"startDate\":\"July 2008\",\"endDate\":\"June 2009\",\"gpa\":\"Distinction\",\"summary\":\"Nagpur, India\",\"courses\":[\"Physic\",\"Chemistry\",\"Maths\"]},{\"institution\":\"Saraswati Vidyalaya\",\"area\":\"Science\",\"studyType\":\"SSC\",\"startDate\":\"July 2006\",\"endDate\":\"June 2007\",\"gpa\":\"Distinction\",\"summary\":\"Nagpur, India\",\"courses\":[]}],\"skills\":[{\"title\":\"Programming Languages\",\"description\":[],\"skillDetails\":[{\"name\":\"JavaScript\",\"level\":\"90\",\"keywords\":[\"programming\"]},{\"name\":\"HTML + CSS\",\"level\":\"90\",\"keywords\":[\"programming\"]},{\"name\":\"TypeScript\",\"level\":\"90\",\"keywords\":[\"programming\"]},{\"name\":\"Node Js\",\"level\":\"80\",\"keywords\":[\"programming\",\"server technology\"]},{\"name\":\"Python\",\"level\":\"50\",\"keywords\":[\"language\"]},{\"name\":\"React Native\",\"level\":\"50\",\"keywords\":[\"programming\",\"Mobile Development\"]}]},{\"title\":\"Frameworks / Libraies\",\"description\":[],\"skillDetails\":[{\"name\":\"Angular\",\"level\":\"90\",\"keywords\":[\"Angular 2\",\"Angular 4\",\"Angular 5\"]},{\"name\":\"Less / SCSS\",\"level\":\"80\",\"keywords\":[\"css preprocessors\"]},{\"name\":\"AngularJs\",\"level\":\"70\",\"keywords\":[\"Angular 1.x\"]},{\"name\":\"React + Redux\",\"level\":\"80\",\"keywords\":[\"library\"]},{\"name\":\"Express Js\",\"level\":\"60\",\"keywords\":[\"framework\"]}]},{\"title\":\"Database\",\"description\":[],\"skillDetails\":[{\"name\":\"Mongodb\",\"level\":\"50\",\"keywords\":[\"mongo db\",\"mongoos\"]}]},{\"title\":\"Tools\",\"description\":[],\"skillDetails\":[{\"name\":\"Git\",\"level\":\"80\",\"keywords\":[\"version management tool\"]},{\"name\":\"Webpack\",\"level\":\"80\",\"keywords\":[\"bundler\"]},{\"name\":\"Gulp\",\"level\":\"70\",\"keywords\":[\"build tool\"]},{\"name\":\"Cordova\",\"level\":\"60\",\"keywords\":[\"mobile app development tool\"]}]}],\"languages\":[{\"name\":\"English\",\"level\":\"90\"},{\"name\":\"Hindi\",\"level\":\"90\"},{\"name\":\"Marathi\",\"level\":\"90\"}],\"references\":[{\"name\":\"Carol Burnett\",\"reference\":\"Only I can change my life. No one can do it for me.\"},{\"name\":\"Walt Disney\",\"reference\":\"All our dreams can come true if we have the courage to pursue them.\"},{\"name\":\"Jim Rohn\",\"reference\":\"Either you run the day, or the day runs you.\"},{\"name\":\"\",\"reference\":\"Great things NEVER came from COMFORT ZONES.\"}]}");
 
 /***/ }),
 
-/***/ 330:
+/***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,7 +181,7 @@ var prop_types = __webpack_require__(1);
 var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
 
 // CONCATENATED MODULE: ./src/component/header.jsx
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -264,7 +264,7 @@ header_Header.propTypes = {
 };
 /* harmony default export */ var header = (header_Header);
 // CONCATENATED MODULE: ./src/component/navigation/link.jsx
-function link_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { link_typeof = function _typeof(obj) { return typeof obj; }; } else { link_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return link_typeof(obj); }
+function link_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { link_typeof = function _typeof(obj) { return typeof obj; }; } else { link_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return link_typeof(obj); }
 
 function link_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -429,7 +429,7 @@ var workSet = prop_types_default.a.arrayOf(work).isRequired;
 
 
 // CONCATENATED MODULE: ./src/component/navigation/index.jsx
-function navigation_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { navigation_typeof = function _typeof(obj) { return typeof obj; }; } else { navigation_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return navigation_typeof(obj); }
+function navigation_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { navigation_typeof = function _typeof(obj) { return typeof obj; }; } else { navigation_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return navigation_typeof(obj); }
 
 function navigation_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -450,7 +450,6 @@ function navigation_setPrototypeOf(o, p) { navigation_setPrototypeOf = Object.se
 
 
 
-/* eslint-disable jsx-a11y/href-no-hash */
 
 var navigation_Navigation =
 /*#__PURE__*/
@@ -505,7 +504,7 @@ navigation_Navigation.propTypes = {
 };
 /* harmony default export */ var component_navigation = (navigation_Navigation);
 // CONCATENATED MODULE: ./src/component/social_media.jsx
-function social_media_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { social_media_typeof = function _typeof(obj) { return typeof obj; }; } else { social_media_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return social_media_typeof(obj); }
+function social_media_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { social_media_typeof = function _typeof(obj) { return typeof obj; }; } else { social_media_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return social_media_typeof(obj); }
 
 function social_media_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -597,7 +596,7 @@ social_media_SocialMedia.propTypes = {
 };
 /* harmony default export */ var social_media = (social_media_SocialMedia);
 // CONCATENATED MODULE: ./src/component/banner.jsx
-function banner_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { banner_typeof = function _typeof(obj) { return typeof obj; }; } else { banner_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return banner_typeof(obj); }
+function banner_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { banner_typeof = function _typeof(obj) { return typeof obj; }; } else { banner_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return banner_typeof(obj); }
 
 function banner_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -654,7 +653,7 @@ banner_Banner.propTypes = {
 };
 /* harmony default export */ var banner = (banner_Banner);
 // CONCATENATED MODULE: ./src/component/scrolldown.jsx
-function scrolldown_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { scrolldown_typeof = function _typeof(obj) { return typeof obj; }; } else { scrolldown_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return scrolldown_typeof(obj); }
+function scrolldown_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { scrolldown_typeof = function _typeof(obj) { return typeof obj; }; } else { scrolldown_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return scrolldown_typeof(obj); }
 
 function scrolldown_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -704,7 +703,7 @@ function (_Component) {
 
 /* harmony default export */ var scrolldown = (scrolldown_ScrollDown);
 // CONCATENATED MODULE: ./src/component/section/about.jsx
-function about_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { about_typeof = function _typeof(obj) { return typeof obj; }; } else { about_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return about_typeof(obj); }
+function about_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { about_typeof = function _typeof(obj) { return typeof obj; }; } else { about_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return about_typeof(obj); }
 
 function about_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -779,12 +778,12 @@ function (_Component) {
   return About;
 }(react["Component"]);
 
-about_About.proptypes = {
+about_About.propTypes = {
   content: basics
 };
 /* harmony default export */ var about = (about_About);
 // CONCATENATED MODULE: ./src/component/section/education.jsx
-function education_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { education_typeof = function _typeof(obj) { return typeof obj; }; } else { education_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return education_typeof(obj); }
+function education_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { education_typeof = function _typeof(obj) { return typeof obj; }; } else { education_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return education_typeof(obj); }
 
 function education_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -879,7 +878,7 @@ education_Education.propTypes = {
 };
 /* harmony default export */ var section_education = (education_Education);
 // CONCATENATED MODULE: ./src/component/section/footer.jsx
-function footer_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { footer_typeof = function _typeof(obj) { return typeof obj; }; } else { footer_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return footer_typeof(obj); }
+function footer_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { footer_typeof = function _typeof(obj) { return typeof obj; }; } else { footer_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return footer_typeof(obj); }
 
 function footer_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -950,12 +949,12 @@ function (_Component) {
   return Footer;
 }(react["Component"]);
 
-footer_Footer.propType = {
+footer_Footer.propTypes = {
   content: profiles
 };
 /* harmony default export */ var footer = (footer_Footer);
 // CONCATENATED MODULE: ./src/component/section/skills.jsx
-function skills_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { skills_typeof = function _typeof(obj) { return typeof obj; }; } else { skills_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return skills_typeof(obj); }
+function skills_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { skills_typeof = function _typeof(obj) { return typeof obj; }; } else { skills_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return skills_typeof(obj); }
 
 function skills_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1121,7 +1120,7 @@ skills_Skills.propTypes = {
 };
 /* harmony default export */ var section_skills = (skills_Skills);
 // CONCATENATED MODULE: ./src/component/bullet_points.jsx
-function bullet_points_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { bullet_points_typeof = function _typeof(obj) { return typeof obj; }; } else { bullet_points_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return bullet_points_typeof(obj); }
+function bullet_points_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { bullet_points_typeof = function _typeof(obj) { return typeof obj; }; } else { bullet_points_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return bullet_points_typeof(obj); }
 
 function bullet_points_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1175,7 +1174,7 @@ bullet_points_BulletPoints.propTypes = {
 };
 /* harmony default export */ var bullet_points = (bullet_points_BulletPoints);
 // CONCATENATED MODULE: ./src/component/section/work.jsx
-function work_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { work_typeof = function _typeof(obj) { return typeof obj; }; } else { work_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return work_typeof(obj); }
+function work_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { work_typeof = function _typeof(obj) { return typeof obj; }; } else { work_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return work_typeof(obj); }
 
 function work_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1288,7 +1287,7 @@ work_Work.propTypes = {
 var es = __webpack_require__(128);
 
 // CONCATENATED MODULE: ./src/component/section/references.jsx
-function references_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { references_typeof = function _typeof(obj) { return typeof obj; }; } else { references_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return references_typeof(obj); }
+function references_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { references_typeof = function _typeof(obj) { return typeof obj; }; } else { references_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return references_typeof(obj); }
 
 function references_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1390,7 +1389,7 @@ references_References.propTypes = {
 };
 /* harmony default export */ var section_references = (references_References);
 // CONCATENATED MODULE: ./src/component/section/index.jsx
-function section_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { section_typeof = function _typeof(obj) { return typeof obj; }; } else { section_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return section_typeof(obj); }
+function section_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { section_typeof = function _typeof(obj) { return typeof obj; }; } else { section_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return section_typeof(obj); }
 
 function section_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1464,7 +1463,7 @@ section_Section.propTypes = {
 };
 /* harmony default export */ var section = (section_Section);
 // CONCATENATED MODULE: ./src/component/loading.jsx
-function loading_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { loading_typeof = function _typeof(obj) { return typeof obj; }; } else { loading_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return loading_typeof(obj); }
+function loading_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { loading_typeof = function _typeof(obj) { return typeof obj; }; } else { loading_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return loading_typeof(obj); }
 
 function loading_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1529,14 +1528,14 @@ function getDataUrl() {
         reject(err);
       });
     } else {
-      var data = __webpack_require__(328);
+      var data = __webpack_require__(327);
 
       resolve(data);
     }
   });
 }
 // CONCATENATED MODULE: ./src/component/main.jsx
-function main_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { main_typeof = function _typeof(obj) { return typeof obj; }; } else { main_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return main_typeof(obj); }
+function main_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { main_typeof = function _typeof(obj) { return typeof obj; }; } else { main_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return main_typeof(obj); }
 
 function main_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1623,7 +1622,7 @@ function (_Component) {
 
 /* harmony default export */ var main = (main_Main);
 // CONCATENATED MODULE: ./src/App.js
-function App_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { App_typeof = function _typeof(obj) { return typeof obj; }; } else { App_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return App_typeof(obj); }
+function App_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { App_typeof = function _typeof(obj) { return typeof obj; }; } else { App_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return App_typeof(obj); }
 
 function App_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 

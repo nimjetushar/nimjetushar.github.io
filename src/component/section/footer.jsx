@@ -11,7 +11,7 @@ class Footer extends Component {
                     <div className="twelve columns">
                         <SocialMedia
                             ulClass="social-links"
-                            profiles={props.content.profiles}
+                            profiles={props.content}
                         />
                         <ul className="copyright">
                             <li>
@@ -41,7 +41,7 @@ class Footer extends Component {
     }
 }
 
-Footer.propType = {
+Footer.propTypes = {
     content: profiles
 }
 

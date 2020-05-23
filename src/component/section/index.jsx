@@ -29,7 +29,7 @@ class Section extends Component {
         <Education content={this.props.education} />
         <Skills content={skillsContent} />
         <References content={this.props.references} />
-        <Footer content={this.props.basics} />
+        <Footer content={this.props.basics.profiles} />
       </Fragment>
     );
   }

@@ -2,7 +2,7 @@ const webpackMerge = require("webpack-merge"),
   commonConfig = require("./webpack.common.js"),
   OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin"),
   UglifyJsPlugin = require('uglifyjs-webpack-plugin'),
-  CleanWebpackPlugin = require('clean-webpack-plugin'),
+  { CleanWebpackPlugin } = require('clean-webpack-plugin'),
   WorkboxPlugin = require('workbox-webpack-plugin'),
   path = require("path"),
   basePath = process.cwd(),
@@ -29,9 +29,7 @@ module.exports = mode => {
         skipWaiting: true,
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
-        exclude: [/\.html$/],
-        globStrict: false,
-        precacheManifestFilename: 'wb-manifest.[manifestHash].js'
+        exclude: [/\.html$/]
       })
     ],
     optimization: {

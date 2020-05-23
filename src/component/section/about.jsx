@@ -53,7 +53,7 @@ class About extends Component {
     }
 }
 
-About.proptypes = {
+About.propTypes = {
     content: basics
 };
 

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Link from './link';
 import { navigation } from '../../prop_types';
 
-/* eslint-disable jsx-a11y/href-no-hash */
-
 class Navigation extends Component {
   render() {
     function navContent(navigation) {
