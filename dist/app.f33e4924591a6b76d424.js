@@ -148,24 +148,25 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([329,3]);
+/******/ 	deferredModules.push([399,3]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 327:
+/***/ 397:
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"basics\":{\"name\":\"Tushar Nimje\",\"label\":\"Software Engineer\",\"picture\":\"https://avatars2.githubusercontent.com/u/16893368?s=460&v=4\",\"email\":\"tusharnimje21@gmail.com\",\"phone\":\"\",\"website\":\"https://nimjetushar.github.io\",\"summary\":[\"Software engineer with hands on experience in JavaScript and worked on various JavaScript technologies such as Angular, React and Nodejs. Experience of working in an Agile and Fast-paced product development environment. Excellent written and verbal communication skills. Interested in challenging technical roles in applications development.\",\"Conscientious, results-driven and analytical software engineer with years of professional exposure in software development. Strong in architectural research, software design and agile team.\"],\"resumeUrl\":\"https://github.com/nimjetushar/resume/raw/master/Tushar%20Nimje.pdf\",\"location\":{\"address\":\"\",\"postalCode\":\"\",\"city\":\"Pune\",\"countryCode\":\"India\",\"region\":\"Maharashtra\"},\"profiles\":[{\"network\":\"Email\",\"username\":\"tusharnimje21@gmail.com\",\"url\":\"mailto:tusharnimje21@gmail.com\"},{\"network\":\"LinkedIn\",\"username\":\"tushar\",\"url\":\"https://www.linkedin.com/in/tushar-nimje\"},{\"network\":\"GitHub\",\"username\":\"nimjetushar\",\"url\":\"https://github.com/nimjetushar\"},{\"network\":\"StackShare\",\"username\":\"nimjetushar\",\"url\":\"https://stackshare.io/nimjetushar/my-stack\"},{\"network\":\"HackerRank\",\"username\":\"tusharnimje21\",\"url\":\"https://www.hackerrank.com/tusharnimje21\"},{\"network\":\"npm\",\"username\":\"tusharnimje\",\"url\":\"https://www.npmjs.com/~tusharnimje\"}]},\"work\":[{\"company\":\"Synechron Inc.\",\"position\":\"Sr. Associate Technology\",\"website\":\"https://www.synechron.com\",\"startDate\":\"Mar 2017\",\"endDate\":\"Oct 2018\",\"summary\":\"Pune, India\",\"highlights\":[\"Involved in the development of the company’s 2 main projects in the finance domain using Angular, javascript, HTML, CSS technology.\",\"Responsible for architecture design, core development and deployment of application.\",\"Implemented CI/CD pipeline for all the microservices using Jenkins with PCF deployment.\",\"Delivered project using Agile methodology.\"]},{\"company\":\"GlobalLogic India Pvt Ltd.\",\"position\":\"Software Engineer\",\"website\":\"https://www.globallogic.com\",\"startDate\":\"Oct 2014\",\"endDate\":\"Mar 2017\",\"summary\":\"Nagpur, India\",\"highlights\":[\"Involved in development and issue fixing of project.\",\"Responsible for different modules of application.\"]}],\"education\":[{\"institution\":\"G.H Raisoni College of Engineering\",\"area\":\"Electronic and Telecommunication (ETC)\",\"studyType\":\"Graduation\",\"startDate\":\"July 2009\",\"endDate\":\"June 2013\",\"gpa\":\"First class\",\"summary\":\"Nagpur, India\",\"courses\":[\"B.E\",\"Electronics\",\"Telecommunication\"]},{\"institution\":\"Hadas Jr. College\",\"area\":\"Science\",\"studyType\":\"HSC\",\"startDate\":\"July 2008\",\"endDate\":\"June 2009\",\"gpa\":\"Distinction\",\"summary\":\"Nagpur, India\",\"courses\":[\"Physic\",\"Chemistry\",\"Maths\"]},{\"institution\":\"Saraswati Vidyalaya\",\"area\":\"Science\",\"studyType\":\"SSC\",\"startDate\":\"July 2006\",\"endDate\":\"June 2007\",\"gpa\":\"Distinction\",\"summary\":\"Nagpur, India\",\"courses\":[]}],\"skills\":[{\"title\":\"Programming Languages\",\"description\":[],\"skillDetails\":[{\"name\":\"JavaScript\",\"level\":\"90\",\"keywords\":[\"programming\"]},{\"name\":\"HTML + CSS\",\"level\":\"90\",\"keywords\":[\"programming\"]},{\"name\":\"TypeScript\",\"level\":\"90\",\"keywords\":[\"programming\"]},{\"name\":\"Node Js\",\"level\":\"80\",\"keywords\":[\"programming\",\"server technology\"]},{\"name\":\"Python\",\"level\":\"50\",\"keywords\":[\"language\"]},{\"name\":\"React Native\",\"level\":\"50\",\"keywords\":[\"programming\",\"Mobile Development\"]}]},{\"title\":\"Frameworks / Libraies\",\"description\":[],\"skillDetails\":[{\"name\":\"Angular\",\"level\":\"90\",\"keywords\":[\"Angular 2\",\"Angular 4\",\"Angular 5\"]},{\"name\":\"Less / SCSS\",\"level\":\"80\",\"keywords\":[\"css preprocessors\"]},{\"name\":\"AngularJs\",\"level\":\"70\",\"keywords\":[\"Angular 1.x\"]},{\"name\":\"React + Redux\",\"level\":\"80\",\"keywords\":[\"library\"]},{\"name\":\"Express Js\",\"level\":\"60\",\"keywords\":[\"framework\"]}]},{\"title\":\"Database\",\"description\":[],\"skillDetails\":[{\"name\":\"Mongodb\",\"level\":\"50\",\"keywords\":[\"mongo db\",\"mongoos\"]}]},{\"title\":\"Tools\",\"description\":[],\"skillDetails\":[{\"name\":\"Git\",\"level\":\"80\",\"keywords\":[\"version management tool\"]},{\"name\":\"Webpack\",\"level\":\"80\",\"keywords\":[\"bundler\"]},{\"name\":\"Gulp\",\"level\":\"70\",\"keywords\":[\"build tool\"]},{\"name\":\"Cordova\",\"level\":\"60\",\"keywords\":[\"mobile app development tool\"]}]}],\"languages\":[{\"name\":\"English\",\"level\":\"90\"},{\"name\":\"Hindi\",\"level\":\"90\"},{\"name\":\"Marathi\",\"level\":\"90\"}],\"references\":[{\"name\":\"Carol Burnett\",\"reference\":\"Only I can change my life. No one can do it for me.\"},{\"name\":\"Walt Disney\",\"reference\":\"All our dreams can come true if we have the courage to pursue them.\"},{\"name\":\"Jim Rohn\",\"reference\":\"Either you run the day, or the day runs you.\"},{\"name\":\"\",\"reference\":\"Great things NEVER came from COMFORT ZONES.\"}]}");
 
 /***/ }),
 
-/***/ 329:
+/***/ 399:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
@@ -173,7 +174,7 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(126);
+var react_dom = __webpack_require__(155);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // EXTERNAL MODULE: ./node_modules/prop-types/index.js
@@ -189,30 +190,34 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
 
-var header_Header =
-/*#__PURE__*/
-function (_Component) {
+
+var header_Header = /*#__PURE__*/function (_Component) {
   _inherits(Header, _Component);
+
+  var _super = _createSuper(Header);
 
   function Header(props) {
     var _this;
 
     _classCallCheck(this, Header);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
+    _this = _super.call(this, props);
     _this.state = {
       window: {
         height: 0,
@@ -244,7 +249,7 @@ function (_Component) {
       var style = {
         height: this.state.window.innerHeight
       };
-      return react_default.a.createElement("header", {
+      return /*#__PURE__*/react_default.a.createElement("header", {
         id: "home",
         style: style
       }, this.props.children);
@@ -272,34 +277,38 @@ function link_defineProperties(target, props) { for (var i = 0; i < props.length
 
 function link_createClass(Constructor, protoProps, staticProps) { if (protoProps) link_defineProperties(Constructor.prototype, protoProps); if (staticProps) link_defineProperties(Constructor, staticProps); return Constructor; }
 
-function link_possibleConstructorReturn(self, call) { if (call && (link_typeof(call) === "object" || typeof call === "function")) { return call; } return link_assertThisInitialized(self); }
-
-function link_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function link_getPrototypeOf(o) { link_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return link_getPrototypeOf(o); }
-
 function link_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) link_setPrototypeOf(subClass, superClass); }
 
 function link_setPrototypeOf(o, p) { link_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return link_setPrototypeOf(o, p); }
 
+function link_createSuper(Derived) { var hasNativeReflectConstruct = link_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = link_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = link_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return link_possibleConstructorReturn(this, result); }; }
+
+function link_possibleConstructorReturn(self, call) { if (call && (link_typeof(call) === "object" || typeof call === "function")) { return call; } return link_assertThisInitialized(self); }
+
+function link_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function link_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function link_getPrototypeOf(o) { link_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return link_getPrototypeOf(o); }
 
 
 
-var link_Link =
-/*#__PURE__*/
-function (_Component) {
+
+var link_Link = /*#__PURE__*/function (_Component) {
   link_inherits(Link, _Component);
+
+  var _super = link_createSuper(Link);
 
   function Link() {
     link_classCallCheck(this, Link);
 
-    return link_possibleConstructorReturn(this, link_getPrototypeOf(Link).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   link_createClass(Link, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("li", null, react_default.a.createElement("a", {
+      return /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("a", {
         className: "smoothscroll",
         href: "#".concat(this.props.link)
       }, this.props.name));
@@ -437,29 +446,33 @@ function navigation_defineProperties(target, props) { for (var i = 0; i < props.
 
 function navigation_createClass(Constructor, protoProps, staticProps) { if (protoProps) navigation_defineProperties(Constructor.prototype, protoProps); if (staticProps) navigation_defineProperties(Constructor, staticProps); return Constructor; }
 
-function navigation_possibleConstructorReturn(self, call) { if (call && (navigation_typeof(call) === "object" || typeof call === "function")) { return call; } return navigation_assertThisInitialized(self); }
-
-function navigation_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function navigation_getPrototypeOf(o) { navigation_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return navigation_getPrototypeOf(o); }
-
 function navigation_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) navigation_setPrototypeOf(subClass, superClass); }
 
 function navigation_setPrototypeOf(o, p) { navigation_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return navigation_setPrototypeOf(o, p); }
 
+function navigation_createSuper(Derived) { var hasNativeReflectConstruct = navigation_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = navigation_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = navigation_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return navigation_possibleConstructorReturn(this, result); }; }
+
+function navigation_possibleConstructorReturn(self, call) { if (call && (navigation_typeof(call) === "object" || typeof call === "function")) { return call; } return navigation_assertThisInitialized(self); }
+
+function navigation_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function navigation_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function navigation_getPrototypeOf(o) { navigation_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return navigation_getPrototypeOf(o); }
 
 
 
 
-var navigation_Navigation =
-/*#__PURE__*/
-function (_Component) {
+
+var navigation_Navigation = /*#__PURE__*/function (_Component) {
   navigation_inherits(Navigation, _Component);
+
+  var _super = navigation_createSuper(Navigation);
 
   function Navigation() {
     navigation_classCallCheck(this, Navigation);
 
-    return navigation_possibleConstructorReturn(this, navigation_getPrototypeOf(Navigation).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   navigation_createClass(Navigation, [{
@@ -469,7 +482,7 @@ function (_Component) {
         var keys = Object.keys(navigation);
         var links = keys.map(function (navigationLink, index) {
           var navigationName = navigation[navigationLink];
-          return react_default.a.createElement(navigation_link, {
+          return /*#__PURE__*/react_default.a.createElement(navigation_link, {
             key: index,
             link: navigationLink,
             name: navigationName
@@ -478,18 +491,18 @@ function (_Component) {
         return links;
       }
 
-      return react_default.a.createElement("nav", {
+      return /*#__PURE__*/react_default.a.createElement("nav", {
         id: "nav-wrap",
         className: "opaque"
-      }, react_default.a.createElement("a", {
+      }, /*#__PURE__*/react_default.a.createElement("a", {
         className: "mobile-btn",
         href: "#nav-wrap",
         title: "Show navigation"
-      }, "Show navigation"), react_default.a.createElement("a", {
+      }, "Show navigation"), /*#__PURE__*/react_default.a.createElement("a", {
         className: "mobile-btn",
         href: "#",
         title: "Hide navigation"
-      }, "Hide navigation"), react_default.a.createElement("ul", {
+      }, "Hide navigation"), /*#__PURE__*/react_default.a.createElement("ul", {
         id: "nav",
         className: "nav"
       }, navContent(this.props.navigation)));
@@ -512,15 +525,19 @@ function social_media_defineProperties(target, props) { for (var i = 0; i < prop
 
 function social_media_createClass(Constructor, protoProps, staticProps) { if (protoProps) social_media_defineProperties(Constructor.prototype, protoProps); if (staticProps) social_media_defineProperties(Constructor, staticProps); return Constructor; }
 
+function social_media_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) social_media_setPrototypeOf(subClass, superClass); }
+
+function social_media_setPrototypeOf(o, p) { social_media_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return social_media_setPrototypeOf(o, p); }
+
+function social_media_createSuper(Derived) { var hasNativeReflectConstruct = social_media_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = social_media_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = social_media_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return social_media_possibleConstructorReturn(this, result); }; }
+
 function social_media_possibleConstructorReturn(self, call) { if (call && (social_media_typeof(call) === "object" || typeof call === "function")) { return call; } return social_media_assertThisInitialized(self); }
 
 function social_media_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
+function social_media_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
 function social_media_getPrototypeOf(o) { social_media_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return social_media_getPrototypeOf(o); }
-
-function social_media_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) social_media_setPrototypeOf(subClass, superClass); }
-
-function social_media_setPrototypeOf(o, p) { social_media_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return social_media_setPrototypeOf(o, p); }
 
 
 
@@ -531,54 +548,54 @@ function mapIcon(socialMedia) {
 
   switch (socialMedia) {
     case 'email':
-      return react_default.a.createElement("i", {
+      return /*#__PURE__*/react_default.a.createElement("i", {
         className: "fas fa-envelope"
       });
 
     case 'stackshare':
-      return react_default.a.createElement("i", {
+      return /*#__PURE__*/react_default.a.createElement("i", {
         className: "stackshare-logo"
       });
 
     case 'hackerrank':
-      return react_default.a.createElement("i", {
+      return /*#__PURE__*/react_default.a.createElement("i", {
         className: "fab fa-hackerrank"
       });
 
     case 'npm':
-      return react_default.a.createElement("i", {
+      return /*#__PURE__*/react_default.a.createElement("i", {
         className: "fab fa-npm"
       });
 
     default:
       media = socialMedia.replace(/ /g, '-');
-      return react_default.a.createElement("i", {
+      return /*#__PURE__*/react_default.a.createElement("i", {
         className: "fab fa-".concat(media)
       });
   }
 }
 
-var social_media_SocialMedia =
-/*#__PURE__*/
-function (_Component) {
+var social_media_SocialMedia = /*#__PURE__*/function (_Component) {
   social_media_inherits(SocialMedia, _Component);
+
+  var _super = social_media_createSuper(SocialMedia);
 
   function SocialMedia() {
     social_media_classCallCheck(this, SocialMedia);
 
-    return social_media_possibleConstructorReturn(this, social_media_getPrototypeOf(SocialMedia).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   social_media_createClass(SocialMedia, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", null, react_default.a.createElement("ul", {
+      return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement("ul", {
         className: this.props.ulClass
       }, this.props.profiles.map(function (profile, index) {
         var icon = mapIcon(profile.network.toLowerCase());
-        return react_default.a.createElement("li", {
+        return /*#__PURE__*/react_default.a.createElement("li", {
           key: index
-        }, react_default.a.createElement("a", {
+        }, /*#__PURE__*/react_default.a.createElement("a", {
           href: profile.url,
           target: "_blank",
           rel: "noopener noreferrer"
@@ -604,41 +621,45 @@ function banner_defineProperties(target, props) { for (var i = 0; i < props.leng
 
 function banner_createClass(Constructor, protoProps, staticProps) { if (protoProps) banner_defineProperties(Constructor.prototype, protoProps); if (staticProps) banner_defineProperties(Constructor, staticProps); return Constructor; }
 
-function banner_possibleConstructorReturn(self, call) { if (call && (banner_typeof(call) === "object" || typeof call === "function")) { return call; } return banner_assertThisInitialized(self); }
-
-function banner_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function banner_getPrototypeOf(o) { banner_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return banner_getPrototypeOf(o); }
-
 function banner_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) banner_setPrototypeOf(subClass, superClass); }
 
 function banner_setPrototypeOf(o, p) { banner_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return banner_setPrototypeOf(o, p); }
 
+function banner_createSuper(Derived) { var hasNativeReflectConstruct = banner_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = banner_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = banner_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return banner_possibleConstructorReturn(this, result); }; }
+
+function banner_possibleConstructorReturn(self, call) { if (call && (banner_typeof(call) === "object" || typeof call === "function")) { return call; } return banner_assertThisInitialized(self); }
+
+function banner_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function banner_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function banner_getPrototypeOf(o) { banner_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return banner_getPrototypeOf(o); }
 
 
 
 
-var banner_Banner =
-/*#__PURE__*/
-function (_Component) {
+
+var banner_Banner = /*#__PURE__*/function (_Component) {
   banner_inherits(Banner, _Component);
+
+  var _super = banner_createSuper(Banner);
 
   function Banner() {
     banner_classCallCheck(this, Banner);
 
-    return banner_possibleConstructorReturn(this, banner_getPrototypeOf(Banner).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   banner_createClass(Banner, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", {
+      return /*#__PURE__*/react_default.a.createElement("div", {
         className: "row banner"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "banner-text"
-      }, react_default.a.createElement("h1", {
+      }, /*#__PURE__*/react_default.a.createElement("h1", {
         className: "responsive-headline"
-      }, this.props.basics.name), react_default.a.createElement("br", null), react_default.a.createElement("hr", null), react_default.a.createElement(social_media, {
+      }, this.props.basics.name), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("hr", null), /*#__PURE__*/react_default.a.createElement(social_media, {
         ulClass: "social",
         profiles: this.props.basics.profiles
       })));
@@ -661,38 +682,42 @@ function scrolldown_defineProperties(target, props) { for (var i = 0; i < props.
 
 function scrolldown_createClass(Constructor, protoProps, staticProps) { if (protoProps) scrolldown_defineProperties(Constructor.prototype, protoProps); if (staticProps) scrolldown_defineProperties(Constructor, staticProps); return Constructor; }
 
-function scrolldown_possibleConstructorReturn(self, call) { if (call && (scrolldown_typeof(call) === "object" || typeof call === "function")) { return call; } return scrolldown_assertThisInitialized(self); }
-
-function scrolldown_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function scrolldown_getPrototypeOf(o) { scrolldown_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return scrolldown_getPrototypeOf(o); }
-
 function scrolldown_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) scrolldown_setPrototypeOf(subClass, superClass); }
 
 function scrolldown_setPrototypeOf(o, p) { scrolldown_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return scrolldown_setPrototypeOf(o, p); }
 
+function scrolldown_createSuper(Derived) { var hasNativeReflectConstruct = scrolldown_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = scrolldown_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = scrolldown_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return scrolldown_possibleConstructorReturn(this, result); }; }
+
+function scrolldown_possibleConstructorReturn(self, call) { if (call && (scrolldown_typeof(call) === "object" || typeof call === "function")) { return call; } return scrolldown_assertThisInitialized(self); }
+
+function scrolldown_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function scrolldown_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function scrolldown_getPrototypeOf(o) { scrolldown_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return scrolldown_getPrototypeOf(o); }
 
 
-var scrolldown_ScrollDown =
-/*#__PURE__*/
-function (_Component) {
+
+var scrolldown_ScrollDown = /*#__PURE__*/function (_Component) {
   scrolldown_inherits(ScrollDown, _Component);
+
+  var _super = scrolldown_createSuper(ScrollDown);
 
   function ScrollDown() {
     scrolldown_classCallCheck(this, ScrollDown);
 
-    return scrolldown_possibleConstructorReturn(this, scrolldown_getPrototypeOf(ScrollDown).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   scrolldown_createClass(ScrollDown, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("p", {
+      return /*#__PURE__*/react_default.a.createElement("p", {
         className: "scrolldown"
-      }, react_default.a.createElement("a", {
+      }, /*#__PURE__*/react_default.a.createElement("a", {
         className: "smoothscroll",
         href: "#about"
-      }, react_default.a.createElement("i", {
+      }, /*#__PURE__*/react_default.a.createElement("i", {
         className: "icon-down-circle"
       })));
     }
@@ -711,28 +736,32 @@ function about_defineProperties(target, props) { for (var i = 0; i < props.lengt
 
 function about_createClass(Constructor, protoProps, staticProps) { if (protoProps) about_defineProperties(Constructor.prototype, protoProps); if (staticProps) about_defineProperties(Constructor, staticProps); return Constructor; }
 
-function about_possibleConstructorReturn(self, call) { if (call && (about_typeof(call) === "object" || typeof call === "function")) { return call; } return about_assertThisInitialized(self); }
-
-function about_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function about_getPrototypeOf(o) { about_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return about_getPrototypeOf(o); }
-
 function about_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) about_setPrototypeOf(subClass, superClass); }
 
 function about_setPrototypeOf(o, p) { about_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return about_setPrototypeOf(o, p); }
 
+function about_createSuper(Derived) { var hasNativeReflectConstruct = about_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = about_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = about_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return about_possibleConstructorReturn(this, result); }; }
+
+function about_possibleConstructorReturn(self, call) { if (call && (about_typeof(call) === "object" || typeof call === "function")) { return call; } return about_assertThisInitialized(self); }
+
+function about_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function about_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function about_getPrototypeOf(o) { about_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return about_getPrototypeOf(o); }
 
 
 
-var about_About =
-/*#__PURE__*/
-function (_Component) {
+
+var about_About = /*#__PURE__*/function (_Component) {
   about_inherits(About, _Component);
+
+  var _super = about_createSuper(About);
 
   function About() {
     about_classCallCheck(this, About);
 
-    return about_possibleConstructorReturn(this, about_getPrototypeOf(About).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   about_createClass(About, [{
@@ -740,36 +769,36 @@ function (_Component) {
     value: function render() {
       var props = this.props;
       var summary = props.content.summary.map(function (content, index) {
-        return react_default.a.createElement("p", {
+        return /*#__PURE__*/react_default.a.createElement("p", {
           key: index
         }, content);
       });
-      return react_default.a.createElement("section", {
+      return /*#__PURE__*/react_default.a.createElement("section", {
         id: "about"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "row"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "two columns"
-      }, react_default.a.createElement("img", {
+      }, /*#__PURE__*/react_default.a.createElement("img", {
         className: "profile-pic",
         src: props.content.picture,
         alt: props.content.name
-      })), react_default.a.createElement("div", {
+      })), /*#__PURE__*/react_default.a.createElement("div", {
         className: "ten columns main-col"
-      }, react_default.a.createElement("h2", null, "About Me"), summary, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("h2", null, "About Me"), summary, /*#__PURE__*/react_default.a.createElement("div", {
         className: "row"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "columns contact-details"
-      }, react_default.a.createElement("h2", null, "Contact Details"), react_default.a.createElement("p", {
+      }, /*#__PURE__*/react_default.a.createElement("h2", null, "Contact Details"), /*#__PURE__*/react_default.a.createElement("p", {
         className: "address"
-      }, react_default.a.createElement("span", null, props.content.location.city), props.content.location.region && react_default.a.createElement("span", null, ", ", props.content.location.region), react_default.a.createElement("br", null), react_default.a.createElement("span", null, props.content.location.countryCode), react_default.a.createElement("br", null), react_default.a.createElement("a", {
+      }, /*#__PURE__*/react_default.a.createElement("span", null, props.content.location.city), props.content.location.region && /*#__PURE__*/react_default.a.createElement("span", null, ", ", props.content.location.region), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("span", null, props.content.location.countryCode), /*#__PURE__*/react_default.a.createElement("br", null), /*#__PURE__*/react_default.a.createElement("a", {
         href: "mailto:".concat(props.content.email)
-      }, react_default.a.createElement("span", null, props.content.email)))), react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("span", null, props.content.email)))), /*#__PURE__*/react_default.a.createElement("div", {
         className: "columns download"
-      }, react_default.a.createElement("p", null, react_default.a.createElement("a", {
+      }, /*#__PURE__*/react_default.a.createElement("p", null, /*#__PURE__*/react_default.a.createElement("a", {
         className: "button",
         href: props.content.resumeUrl
-      }, react_default.a.createElement("i", {
+      }, /*#__PURE__*/react_default.a.createElement("i", {
         className: "fa fa-download"
       }), "Download Resume")))))));
     }
@@ -791,42 +820,46 @@ function education_defineProperties(target, props) { for (var i = 0; i < props.l
 
 function education_createClass(Constructor, protoProps, staticProps) { if (protoProps) education_defineProperties(Constructor.prototype, protoProps); if (staticProps) education_defineProperties(Constructor, staticProps); return Constructor; }
 
-function education_possibleConstructorReturn(self, call) { if (call && (education_typeof(call) === "object" || typeof call === "function")) { return call; } return education_assertThisInitialized(self); }
-
-function education_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function education_getPrototypeOf(o) { education_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return education_getPrototypeOf(o); }
-
 function education_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) education_setPrototypeOf(subClass, superClass); }
 
 function education_setPrototypeOf(o, p) { education_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return education_setPrototypeOf(o, p); }
 
+function education_createSuper(Derived) { var hasNativeReflectConstruct = education_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = education_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = education_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return education_possibleConstructorReturn(this, result); }; }
+
+function education_possibleConstructorReturn(self, call) { if (call && (education_typeof(call) === "object" || typeof call === "function")) { return call; } return education_assertThisInitialized(self); }
+
+function education_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function education_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function education_getPrototypeOf(o) { education_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return education_getPrototypeOf(o); }
 
 
 
-var education_Entry =
-/*#__PURE__*/
-function (_Component) {
+
+var education_Entry = /*#__PURE__*/function (_Component) {
   education_inherits(Entry, _Component);
+
+  var _super = education_createSuper(Entry);
 
   function Entry() {
     education_classCallCheck(this, Entry);
 
-    return education_possibleConstructorReturn(this, education_getPrototypeOf(Entry).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   education_createClass(Entry, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", {
+      return /*#__PURE__*/react_default.a.createElement("div", {
         className: "row item"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "twelve columns"
-      }, react_default.a.createElement("h3", null, this.props.entry.institution), react_default.a.createElement("p", {
+      }, /*#__PURE__*/react_default.a.createElement("h3", null, this.props.entry.institution), /*#__PURE__*/react_default.a.createElement("p", {
         className: "info"
-      }, this.props.entry.studyType, " in ", this.props.entry.area, react_default.a.createElement("span", null, " \u2022 "), react_default.a.createElement("span", {
+      }, this.props.entry.studyType, " in ", this.props.entry.area, /*#__PURE__*/react_default.a.createElement("span", null, " \u2022 "), /*#__PURE__*/react_default.a.createElement("span", {
         className: "info-summary"
-      }, this.props.entry.summary), react_default.a.createElement("span", null, " \u2022 "), react_default.a.createElement("em", {
+      }, this.props.entry.summary), /*#__PURE__*/react_default.a.createElement("span", null, " \u2022 "), /*#__PURE__*/react_default.a.createElement("em", {
         className: "date"
       }, this.props.entry.startDate, " - ", this.props.entry.endDate))));
     }
@@ -839,30 +872,30 @@ education_Entry.propTypes = {
   entry: education
 };
 
-var education_Education =
-/*#__PURE__*/
-function (_Component2) {
+var education_Education = /*#__PURE__*/function (_Component2) {
   education_inherits(Education, _Component2);
+
+  var _super2 = education_createSuper(Education);
 
   function Education() {
     education_classCallCheck(this, Education);
 
-    return education_possibleConstructorReturn(this, education_getPrototypeOf(Education).apply(this, arguments));
+    return _super2.apply(this, arguments);
   }
 
   education_createClass(Education, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("section", {
+      return /*#__PURE__*/react_default.a.createElement("section", {
         id: "education"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "row education"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "two columns header-col"
-      }, react_default.a.createElement("h1", null, react_default.a.createElement("span", null, "Education"))), react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("h1", null, /*#__PURE__*/react_default.a.createElement("span", null, "Education"))), /*#__PURE__*/react_default.a.createElement("div", {
         className: "ten columns main-col"
       }, this.props.content.map(function (entry, index) {
-        return react_default.a.createElement(education_Entry, {
+        return /*#__PURE__*/react_default.a.createElement(education_Entry, {
           key: index,
           entry: entry
         });
@@ -886,61 +919,65 @@ function footer_defineProperties(target, props) { for (var i = 0; i < props.leng
 
 function footer_createClass(Constructor, protoProps, staticProps) { if (protoProps) footer_defineProperties(Constructor.prototype, protoProps); if (staticProps) footer_defineProperties(Constructor, staticProps); return Constructor; }
 
-function footer_possibleConstructorReturn(self, call) { if (call && (footer_typeof(call) === "object" || typeof call === "function")) { return call; } return footer_assertThisInitialized(self); }
-
-function footer_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function footer_getPrototypeOf(o) { footer_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return footer_getPrototypeOf(o); }
-
 function footer_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) footer_setPrototypeOf(subClass, superClass); }
 
 function footer_setPrototypeOf(o, p) { footer_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return footer_setPrototypeOf(o, p); }
 
+function footer_createSuper(Derived) { var hasNativeReflectConstruct = footer_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = footer_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = footer_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return footer_possibleConstructorReturn(this, result); }; }
+
+function footer_possibleConstructorReturn(self, call) { if (call && (footer_typeof(call) === "object" || typeof call === "function")) { return call; } return footer_assertThisInitialized(self); }
+
+function footer_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function footer_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function footer_getPrototypeOf(o) { footer_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return footer_getPrototypeOf(o); }
 
 
 
 
-var footer_Footer =
-/*#__PURE__*/
-function (_Component) {
+
+var footer_Footer = /*#__PURE__*/function (_Component) {
   footer_inherits(Footer, _Component);
+
+  var _super = footer_createSuper(Footer);
 
   function Footer() {
     footer_classCallCheck(this, Footer);
 
-    return footer_possibleConstructorReturn(this, footer_getPrototypeOf(Footer).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   footer_createClass(Footer, [{
     key: "render",
     value: function render() {
       var props = this.props;
-      return react_default.a.createElement("footer", null, react_default.a.createElement("div", {
+      return /*#__PURE__*/react_default.a.createElement("footer", null, /*#__PURE__*/react_default.a.createElement("div", {
         className: "row"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "twelve columns"
-      }, react_default.a.createElement(social_media, {
+      }, /*#__PURE__*/react_default.a.createElement(social_media, {
         ulClass: "social-links",
-        profiles: props.content.profiles
-      }), react_default.a.createElement("ul", {
+        profiles: props.content
+      }), /*#__PURE__*/react_default.a.createElement("ul", {
         className: "copyright"
-      }, react_default.a.createElement("li", null, "This site is developed in React.js by\xA0", react_default.a.createElement("a", {
+      }, /*#__PURE__*/react_default.a.createElement("li", null, "This site is developed in React.js by\xA0", /*#__PURE__*/react_default.a.createElement("a", {
         href: "https://nimjetushar.github.io",
         title: "Tushar Nimje",
         target: "_blank",
         rel: "noopener noreferrer"
-      }, "Tushar Nimje"), " from the original design of Ceevee from\xA0 ", react_default.a.createElement("a", {
+      }, "Tushar Nimje"), " from the original design of Ceevee from\xA0 ", /*#__PURE__*/react_default.a.createElement("a", {
         href: "http://www.styleshout.com/",
         title: "Styleshout",
         target: "_blank",
         rel: "noopener noreferrer"
-      }, "Styleshout")))), react_default.a.createElement("div", {
+      }, "Styleshout")))), /*#__PURE__*/react_default.a.createElement("div", {
         id: "go-top"
-      }, react_default.a.createElement("a", {
+      }, /*#__PURE__*/react_default.a.createElement("a", {
         className: "smoothscroll",
         title: "Back to Top",
         href: "#home"
-      }, react_default.a.createElement("i", {
+      }, /*#__PURE__*/react_default.a.createElement("i", {
         className: "icon-up-open"
       })))));
     }
@@ -962,31 +999,35 @@ function skills_defineProperties(target, props) { for (var i = 0; i < props.leng
 
 function skills_createClass(Constructor, protoProps, staticProps) { if (protoProps) skills_defineProperties(Constructor.prototype, protoProps); if (staticProps) skills_defineProperties(Constructor, staticProps); return Constructor; }
 
-function skills_possibleConstructorReturn(self, call) { if (call && (skills_typeof(call) === "object" || typeof call === "function")) { return call; } return skills_assertThisInitialized(self); }
-
-function skills_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function skills_getPrototypeOf(o) { skills_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return skills_getPrototypeOf(o); }
-
 function skills_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) skills_setPrototypeOf(subClass, superClass); }
 
 function skills_setPrototypeOf(o, p) { skills_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return skills_setPrototypeOf(o, p); }
 
+function skills_createSuper(Derived) { var hasNativeReflectConstruct = skills_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = skills_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = skills_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return skills_possibleConstructorReturn(this, result); }; }
+
+function skills_possibleConstructorReturn(self, call) { if (call && (skills_typeof(call) === "object" || typeof call === "function")) { return call; } return skills_assertThisInitialized(self); }
+
+function skills_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function skills_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function skills_getPrototypeOf(o) { skills_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return skills_getPrototypeOf(o); }
 
 
 
 
-var skills_Entry =
-/*#__PURE__*/
-function (_Component) {
+
+var skills_Entry = /*#__PURE__*/function (_Component) {
   skills_inherits(Entry, _Component);
+
+  var _super = skills_createSuper(Entry);
 
   function Entry(props) {
     var _this;
 
     skills_classCallCheck(this, Entry);
 
-    _this = skills_possibleConstructorReturn(this, skills_getPrototypeOf(Entry).call(this, props));
+    _this = _super.call(this, props);
     _this.state = {
       style: {
         background: '#313131'
@@ -1016,12 +1057,12 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return react_default.a.createElement("li", null, react_default.a.createElement("span", {
+      return /*#__PURE__*/react_default.a.createElement("li", null, /*#__PURE__*/react_default.a.createElement("span", {
         className: "bar-expand percentage".concat(this.props.entry.level),
         onMouseEnter: this.handleMouseEnter.bind(this),
         onMouseLeave: this.handleMouseLeave.bind(this),
         style: this.state.style
-      }), react_default.a.createElement("em", null, this.props.entry.name));
+      }), /*#__PURE__*/react_default.a.createElement("em", null, this.props.entry.name));
     }
   }]);
 
@@ -1032,34 +1073,34 @@ skills_Entry.propTypes = {
   entry: languages
 };
 
-var skills_Skill =
-/*#__PURE__*/
-function (_Component2) {
+var skills_Skill = /*#__PURE__*/function (_Component2) {
   skills_inherits(Skill, _Component2);
+
+  var _super2 = skills_createSuper(Skill);
 
   function Skill() {
     skills_classCallCheck(this, Skill);
 
-    return skills_possibleConstructorReturn(this, skills_getPrototypeOf(Skill).apply(this, arguments));
+    return _super2.apply(this, arguments);
   }
 
   skills_createClass(Skill, [{
     key: "render",
     value: function render() {
       var summary = this.props.summary.map(function (point, index) {
-        return react_default.a.createElement("p", {
+        return /*#__PURE__*/react_default.a.createElement("p", {
           key: index,
           className: "skill-summary"
         }, point);
       });
-      return react_default.a.createElement("div", {
+      return /*#__PURE__*/react_default.a.createElement("div", {
         className: "row inside"
-      }, react_default.a.createElement("h3", null, this.props.title), summary, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("h3", null, this.props.title), summary, /*#__PURE__*/react_default.a.createElement("div", {
         className: "bars"
-      }, react_default.a.createElement("ul", {
+      }, /*#__PURE__*/react_default.a.createElement("ul", {
         className: "skills"
       }, this.props.content.map(function (entry, index) {
-        return react_default.a.createElement(skills_Entry, {
+        return /*#__PURE__*/react_default.a.createElement(skills_Entry, {
           key: index,
           entry: entry
         });
@@ -1076,30 +1117,30 @@ skills_Skill.propTypes = {
   summary: prop_types_default.a.arrayOf(prop_types_default.a.string).isRequired
 };
 
-var skills_Skills =
-/*#__PURE__*/
-function (_Component3) {
+var skills_Skills = /*#__PURE__*/function (_Component3) {
   skills_inherits(Skills, _Component3);
+
+  var _super3 = skills_createSuper(Skills);
 
   function Skills() {
     skills_classCallCheck(this, Skills);
 
-    return skills_possibleConstructorReturn(this, skills_getPrototypeOf(Skills).apply(this, arguments));
+    return _super3.apply(this, arguments);
   }
 
   skills_createClass(Skills, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("section", {
+      return /*#__PURE__*/react_default.a.createElement("section", {
         id: "skill"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "row skill"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "two columns header-col"
-      }, react_default.a.createElement("h1", null, react_default.a.createElement("span", null, "Skills"))), react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("h1", null, /*#__PURE__*/react_default.a.createElement("span", null, "Skills"))), /*#__PURE__*/react_default.a.createElement("div", {
         className: "ten columns main-col"
       }, this.props.content.skills.map(function (skill, index) {
-        return react_default.a.createElement(skills_Skill, {
+        return /*#__PURE__*/react_default.a.createElement(skills_Skill, {
           key: index,
           title: skill.title,
           content: skill.skillDetails,
@@ -1128,38 +1169,42 @@ function bullet_points_defineProperties(target, props) { for (var i = 0; i < pro
 
 function bullet_points_createClass(Constructor, protoProps, staticProps) { if (protoProps) bullet_points_defineProperties(Constructor.prototype, protoProps); if (staticProps) bullet_points_defineProperties(Constructor, staticProps); return Constructor; }
 
-function bullet_points_possibleConstructorReturn(self, call) { if (call && (bullet_points_typeof(call) === "object" || typeof call === "function")) { return call; } return bullet_points_assertThisInitialized(self); }
-
-function bullet_points_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function bullet_points_getPrototypeOf(o) { bullet_points_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return bullet_points_getPrototypeOf(o); }
-
 function bullet_points_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) bullet_points_setPrototypeOf(subClass, superClass); }
 
 function bullet_points_setPrototypeOf(o, p) { bullet_points_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return bullet_points_setPrototypeOf(o, p); }
 
+function bullet_points_createSuper(Derived) { var hasNativeReflectConstruct = bullet_points_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = bullet_points_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = bullet_points_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return bullet_points_possibleConstructorReturn(this, result); }; }
+
+function bullet_points_possibleConstructorReturn(self, call) { if (call && (bullet_points_typeof(call) === "object" || typeof call === "function")) { return call; } return bullet_points_assertThisInitialized(self); }
+
+function bullet_points_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function bullet_points_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function bullet_points_getPrototypeOf(o) { bullet_points_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return bullet_points_getPrototypeOf(o); }
 
 
 
-var bullet_points_BulletPoints =
-/*#__PURE__*/
-function (_Component) {
+
+var bullet_points_BulletPoints = /*#__PURE__*/function (_Component) {
   bullet_points_inherits(BulletPoints, _Component);
+
+  var _super = bullet_points_createSuper(BulletPoints);
 
   function BulletPoints() {
     bullet_points_classCallCheck(this, BulletPoints);
 
-    return bullet_points_possibleConstructorReturn(this, bullet_points_getPrototypeOf(BulletPoints).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   bullet_points_createClass(BulletPoints, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", null, this.props.points.map(function (point, index) {
-        return react_default.a.createElement("p", {
+      return /*#__PURE__*/react_default.a.createElement("div", null, this.props.points.map(function (point, index) {
+        return /*#__PURE__*/react_default.a.createElement("p", {
           key: index,
           className: "point"
-        }, react_default.a.createElement("span", {
+        }, /*#__PURE__*/react_default.a.createElement("span", {
           className: "bullet-point"
         }, "\u2022 "), point);
       }));
@@ -1182,52 +1227,56 @@ function work_defineProperties(target, props) { for (var i = 0; i < props.length
 
 function work_createClass(Constructor, protoProps, staticProps) { if (protoProps) work_defineProperties(Constructor.prototype, protoProps); if (staticProps) work_defineProperties(Constructor, staticProps); return Constructor; }
 
-function work_possibleConstructorReturn(self, call) { if (call && (work_typeof(call) === "object" || typeof call === "function")) { return call; } return work_assertThisInitialized(self); }
-
-function work_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function work_getPrototypeOf(o) { work_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return work_getPrototypeOf(o); }
-
 function work_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) work_setPrototypeOf(subClass, superClass); }
 
 function work_setPrototypeOf(o, p) { work_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return work_setPrototypeOf(o, p); }
 
+function work_createSuper(Derived) { var hasNativeReflectConstruct = work_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = work_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = work_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return work_possibleConstructorReturn(this, result); }; }
+
+function work_possibleConstructorReturn(self, call) { if (call && (work_typeof(call) === "object" || typeof call === "function")) { return call; } return work_assertThisInitialized(self); }
+
+function work_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function work_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function work_getPrototypeOf(o) { work_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return work_getPrototypeOf(o); }
 
 
 
 
 
-var work_Entry =
-/*#__PURE__*/
-function (_Component) {
+
+var work_Entry = /*#__PURE__*/function (_Component) {
   work_inherits(Entry, _Component);
+
+  var _super = work_createSuper(Entry);
 
   function Entry() {
     work_classCallCheck(this, Entry);
 
-    return work_possibleConstructorReturn(this, work_getPrototypeOf(Entry).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   work_createClass(Entry, [{
     key: "render",
     value: function render() {
       var index = this.props.index + 1;
-      var divider = index === this.props.total ? react_default.a.createElement("br", null) : react_default.a.createElement("hr", null);
-      return react_default.a.createElement("div", {
+      var divider = index === this.props.total ? /*#__PURE__*/react_default.a.createElement("br", null) : /*#__PURE__*/react_default.a.createElement("hr", null);
+      return /*#__PURE__*/react_default.a.createElement("div", {
         className: "row item"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "twelve columns"
-      }, react_default.a.createElement("h3", null, react_default.a.createElement("a", {
+      }, /*#__PURE__*/react_default.a.createElement("h3", null, /*#__PURE__*/react_default.a.createElement("a", {
         href: this.props.entry.website,
         target: "_blank",
         rel: "noopener noreferrer"
-      }, this.props.entry.company)), react_default.a.createElement("p", {
+      }, this.props.entry.company)), /*#__PURE__*/react_default.a.createElement("p", {
         className: "info"
-      }, this.props.entry.position, react_default.a.createElement("span", null, " \u2022 "), react_default.a.createElement("span", {
+      }, this.props.entry.position, /*#__PURE__*/react_default.a.createElement("span", null, " \u2022 "), /*#__PURE__*/react_default.a.createElement("span", {
         className: "info-summary"
-      }, this.props.entry.summary), react_default.a.createElement("span", null, " \u2022 "), react_default.a.createElement("em", {
+      }, this.props.entry.summary), /*#__PURE__*/react_default.a.createElement("span", null, " \u2022 "), /*#__PURE__*/react_default.a.createElement("em", {
         className: "date"
-      }, this.props.entry.startDate, " - ", this.props.entry.endDate)), react_default.a.createElement(bullet_points, {
+      }, this.props.entry.startDate, " - ", this.props.entry.endDate)), /*#__PURE__*/react_default.a.createElement(bullet_points, {
         points: this.props.entry.highlights
       })), divider);
     }
@@ -1242,31 +1291,31 @@ work_Entry.propTypes = {
   entry: work
 };
 
-var work_Work =
-/*#__PURE__*/
-function (_Component2) {
+var work_Work = /*#__PURE__*/function (_Component2) {
   work_inherits(Work, _Component2);
+
+  var _super2 = work_createSuper(Work);
 
   function Work() {
     work_classCallCheck(this, Work);
 
-    return work_possibleConstructorReturn(this, work_getPrototypeOf(Work).apply(this, arguments));
+    return _super2.apply(this, arguments);
   }
 
   work_createClass(Work, [{
     key: "render",
     value: function render() {
       var numEntries = this.props.content.length;
-      return react_default.a.createElement("section", {
+      return /*#__PURE__*/react_default.a.createElement("section", {
         id: "work"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "row work"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "two columns header-col"
-      }, react_default.a.createElement("h1", null, react_default.a.createElement("span", null, "Work"))), react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("h1", null, /*#__PURE__*/react_default.a.createElement("span", null, "Work"))), /*#__PURE__*/react_default.a.createElement("div", {
         className: "ten columns main-col"
       }, this.props.content.map(function (entry, index) {
-        return react_default.a.createElement(work_Entry, {
+        return /*#__PURE__*/react_default.a.createElement(work_Entry, {
           key: index,
           index: index,
           total: numEntries,
@@ -1284,7 +1333,7 @@ work_Work.propTypes = {
 };
 /* harmony default export */ var section_work = (work_Work);
 // EXTERNAL MODULE: ./node_modules/nuka-carousel/es/index.js + 20 modules
-var es = __webpack_require__(128);
+var es = __webpack_require__(157);
 
 // CONCATENATED MODULE: ./src/component/section/references.jsx
 function references_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { references_typeof = function _typeof(obj) { return typeof obj; }; } else { references_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return references_typeof(obj); }
@@ -1295,35 +1344,39 @@ function references_defineProperties(target, props) { for (var i = 0; i < props.
 
 function references_createClass(Constructor, protoProps, staticProps) { if (protoProps) references_defineProperties(Constructor.prototype, protoProps); if (staticProps) references_defineProperties(Constructor, staticProps); return Constructor; }
 
-function references_possibleConstructorReturn(self, call) { if (call && (references_typeof(call) === "object" || typeof call === "function")) { return call; } return references_assertThisInitialized(self); }
-
-function references_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function references_getPrototypeOf(o) { references_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return references_getPrototypeOf(o); }
-
 function references_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) references_setPrototypeOf(subClass, superClass); }
 
 function references_setPrototypeOf(o, p) { references_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return references_setPrototypeOf(o, p); }
 
+function references_createSuper(Derived) { var hasNativeReflectConstruct = references_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = references_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = references_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return references_possibleConstructorReturn(this, result); }; }
+
+function references_possibleConstructorReturn(self, call) { if (call && (references_typeof(call) === "object" || typeof call === "function")) { return call; } return references_assertThisInitialized(self); }
+
+function references_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function references_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function references_getPrototypeOf(o) { references_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return references_getPrototypeOf(o); }
 
 
 
 
-var references_Entry =
-/*#__PURE__*/
-function (_Component) {
+
+var references_Entry = /*#__PURE__*/function (_Component) {
   references_inherits(Entry, _Component);
+
+  var _super = references_createSuper(Entry);
 
   function Entry() {
     references_classCallCheck(this, Entry);
 
-    return references_possibleConstructorReturn(this, references_getPrototypeOf(Entry).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   references_createClass(Entry, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", null, react_default.a.createElement("blockquote", null, react_default.a.createElement("p", null, this.props.entry.reference), this.props.entry.name ? react_default.a.createElement("cite", null, this.props.entry.name) : ""));
+      return /*#__PURE__*/react_default.a.createElement("div", null, /*#__PURE__*/react_default.a.createElement("blockquote", null, /*#__PURE__*/react_default.a.createElement("p", null, this.props.entry.reference), this.props.entry.name ? /*#__PURE__*/react_default.a.createElement("cite", null, this.props.entry.name) : ""));
     }
   }]);
 
@@ -1334,15 +1387,15 @@ references_Entry.propTypes = {
   entry: references
 };
 
-var references_References =
-/*#__PURE__*/
-function (_Component2) {
+var references_References = /*#__PURE__*/function (_Component2) {
   references_inherits(References, _Component2);
+
+  var _super2 = references_createSuper(References);
 
   function References() {
     references_classCallCheck(this, References);
 
-    return references_possibleConstructorReturn(this, references_getPrototypeOf(References).apply(this, arguments));
+    return _super2.apply(this, arguments);
   }
 
   references_createClass(References, [{
@@ -1353,27 +1406,27 @@ function (_Component2) {
         wrapAround: true,
         withoutControls: true
       };
-      return react_default.a.createElement("section", {
+      return /*#__PURE__*/react_default.a.createElement("section", {
         id: "testimonials"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "text-container"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "row"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "two columns header-col"
-      }, react_default.a.createElement("h1", null, react_default.a.createElement("i", {
+      }, /*#__PURE__*/react_default.a.createElement("h1", null, /*#__PURE__*/react_default.a.createElement("i", {
         className: "fas fa-quote-left",
         size: "7"
-      }))), react_default.a.createElement("div", {
+      }))), /*#__PURE__*/react_default.a.createElement("div", {
         className: "columns flex-container"
-      }, react_default.a.createElement("div", {
+      }, /*#__PURE__*/react_default.a.createElement("div", {
         className: "flexslider"
-      }, react_default.a.createElement(es["a" /* default */], {
+      }, /*#__PURE__*/react_default.a.createElement(es["a" /* default */], {
         autoplay: carouselConfig.autoplay,
         wrapAround: carouselConfig.wrapAround,
         withoutControls: carouselConfig.withoutControls
       }, this.props.content.map(function (entry, index) {
-        return react_default.a.createElement(references_Entry, {
+        return /*#__PURE__*/react_default.a.createElement(references_Entry, {
           key: index,
           entry: entry
         });
@@ -1397,16 +1450,19 @@ function section_defineProperties(target, props) { for (var i = 0; i < props.len
 
 function section_createClass(Constructor, protoProps, staticProps) { if (protoProps) section_defineProperties(Constructor.prototype, protoProps); if (staticProps) section_defineProperties(Constructor, staticProps); return Constructor; }
 
-function section_possibleConstructorReturn(self, call) { if (call && (section_typeof(call) === "object" || typeof call === "function")) { return call; } return section_assertThisInitialized(self); }
-
-function section_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function section_getPrototypeOf(o) { section_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return section_getPrototypeOf(o); }
-
 function section_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) section_setPrototypeOf(subClass, superClass); }
 
 function section_setPrototypeOf(o, p) { section_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return section_setPrototypeOf(o, p); }
 
+function section_createSuper(Derived) { var hasNativeReflectConstruct = section_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = section_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = section_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return section_possibleConstructorReturn(this, result); }; }
+
+function section_possibleConstructorReturn(self, call) { if (call && (section_typeof(call) === "object" || typeof call === "function")) { return call; } return section_assertThisInitialized(self); }
+
+function section_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function section_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function section_getPrototypeOf(o) { section_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return section_getPrototypeOf(o); }
 
 
 
@@ -1416,15 +1472,16 @@ function section_setPrototypeOf(o, p) { section_setPrototypeOf = Object.setProto
 
 
 
-var section_Section =
-/*#__PURE__*/
-function (_Component) {
+
+var section_Section = /*#__PURE__*/function (_Component) {
   section_inherits(Section, _Component);
+
+  var _super = section_createSuper(Section);
 
   function Section() {
     section_classCallCheck(this, Section);
 
-    return section_possibleConstructorReturn(this, section_getPrototypeOf(Section).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   section_createClass(Section, [{
@@ -1434,18 +1491,18 @@ function (_Component) {
         skills: this.props.skills,
         languages: this.props.languages
       };
-      return react_default.a.createElement(react["Fragment"], null, react_default.a.createElement(about, {
+      return /*#__PURE__*/react_default.a.createElement(react["Fragment"], null, /*#__PURE__*/react_default.a.createElement(about, {
         content: this.props.basics
-      }), react_default.a.createElement(section_work, {
+      }), /*#__PURE__*/react_default.a.createElement(section_work, {
         content: this.props.work
-      }), react_default.a.createElement(section_education, {
+      }), /*#__PURE__*/react_default.a.createElement(section_education, {
         content: this.props.education
-      }), react_default.a.createElement(section_skills, {
+      }), /*#__PURE__*/react_default.a.createElement(section_skills, {
         content: skillsContent
-      }), react_default.a.createElement(section_references, {
+      }), /*#__PURE__*/react_default.a.createElement(section_references, {
         content: this.props.references
-      }), react_default.a.createElement(footer, {
-        content: this.props.basics
+      }), /*#__PURE__*/react_default.a.createElement(footer, {
+        content: this.props.basics.profiles
       }));
     }
   }]);
@@ -1471,33 +1528,37 @@ function loading_defineProperties(target, props) { for (var i = 0; i < props.len
 
 function loading_createClass(Constructor, protoProps, staticProps) { if (protoProps) loading_defineProperties(Constructor.prototype, protoProps); if (staticProps) loading_defineProperties(Constructor, staticProps); return Constructor; }
 
-function loading_possibleConstructorReturn(self, call) { if (call && (loading_typeof(call) === "object" || typeof call === "function")) { return call; } return loading_assertThisInitialized(self); }
-
-function loading_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function loading_getPrototypeOf(o) { loading_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return loading_getPrototypeOf(o); }
-
 function loading_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) loading_setPrototypeOf(subClass, superClass); }
 
 function loading_setPrototypeOf(o, p) { loading_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return loading_setPrototypeOf(o, p); }
 
+function loading_createSuper(Derived) { var hasNativeReflectConstruct = loading_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = loading_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = loading_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return loading_possibleConstructorReturn(this, result); }; }
+
+function loading_possibleConstructorReturn(self, call) { if (call && (loading_typeof(call) === "object" || typeof call === "function")) { return call; } return loading_assertThisInitialized(self); }
+
+function loading_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function loading_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function loading_getPrototypeOf(o) { loading_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return loading_getPrototypeOf(o); }
 
 
-var loading_Loading =
-/*#__PURE__*/
-function (_Component) {
+
+var loading_Loading = /*#__PURE__*/function (_Component) {
   loading_inherits(Loading, _Component);
+
+  var _super = loading_createSuper(Loading);
 
   function Loading() {
     loading_classCallCheck(this, Loading);
 
-    return loading_possibleConstructorReturn(this, loading_getPrototypeOf(Loading).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   loading_createClass(Loading, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement("div", {
+      return /*#__PURE__*/react_default.a.createElement("div", {
         className: "loading"
       });
     }
@@ -1528,7 +1589,7 @@ function getDataUrl() {
         reject(err);
       });
     } else {
-      var data = __webpack_require__(327);
+      var data = __webpack_require__(397);
 
       resolve(data);
     }
@@ -1543,16 +1604,19 @@ function main_defineProperties(target, props) { for (var i = 0; i < props.length
 
 function main_createClass(Constructor, protoProps, staticProps) { if (protoProps) main_defineProperties(Constructor.prototype, protoProps); if (staticProps) main_defineProperties(Constructor, staticProps); return Constructor; }
 
-function main_possibleConstructorReturn(self, call) { if (call && (main_typeof(call) === "object" || typeof call === "function")) { return call; } return main_assertThisInitialized(self); }
-
-function main_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function main_getPrototypeOf(o) { main_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return main_getPrototypeOf(o); }
-
 function main_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) main_setPrototypeOf(subClass, superClass); }
 
 function main_setPrototypeOf(o, p) { main_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return main_setPrototypeOf(o, p); }
 
+function main_createSuper(Derived) { var hasNativeReflectConstruct = main_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = main_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = main_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return main_possibleConstructorReturn(this, result); }; }
+
+function main_possibleConstructorReturn(self, call) { if (call && (main_typeof(call) === "object" || typeof call === "function")) { return call; } return main_assertThisInitialized(self); }
+
+function main_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function main_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function main_getPrototypeOf(o) { main_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return main_getPrototypeOf(o); }
 
 
 
@@ -1562,17 +1626,18 @@ function main_setPrototypeOf(o, p) { main_setPrototypeOf = Object.setPrototypeOf
 
 
 
-var main_Main =
-/*#__PURE__*/
-function (_Component) {
+
+var main_Main = /*#__PURE__*/function (_Component) {
   main_inherits(Main, _Component);
+
+  var _super = main_createSuper(Main);
 
   function Main(props) {
     var _this;
 
     main_classCallCheck(this, Main);
 
-    _this = main_possibleConstructorReturn(this, main_getPrototypeOf(Main).call(this, props));
+    _this = _super.call(this, props);
     _this.state = {
       resume: false,
       navigation: NavigationConfig
@@ -1596,11 +1661,11 @@ function (_Component) {
   }, {
     key: "onLoad",
     value: function onLoad() {
-      return react_default.a.createElement(react["Fragment"], null, react_default.a.createElement(header, null, react_default.a.createElement(component_navigation, {
+      return /*#__PURE__*/react_default.a.createElement(react["Fragment"], null, /*#__PURE__*/react_default.a.createElement(header, null, /*#__PURE__*/react_default.a.createElement(component_navigation, {
         navigation: this.state.navigation
-      }), react_default.a.createElement(banner, {
+      }), /*#__PURE__*/react_default.a.createElement(banner, {
         basics: this.state.resume.basics
-      }), react_default.a.createElement(scrolldown, null)), react_default.a.createElement(section, {
+      }), /*#__PURE__*/react_default.a.createElement(scrolldown, null)), /*#__PURE__*/react_default.a.createElement(section, {
         basics: this.state.resume.basics,
         work: this.state.resume.work,
         education: this.state.resume.education,
@@ -1613,7 +1678,7 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return this.state.resume ? this.onLoad() : react_default.a.createElement(loading, null);
+      return this.state.resume ? this.onLoad() : /*#__PURE__*/react_default.a.createElement(loading, null);
     }
   }]);
 
@@ -1630,34 +1695,38 @@ function App_defineProperties(target, props) { for (var i = 0; i < props.length;
 
 function App_createClass(Constructor, protoProps, staticProps) { if (protoProps) App_defineProperties(Constructor.prototype, protoProps); if (staticProps) App_defineProperties(Constructor, staticProps); return Constructor; }
 
-function App_possibleConstructorReturn(self, call) { if (call && (App_typeof(call) === "object" || typeof call === "function")) { return call; } return App_assertThisInitialized(self); }
-
-function App_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function App_getPrototypeOf(o) { App_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return App_getPrototypeOf(o); }
-
 function App_inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) App_setPrototypeOf(subClass, superClass); }
 
 function App_setPrototypeOf(o, p) { App_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return App_setPrototypeOf(o, p); }
 
+function App_createSuper(Derived) { var hasNativeReflectConstruct = App_isNativeReflectConstruct(); return function _createSuperInternal() { var Super = App_getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = App_getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return App_possibleConstructorReturn(this, result); }; }
+
+function App_possibleConstructorReturn(self, call) { if (call && (App_typeof(call) === "object" || typeof call === "function")) { return call; } return App_assertThisInitialized(self); }
+
+function App_assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function App_isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function App_getPrototypeOf(o) { App_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return App_getPrototypeOf(o); }
 
 
 
-var App_App =
-/*#__PURE__*/
-function (_Component) {
+
+var App_App = /*#__PURE__*/function (_Component) {
   App_inherits(App, _Component);
+
+  var _super = App_createSuper(App);
 
   function App() {
     App_classCallCheck(this, App);
 
-    return App_possibleConstructorReturn(this, App_getPrototypeOf(App).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   App_createClass(App, [{
     key: "render",
     value: function render() {
-      return react_default.a.createElement(main, null);
+      return /*#__PURE__*/react_default.a.createElement(main, null);
     }
   }]);
 
@@ -1685,7 +1754,7 @@ function registerWebWorker() {
 
 
 
-react_dom_default.a.render(react_default.a.createElement(src_App, null), document.getElementById('root'));
+react_dom_default.a.render( /*#__PURE__*/react_default.a.createElement(src_App, null), document.getElementById('root'));
 registerWebWorker();
 
 /***/ })

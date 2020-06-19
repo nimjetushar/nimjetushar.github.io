@@ -1,49 +1,8 @@
 {
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "no-console": 0
-    },
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
-    },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+        "@fourjs/eslint-config-tn",
+        "@fourjs/eslint-config-tn/react",
+        "@fourjs/eslint-config-tn/jest"
     ],
-    "settings": {
-        "react": {
-            "createClass": "createReactClass",
-            "pragma": "React",
-            "version": "detect",
-            "flowVersion": "0.53"
-        },
-        "propWrapperFunctions": [
-            "forbidExtraProps",
-            {
-                "property": "freeze",
-                "object": "Object"
-            },
-            {
-                "property": "myFavoriteWrapper"
-            }
-        ],
-        "linkComponents": [
-            "Hyperlink",
-            {
-                "name": "Link",
-                "linkAttribute": "to"
-            }
-        ]
-    }
+    "parser": "babel-eslint"
 }

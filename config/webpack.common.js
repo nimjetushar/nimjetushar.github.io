@@ -1,4 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'),
+/* eslint-disable sort-keys */
+const path = require('path'),
+  HtmlWebpackPlugin = require('html-webpack-plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function fileLoaderOpt(type) {
@@ -6,7 +8,7 @@ function fileLoaderOpt(type) {
     name: '[name].[ext]',
     publicPath: type,
     outputPath: type
-  }
+  };
 }
 
 module.exports = mode => {
@@ -23,10 +25,11 @@ module.exports = mode => {
 
     module: {
       rules: [{
-        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        options: {
+          configFile: path.resolve('babel.config.js')
         }
       },
       {
@@ -59,7 +62,7 @@ module.exports = mode => {
         use: [
           {
             loader: 'file-loader',
-            options: fileLoaderOpt('font'),
+            options: fileLoaderOpt('font')
           }
         ]
       },
@@ -68,7 +71,7 @@ module.exports = mode => {
         use: [
           {
             loader: 'file-loader',
-            options: fileLoaderOpt('image'),
+            options: fileLoaderOpt('image')
           }
         ]
       }]
@@ -92,5 +95,5 @@ module.exports = mode => {
       },
       mergeDuplicateChunks: true
     }
-  }
+  };
 };
