@@ -8,7 +8,6 @@ const isLocalhost = Boolean(
     )
 );
 
-
 export default function registerWebWorker() {
     if (!isLocalhost && 'serviceWorker' in navigator) {
         window.addEventListener('load', () => {

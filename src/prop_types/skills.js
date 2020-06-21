@@ -2,15 +2,15 @@ import PropTypes from 'prop-types';
 import { bulletPoints } from './common';
 
 export const skillDetails = PropTypes.shape({
-  name: PropTypes.string.isRequired,
+  keywords: bulletPoints,
   level: PropTypes.string.isRequired,
-  keywords: bulletPoints
+  name: PropTypes.string.isRequired
 });
 export const skillDetailsSet = PropTypes.arrayOf(skillDetails);
 
 export const skills = PropTypes.shape({
-  title: PropTypes.string.isRequired,
   description: bulletPoints,
-  skillDetails: skillDetailsSet
+  skillDetails: skillDetailsSet,
+  title: PropTypes.string.isRequired
 });
 export const skillsSet = PropTypes.arrayOf(skills).isRequired;

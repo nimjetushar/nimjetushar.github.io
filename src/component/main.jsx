@@ -1,19 +1,18 @@
 import React, { Component, Fragment } from 'react';
-
+import { NavigationConfig, getDataUrl } from '../config/app.config.js';
 import Header from './header';
 import Navigation from './navigation';
 import Banner from './banner';
 import ScrollDown from './scrolldown';
 import Section from './section';
 import Loading from './loading';
-import { NavigationConfig, getDataUrl } from '../config/app.config.js';
 
 class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      resume: false,
-      navigation: NavigationConfig
+      navigation: NavigationConfig,
+      resume: false
     };
   }
 

@@ -20,6 +20,7 @@ module.exports = mode => {
     },
 
     resolve: {
+      modules: ['node_modules'],
       extensions: ['.js', '.jsx']
     },
 

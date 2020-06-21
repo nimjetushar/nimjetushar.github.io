@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { profiles } from '../prop_types';
 
 function mapIcon(socialMedia) {
@@ -40,8 +39,8 @@ class SocialMedia extends Component {
 }
 
 SocialMedia.propTypes = {
-  ulClass: PropTypes.string.isRequired,
-  profiles
+  profiles,
+  ulClass: PropTypes.string.isRequired
 };
 
 export default SocialMedia;

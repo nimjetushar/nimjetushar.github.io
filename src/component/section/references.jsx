@@ -22,8 +22,8 @@ class References extends Component {
     render() {
         const carouselConfig = {
             autoplay: true,
-            wrapAround: true,
-            withoutControls: true
+            withoutControls: true,
+            wrapAround: true
         };
 
         return (

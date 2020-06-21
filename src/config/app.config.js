@@ -1,10 +1,10 @@
 export const NavigationConfig = {
-  home: 'Home',
   about: 'About',
-  work: 'Work',
   education: 'Education',
+  home: 'Home',
   skill: 'Skills',
-  testimonials: 'testimonials'
+  testimonials: 'testimonials',
+  work: 'Work'
 };
 
 export function getDataUrl() {
