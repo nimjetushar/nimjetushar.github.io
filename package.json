@@ -4,7 +4,7 @@
   "author": "Tushar Nimje",
   "license": "apache-2.0",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.13.1",
+    "@fortawesome/fontawesome-free": "5.15.2",
     "nuka-carousel": "4.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
