@@ -8,7 +8,7 @@
     "nuka-carousel": "4.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "whatwg-fetch": "3.0.0",
+    "whatwg-fetch": "3.6.2",
     "regenerator-runtime": "0.13.5",
     "core-js": "3.6.5"
   },
