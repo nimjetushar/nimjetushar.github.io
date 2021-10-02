@@ -9,8 +9,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "whatwg-fetch": "3.0.0",
-    "regenerator-runtime": "0.13.9",
-    "core-js": "3.6.5"
+    "core-js": "3.16.0",
+    "regenerator-runtime": "0.13.9"
   },
   "devDependencies": {
     "@babel/core": "7.10.4",
