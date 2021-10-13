@@ -1,10 +1,10 @@
 export interface IResumeObj {
   basics: IBasics;
-  work?: IWorkEntity[] | null;
-  education?: IEducationEntity[] | null;
-  skills?: ISkillsEntity[] | null;
-  languages?: ILanguagesEntity[] | null;
-  references?: IReferencesEntity[] | null;
+  work?: IWorkEntity[];
+  education?: IEducationEntity[];
+  skills?: ISkillsEntity[];
+  languages?: ILanguagesEntity[];
+  references?: IReferencesEntity[];
 }
 
 export interface IBasics {
@@ -14,10 +14,10 @@ export interface IBasics {
   email: string;
   phone: string;
   website: string;
-  summary?: string[] | null;
+  summary: string[];
   resumeUrl: string;
-  location: Location;
-  profiles?: IProfilesEntity[] | null;
+  location: ILocation;
+  profiles: IProfilesEntity[];
 }
 
 export interface ILocation {
@@ -41,7 +41,7 @@ export interface IWorkEntity {
   startDate: string;
   endDate: string;
   summary: string;
-  highlights?: string[] | null;
+  highlights?: string[];
 }
 
 export interface IEducationEntity {
@@ -52,19 +52,19 @@ export interface IEducationEntity {
   endDate: string;
   gpa: string;
   summary: string;
-  courses?: (string | null)[] | null;
+  courses?: string[];
 }
 
 export interface ISkillsEntity {
   title: string;
-  description?: null[] | null;
-  skillDetails?: ISkillDetailsEntity[] | null;
+  description?: null[];
+  skillDetails?: ISkillDetailsEntity[];
 }
 
 export interface ISkillDetailsEntity {
   name: string;
   level: string;
-  keywords?: string[] | null;
+  keywords?: string[];
 }
 
 export interface ILanguagesEntity {

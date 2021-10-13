@@ -1,15 +1,16 @@
 import { Component, Fragment } from "react";
-import { NavigationConfig, getDataUrl } from "../config/app.config";
-import Header from "./header";
-import Navigation from "./navigation";
-import Banner from "./banner";
-import ScrollDown from "./scrolldown";
-import Section from "./section";
-import Loading from "./loading";
+import { resume } from "../data/resume";
+import { NavigationConfig } from "../config/app.constant";
+import { IResumeObj } from "../interface/resume.interface";
+import { Header } from "./header.component";
+import { Navigation } from "./navigation/navigation.component";
+import { Banner } from "./banner.component";
+// import ScrollDown from "./scrolldown";
+// import Section from "./section";
 
 interface IMainComponentProps {}
 
-interface IMainComponentStats {
+interface IMainComponentState {
   navigation: {
     about: string;
     education: string;
@@ -18,26 +19,16 @@ interface IMainComponentStats {
     testimonials: string;
     work: string;
   };
-  resume: boolean;
+  resume: IResumeObj;
 }
 
-class Main extends Component<IMainComponentProps, IMainComponentStats> {
+export class Main extends Component<IMainComponentProps, IMainComponentState> {
   constructor(props: IMainComponentProps) {
     super(props);
     this.state = {
       navigation: NavigationConfig,
-      resume: false,
+      resume,
     };
-  }
-
-  componentDidMount() {
-    getDataUrl()
-      .then((res) => {
-        this.setState({ resume: res });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
   }
 
   onLoad() {
@@ -46,9 +37,9 @@ class Main extends Component<IMainComponentProps, IMainComponentStats> {
         <Header>
           <Navigation navigation={this.state.navigation} />
           <Banner basics={this.state.resume.basics} />
-          <ScrollDown />
+          {/*<ScrollDown /> */}
         </Header>
-        <Section
+        {/* <Section
           basics={this.state.resume.basics}
           work={this.state.resume.work}
           education={this.state.resume.education}
@@ -56,14 +47,12 @@ class Main extends Component<IMainComponentProps, IMainComponentStats> {
           languages={this.state.resume.languages}
           portfolio={this.state.resume.projects}
           references={this.state.resume.references}
-        />
+        /> */}
       </Fragment>
     );
   }
 
   render() {
-    return this.state.resume ? this.onLoad() : <Loading />;
+    return this.state.resume ? this.onLoad() : "";
   }
 }
-
-export default Main;
