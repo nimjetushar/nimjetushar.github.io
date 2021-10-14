@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { SocialMedia } from "./socialMedia.component";
-import { IBasics } from "../interface/resume.interface";
+import { IBasicsEntity } from "../interface/resume.interface";
 
 interface IBannerComponentProps {
-  basics: IBasics;
+  basics: IBasicsEntity;
 }
 
 export const Banner: FC<IBannerComponentProps> = (props) => {

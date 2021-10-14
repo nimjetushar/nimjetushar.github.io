@@ -1,5 +1,5 @@
-export interface IResumeObj {
-  basics: IBasics;
+export interface IResumeEntity {
+  basics: IBasicsEntity;
   work?: IWorkEntity[];
   education?: IEducationEntity[];
   skills?: ISkillsEntity[];
@@ -7,7 +7,7 @@ export interface IResumeObj {
   references?: IReferencesEntity[];
 }
 
-export interface IBasics {
+export interface IBasicsEntity {
   name: string;
   label: string;
   picture: string;
@@ -16,11 +16,11 @@ export interface IBasics {
   website: string;
   summary: string[];
   resumeUrl: string;
-  location: ILocation;
+  location: ILocationEntity;
   profiles: IProfilesEntity[];
 }
 
-export interface ILocation {
+export interface ILocationEntity {
   address: string;
   postalCode: string;
   city: string;

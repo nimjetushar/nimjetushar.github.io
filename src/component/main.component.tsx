@@ -1,11 +1,11 @@
 import { Component, Fragment } from "react";
 import { resume } from "../data/resume";
 import { NavigationConfig } from "../config/app.constant";
-import { IResumeObj } from "../interface/resume.interface";
+import { IResumeEntity } from "../interface/resume.interface";
 import { Header } from "./header.component";
 import { Navigation } from "./navigation/navigation.component";
 import { Banner } from "./banner.component";
-// import ScrollDown from "./scrolldown";
+import { ScrollDown } from "./scrollDown.component";
 // import Section from "./section";
 
 interface IMainComponentProps {}
@@ -19,7 +19,7 @@ interface IMainComponentState {
     testimonials: string;
     work: string;
   };
-  resume: IResumeObj;
+  resume: IResumeEntity;
 }
 
 export class Main extends Component<IMainComponentProps, IMainComponentState> {
@@ -37,7 +37,7 @@ export class Main extends Component<IMainComponentProps, IMainComponentState> {
         <Header>
           <Navigation navigation={this.state.navigation} />
           <Banner basics={this.state.resume.basics} />
-          {/*<ScrollDown /> */}
+          <ScrollDown />
         </Header>
         {/* <Section
           basics={this.state.resume.basics}
