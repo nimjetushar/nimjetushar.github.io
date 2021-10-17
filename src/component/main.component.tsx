@@ -6,7 +6,7 @@ import { Header } from "./header.component";
 import { Navigation } from "./navigation/navigation.component";
 import { Banner } from "./banner.component";
 import { ScrollDown } from "./scrollDown.component";
-// import Section from "./section";
+import { Section } from "./section/section.component";
 
 interface IMainComponentProps {}
 
@@ -39,15 +39,14 @@ export class Main extends Component<IMainComponentProps, IMainComponentState> {
           <Banner basics={this.state.resume.basics} />
           <ScrollDown />
         </Header>
-        {/* <Section
+        <Section
           basics={this.state.resume.basics}
           work={this.state.resume.work}
           education={this.state.resume.education}
           skills={this.state.resume.skills}
           languages={this.state.resume.languages}
-          portfolio={this.state.resume.projects}
           references={this.state.resume.references}
-        /> */}
+        />
       </Fragment>
     );
   }

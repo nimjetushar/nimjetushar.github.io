@@ -1,10 +1,10 @@
 export interface IResumeEntity {
   basics: IBasicsEntity;
-  work?: IWorkEntity[];
-  education?: IEducationEntity[];
-  skills?: ISkillsEntity[];
-  languages?: ILanguagesEntity[];
-  references?: IReferencesEntity[];
+  work: IWorkEntity[];
+  education: IEducationEntity[];
+  skills: ISkillsEntity[];
+  languages: ILanguagesEntity[];
+  references: IReferencesEntity[];
 }
 
 export interface IBasicsEntity {
@@ -41,7 +41,7 @@ export interface IWorkEntity {
   startDate: string;
   endDate: string;
   summary: string;
-  highlights?: string[];
+  highlights: string[];
 }
 
 export interface IEducationEntity {
