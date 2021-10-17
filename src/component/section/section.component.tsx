@@ -10,10 +10,10 @@ import {
 
 import { About } from "./about.component";
 import { Work } from "./work.component";
-// import Education from "./education";
-// import Footer from "./footer";
-// import Skills from "./skills";
-// import References from "./references";
+import { Education } from "./education.component";
+import { Skills } from "./skills.component";
+import { References } from "./references.component";
+import { Footer } from "./footer.component";
 
 interface ISectionComponentProps {
   basics: IBasicsEntity;
@@ -25,19 +25,14 @@ interface ISectionComponentProps {
 }
 
 export const Section: FC<ISectionComponentProps> = (props) => {
-  const skillsContent = {
-    skills: props.skills,
-    languages: props.languages,
-  };
-
   return (
     <Fragment>
       <About content={props.basics} />
       <Work content={props.work} />
-      {/* <Education content={props.education} />
-      <Skills content={skillsContent} />
+      <Education content={props.education} />
+      <Skills skills={props.skills} />
       <References content={props.references} />
-      <Footer content={props.basics.profiles} /> */}
+      <Footer content={props.basics.profiles} />
     </Fragment>
   );
 };

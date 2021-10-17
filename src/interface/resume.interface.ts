@@ -57,8 +57,8 @@ export interface IEducationEntity {
 
 export interface ISkillsEntity {
   title: string;
-  description?: null[];
-  skillDetails?: ISkillDetailsEntity[];
+  description: string[];
+  skillDetails: ISkillDetailsEntity[];
 }
 
 export interface ISkillDetailsEntity {

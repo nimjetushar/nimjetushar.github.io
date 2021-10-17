@@ -5,10 +5,10 @@ import { IWorkEntity } from "../../interface/resume.interface";
 interface IWorkEntryComponentProps {
   index: number;
   total: number;
-  entry: IWorkEntity;
+  detail: IWorkEntity;
 }
 
-const WorkEntry: FC<IWorkEntryComponentProps> = (props) => {
+const WorkDetail: FC<IWorkEntryComponentProps> = (props) => {
   const index = props.index + 1;
   const divider = index === props.total ? <br /> : <hr />;
 
@@ -17,23 +17,23 @@ const WorkEntry: FC<IWorkEntryComponentProps> = (props) => {
       <div className="twelve columns">
         <h3>
           <a
-            href={props.entry.website}
+            href={props.detail.website}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {props.entry.company}
+            {props.detail.company}
           </a>
         </h3>
         <p className="info">
-          {props.entry.position}
+          {props.detail.position}
           <span> &bull; </span>
-          <span className="info-summary">{props.entry.summary}</span>
+          <span className="info-summary">{props.detail.summary}</span>
           <span> &bull; </span>
           <em className="date">
-            {props.entry.startDate} - {props.entry.endDate}
+            {props.detail.startDate} - {props.detail.endDate}
           </em>
         </p>
-        <BulletPoints points={props.entry.highlights} />
+        <BulletPoints points={props.detail.highlights} />
       </div>
       {divider}
     </div>
@@ -55,13 +55,13 @@ export const Work: FC<IWorkComponentProps> = (props) => {
           </h1>
         </div>
         <div className="ten columns main-col">
-          {props.content.map((entry, index) => {
+          {props.content.map((detail, index) => {
             return (
-              <WorkEntry
+              <WorkDetail
                 key={index}
                 index={index}
                 total={numEntries}
-                entry={entry}
+                detail={detail}
               />
             );
           })}
