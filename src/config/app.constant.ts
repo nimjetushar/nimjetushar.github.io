@@ -1,8 +1,8 @@
 export const NavigationConfig = {
-  about: "About",
-  education: "Education",
   home: "Home",
+  about: "About",
+  work: "Work",
+  education: "Education",
   skill: "Skills",
   testimonials: "testimonials",
-  work: "Work",
 };
