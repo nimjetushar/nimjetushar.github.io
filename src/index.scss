@@ -1,7 +1,11 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "./styles/default.scss";
 @import "./styles/layout.scss";
 @import "./styles/media-queries.scss";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -26,8 +30,4 @@ footer .stackshare-logo {
     background-size: contain;
     opacity: 1;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
