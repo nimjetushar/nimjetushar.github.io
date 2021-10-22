@@ -17,8 +17,7 @@ function mapIcon(socialMedia: string) {
     case "npm":
       return <i className="fab fa-npm" />;
     default:
-      const media = socialMedia.replace(/ /g, "-");
-      return <i className={`fab fa-${media}`} />;
+      return <i className={`fab fa-${socialMedia.replace(/ /g, "-")}`} />;
   }
 }
 
