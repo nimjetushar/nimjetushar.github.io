@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const currPath = "./build";
-const newPath = "./doc";
+const newPath = "./docs";
 
 fs.rename(currPath, newPath, function (err) {
   if (err) {

@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npx rimraf doc && npm run build && node script.js"
+    "deploy": "npx rimraf docs && npm run build && node script.js"
   },
   "eslintConfig": {
     "extends": [
