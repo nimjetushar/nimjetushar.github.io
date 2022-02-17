@@ -12,7 +12,7 @@ function App() {
       if (loaderEle) {
         loaderEle.style.display = "none";
       }
-    }, 1000 * 5);
+    }, 1000 * 3);
   }, []);
 
   return <div className="application-container">{loading ? "" : <Main />}</div>;
