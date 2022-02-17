@@ -4,7 +4,6 @@
 <br/>
 [![Build Status](https://semaphoreci.com/api/v1/nimjetushar/nimjetushar-github-io/branches/master/shields_badge.svg)](https://semaphoreci.com/nimjetushar/nimjetushar-github-io)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ab1ac0cd0d204f989c95928b39bed6cf)](https://www.codacy.com/app/tushar/nimjetushar.github.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nimjetushar/nimjetushar.github.io&amp;utm_campaign=Badge_Grade)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=nimjetushar/nimjetushar.github.io)](https://dependabot.com)
 <br/>
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/nimjetushar/nimjetushar-github-io)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/nimjetushar/nimjetushar.github.io.svg)
