@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import "./App.scss";
-import { Main } from "./component/main.component";
+import React, { useEffect, useState } from 'react';
+import './App.scss';
+import { Main } from './component/main.component';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -8,14 +8,16 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      const loaderEle = document.getElementById("boot-loader");
+      const loaderEle = document.getElementById('boot-loader');
       if (loaderEle) {
-        loaderEle.style.display = "none";
+        loaderEle.style.display = 'none';
       }
     }, 1000 * 3);
   }, []);
 
-  return <div className="application-container">{loading ? "" : <Main />}</div>;
+  return (
+    <div className="application-container">{loading ? '' : <Main />}</div>
+  );
 }
 
 export default App;

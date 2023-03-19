@@ -1,52 +1,57 @@
 {
   "name": "nimjetushar.github.io",
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "nx exec -- vite",
+    "serve": "nx exec -- vite",
+    "build": "nx exec -- vite build",
+    "test": "nx exec -- vitest"
+  },
+  "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.13.1",
-    "@testing-library/jest-dom": "5.14.1",
-    "@testing-library/react": "11.2.7",
-    "@testing-library/user-event": "12.8.3",
-    "@types/jest": "26.0.24",
-    "@types/node": "12.20.19",
-    "@types/react": "17.0.18",
-    "@types/react-dom": "17.0.9",
-    "node-sass": "7.0.1",
-    "nuka-carousel": "4.8.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "5.0.0",
-    "typescript": "4.3.5",
-    "web-vitals": "1.1.2"
+    "@fortawesome/fontawesome-free": "6.3.0",
+    "nuka-carousel": "5.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "1.59.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.1.0",
-    "@typescript-eslint/parser": "5.1.0",
-    "eslint": "7.11.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "npx rimraf docs && npm run build && node script.js",
-    "lint": "eslint src/ --ext=.ts,.tsx,.js"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@nrwl/eslint-plugin-nx": "15.8.6",
+    "@nrwl/js": "15.8.6",
+    "@nrwl/linter": "15.8.6",
+    "@nrwl/nx-cloud": "latest",
+    "@nrwl/react": "15.8.6",
+    "@nrwl/vite": "15.8.6",
+    "@nrwl/workspace": "15.8.6",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@types/node": "18.14.2",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "5.36.1",
+    "@typescript-eslint/parser": "5.36.1",
+    "@vitejs/plugin-react": "3.1.0",
+    "@vitest/coverage-c8": "0.25.8",
+    "@vitest/ui": "0.25.8",
+    "cypress": "12.2.0",
+    "eslint": "8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest-watch-typeahead": "2.2.2",
+    "jsdom": "20.0.3",
+    "nx": "15.8.6",
+    "prettier": "2.6.2",
+    "react-test-renderer": "18.2.0",
+    "typescript": "4.9.5",
+    "vite": "4.1.4",
+    "vite-plugin-eslint": "1.8.1",
+    "vite-tsconfig-paths": "4.0.2",
+    "vitest": "0.25.8",
+    "web-vitals": "3.3.0"
   }
 }
