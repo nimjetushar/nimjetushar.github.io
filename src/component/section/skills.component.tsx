@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import React, { useState } from "react";
 import {
   ISkillsEntity,
   ISkillDetailsEntity,
@@ -8,7 +8,7 @@ interface ISkillDetailComponentProps {
   detail: ISkillDetailsEntity;
 }
 
-const SkillDetail: FC<ISkillDetailComponentProps> = (props) => {
+const SkillDetail = (props: ISkillDetailComponentProps) => {
   const [style, setStyle] = useState({
     background: "#313131",
   });
@@ -44,7 +44,7 @@ interface ISkillComponentProps {
   summary: string[];
 }
 
-const Skill: FC<ISkillComponentProps> = (props) => {
+const Skill = (props: ISkillComponentProps) => {
   const summary = props.summary.map((point, index) => {
     return (
       <p key={index} className="skill-summary">
@@ -67,7 +67,7 @@ const Skill: FC<ISkillComponentProps> = (props) => {
   );
 };
 
-export const Skills: FC<{ skills: ISkillsEntity[] }> = (props) => {
+export const Skills = (props: { skills: ISkillsEntity[] }) => {
   return (
     <section id="skill">
       <div className="row skill">

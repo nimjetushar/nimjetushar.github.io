@@ -1,12 +1,12 @@
-const fs = require("fs");
+const fs = require('fs-extra');
 
-const currPath = "./build";
-const newPath = "./docs";
+const currPath = './dist/nimjetushar.github.io';
+const newPath = './docs';
 
-fs.rename(currPath, newPath, function (err) {
+fs.copy(currPath, newPath, function (err) {
   if (err) {
     console.log(err);
   } else {
-    console.log("Successfully renamed the directory.");
+    console.log('Successfully copied the directory.');
   }
 });

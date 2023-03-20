@@ -1,8 +1,8 @@
-import { FC } from "react";
+import React from "react";
 import { IProfilesEntity } from "../../interface/resume.interface";
 import { SocialMedia } from "../socialMedia.component";
 
-export const Footer: FC<{ content: IProfilesEntity[] }> = (props) => {
+export const Footer = (props: { content: IProfilesEntity[] }) => {
   return (
     <footer>
       <div className="row">

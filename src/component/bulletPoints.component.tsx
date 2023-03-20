@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-export const BulletPoints: FC<{ points: string[] }> = (props) => {
+export const BulletPoints = (props: { points: string[] }) => {
   return (
     <div>
       {props.points.map((point, index) => {

@@ -1,8 +1,8 @@
-import { FC } from "react";
+import React from "react";
 import Carousel from "nuka-carousel";
 import { IReferencesEntity } from "../../interface/resume.interface";
 
-const Reference: FC<{ reference: IReferencesEntity }> = (props) => {
+const Reference = (props:{ reference: IReferencesEntity }) => {
   return (
     <div>
       <blockquote>
@@ -13,7 +13,7 @@ const Reference: FC<{ reference: IReferencesEntity }> = (props) => {
   );
 };
 
-export const References: FC<{ content: IReferencesEntity[] }> = (props) => {
+export const References = (props: { content: IReferencesEntity[] }) => {
   const carouselConfig = {
     autoplay: true,
     withoutControls: true,

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { resume as resumeData } from '../data/resume';
-import { NavigationConfig } from '../config/app.constant';
+import React from 'react';
+import { resume } from '../data/resume';
+import { NavigationConfig as navigation } from '../config/app.constant';
 import { Header } from './header.component';
 import { Navigation } from './navigation/navigation.component';
 import { Banner } from './banner.component';
@@ -8,9 +8,6 @@ import { ScrollDown } from './scrollDown.component';
 import { Section } from './section/section.component';
 
 export function Main() {
-  const [navigation] = useState(NavigationConfig);
-  const [resume] = useState(resumeData);
-
   return resume ? (
     <>
       <Header>

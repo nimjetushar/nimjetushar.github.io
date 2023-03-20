@@ -1,11 +1,11 @@
-import { FC } from "react";
+import React from "react";
 import { Link } from "./link.component";
 
 interface INavigationComponentProps {
   navigation: { [key: string]: string };
 }
 
-export const Navigation: FC<INavigationComponentProps> = (props) => {
+export const Navigation = (props: INavigationComponentProps) => {
   function navContent(navigation: { [key: string]: string }) {
     const keys = Object.keys(navigation);
     const links = keys.map((navigationLink, index) => {

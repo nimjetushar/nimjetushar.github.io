@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 import { SocialMedia } from "./socialMedia.component";
 import { IBasicsEntity } from "../interface/resume.interface";
 
@@ -6,7 +6,7 @@ interface IBannerComponentProps {
   basics: IBasicsEntity;
 }
 
-export const Banner: FC<IBannerComponentProps> = (props) => {
+export const Banner = (props: IBannerComponentProps) => {
   return (
     <div className="row banner">
       <div className="banner-text">

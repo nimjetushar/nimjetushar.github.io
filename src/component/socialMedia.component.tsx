@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { IProfilesEntity } from "../interface/resume.interface";
 
 interface ISocialMediaComponentProps {
@@ -21,7 +21,7 @@ function mapIcon(socialMedia: string) {
   }
 }
 
-export const SocialMedia: FC<ISocialMediaComponentProps> = (props) => {
+export const SocialMedia = (props: ISocialMediaComponentProps) => {
   return (
     <div>
       <ul className={props.ulClass}>

@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { BulletPoints } from "../bulletPoints.component";
-import { IWorkEntity } from "../../interface/resume.interface";
+import React from 'react';
+import { BulletPoints } from '../bulletPoints.component';
+import { IWorkEntity } from '../../interface/resume.interface';
 
 interface IWorkEntryComponentProps {
   index: number;
@@ -8,7 +8,7 @@ interface IWorkEntryComponentProps {
   detail: IWorkEntity;
 }
 
-const WorkDetail: FC<IWorkEntryComponentProps> = (props) => {
+const WorkDetail = (props: IWorkEntryComponentProps) => {
   const index = props.index + 1;
   const divider = index === props.total ? <br /> : <hr />;
 
@@ -44,7 +44,7 @@ interface IWorkComponentProps {
   content: IWorkEntity[];
 }
 
-export const Work: FC<IWorkComponentProps> = (props) => {
+export const Work = (props: IWorkComponentProps) => {
   const numEntries = props.content.length;
   return (
     <section id="work">

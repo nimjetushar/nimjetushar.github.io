@@ -1,7 +1,7 @@
-import { FC } from "react";
-import { IEducationEntity } from "../../interface/resume.interface";
+import React from 'react';
+import { IEducationEntity } from '../../interface/resume.interface';
 
-const EducationDetail: FC<{ detail: IEducationEntity }> = (props) => {
+const EducationDetail = (props: { detail: IEducationEntity }) => {
   return (
     <div className="row item">
       <div className="twelve columns">
@@ -20,12 +20,11 @@ const EducationDetail: FC<{ detail: IEducationEntity }> = (props) => {
   );
 };
 
-
 interface IEducationComponentProps {
   content: IEducationEntity[];
 }
 
-export const Education: FC<IEducationComponentProps> = (props) => {
+export const Education = (props: IEducationComponentProps) => {
   return (
     <section id="education">
       <div className="row education">

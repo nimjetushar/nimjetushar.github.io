@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react";
+import React from "react";
 import {
   IBasicsEntity,
   IEducationEntity,
@@ -24,15 +24,15 @@ interface ISectionComponentProps {
   languages: ILanguagesEntity[];
 }
 
-export const Section: FC<ISectionComponentProps> = (props) => {
+export const Section = (props: ISectionComponentProps) => {
   return (
-    <Fragment>
+    <>
       <About content={props.basics} />
       <Work content={props.work} />
       <Education content={props.education} />
       <Skills skills={props.skills} />
       <References content={props.references} />
       <Footer content={props.basics.profiles} />
-    </Fragment>
+    </>
   );
 };

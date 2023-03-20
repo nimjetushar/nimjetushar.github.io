@@ -1,15 +1,11 @@
-import { FC } from "react";
-import { IBasicsEntity } from "../../interface/resume.interface";
+import React from 'react';
+import { IBasicsEntity } from '../../interface/resume.interface';
 
 interface IAboutComponentProps {
   content: IBasicsEntity;
 }
 
-export const About: FC<IAboutComponentProps> = (props) => {
-  const summary = props.content.summary.map((content, index) => (
-    <p key={index}>{content}</p>
-  ));
-
+export const About = (props: IAboutComponentProps) => {
   return (
     <section id="about">
       <div className="row">
@@ -22,7 +18,9 @@ export const About: FC<IAboutComponentProps> = (props) => {
         </div>
         <div className="ten columns main-col">
           <h2>About Me</h2>
-          {summary}
+          {props.content.summary.map((content, index) => (
+            <p key={index}>{content}</p>
+          ))}
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact Details</h2>
