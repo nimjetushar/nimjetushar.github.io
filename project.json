@@ -1,7 +1,72 @@
 {
   "name": "nimjetushar.github.io",
   "$schema": "node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "src",
+  "sourceRoot": "./src",
   "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/nimjetushar.github.io"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "nimjetushar.github.io:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "nimjetushar.github.io:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "nimjetushar.github.io:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nrwl/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "nimjetushar.github.io:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "nimjetushar.github.io:build:development"
+        },
+        "production": {
+          "buildTarget": "nimjetushar.github.io:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nrwl/vite:test",
+      "outputs": ["coverage/nimjetushar.github.io"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "coverage/nimjetushar.github.io"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["./src/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
   "tags": []
 }
