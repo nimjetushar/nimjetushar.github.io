@@ -27,7 +27,7 @@ export const Header = (props: IHeaderComponentProps) => {
   };
 
   return (
-    <header id="home" style={{ height: window.innerHeight }}>
+    <header id="home" style={{ height: windowAttr.height }}>
       {props.children}
     </header>
   );
