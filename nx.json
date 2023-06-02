@@ -3,9 +3,10 @@
   "npmScope": "nimjetushar.github.io",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "ODJmZjBmNDYtYjU0NS00YTRkLTg2ZDItZDcyNDU5YTUxNjVhfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -39,7 +40,7 @@
     "sharedGlobals": []
   },
   "generators": {
-    "@nrwl/react": {
+    "@nx/react": {
       "application": {
         "style": "scss",
         "linter": "eslint",

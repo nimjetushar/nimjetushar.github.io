@@ -1,16 +1,14 @@
-import React from "react";
+import React from 'react';
 
-export const BulletPoints = (props: { points: string[] }) => {
+export const BulletPoints = ({ points }: { points: string[] }) => {
   return (
     <div>
-      {props.points.map((point, index) => {
-        return (
-          <p key={index} className="point">
-            <span className="bullet-point">&bull; </span>
-            {point}
-          </p>
-        );
-      })}
+      {points.map((point, index) => (
+        <p key={index} className="point">
+          <span className="bullet-point">&bull; </span>
+          {point}
+        </p>
+      ))}
     </div>
   );
 };

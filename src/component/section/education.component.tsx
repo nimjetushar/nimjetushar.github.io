@@ -1,18 +1,18 @@
 import React from 'react';
 import { IEducationEntity } from '../../interface/resume.interface';
 
-const EducationDetail = (props: { detail: IEducationEntity }) => {
+const EducationDetail = ({ detail }: { detail: IEducationEntity }) => {
   return (
     <div className="row item">
       <div className="twelve columns">
-        <h3>{props.detail.institution}</h3>
+        <h3>{detail.institution}</h3>
         <p className="info">
-          {props.detail.studyType} in {props.detail.area}
+          {detail.studyType} in {detail.area}
           <span> &bull; </span>
-          <span className="info-summary">{props.detail.summary}</span>
+          <span className="info-summary">{detail.summary}</span>
           <span> &bull; </span>
           <em className="date">
-            {props.detail.startDate} - {props.detail.endDate}
+            {detail.startDate} - {detail.endDate}
           </em>
         </p>
       </div>
@@ -24,7 +24,7 @@ interface IEducationComponentProps {
   content: IEducationEntity[];
 }
 
-export const Education = (props: IEducationComponentProps) => {
+export const Education = ({ content }: IEducationComponentProps) => {
   return (
     <section id="education">
       <div className="row education">
@@ -34,9 +34,9 @@ export const Education = (props: IEducationComponentProps) => {
           </h1>
         </div>
         <div className="ten columns main-col">
-          {props.content.map((item, index) => {
-            return <EducationDetail key={index} detail={item} />;
-          })}
+          {content.map((item, index) => (
+            <EducationDetail key={index} detail={item} />
+          ))}
         </div>
       </div>
     </section>

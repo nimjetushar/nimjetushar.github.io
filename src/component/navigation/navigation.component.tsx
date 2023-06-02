@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "./link.component";
+import React from 'react';
+import { Link } from './link.component';
 
 interface INavigationComponentProps {
   navigation: { [key: string]: string };
@@ -7,8 +7,7 @@ interface INavigationComponentProps {
 
 export const Navigation = (props: INavigationComponentProps) => {
   function navContent(navigation: { [key: string]: string }) {
-    const keys = Object.keys(navigation);
-    const links = keys.map((navigationLink, index) => {
+    const links = Object.keys(navigation).map((navigationLink, index) => {
       const navigationName = navigation[navigationLink];
       return <Link key={index} link={navigationLink} name={navigationName} />;
     });

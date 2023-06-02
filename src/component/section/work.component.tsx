@@ -8,32 +8,28 @@ interface IWorkEntryComponentProps {
   detail: IWorkEntity;
 }
 
-const WorkDetail = (props: IWorkEntryComponentProps) => {
-  const index = props.index + 1;
-  const divider = index === props.total ? <br /> : <hr />;
+const WorkDetail = ({ detail, index, total }: IWorkEntryComponentProps) => {
+  const idx = index + 1;
+  const divider = idx === total ? <br /> : <hr />;
 
   return (
     <div className="row item">
       <div className="twelve columns">
         <h3>
-          <a
-            href={props.detail.website}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {props.detail.company}
+          <a href={detail.website} target="_blank" rel="noopener noreferrer">
+            {detail.company}
           </a>
         </h3>
         <p className="info">
-          {props.detail.position}
+          {detail.position}
           <span> &bull; </span>
-          <span className="info-summary">{props.detail.summary}</span>
+          <span className="info-summary">{detail.summary}</span>
           <span> &bull; </span>
           <em className="date">
-            {props.detail.startDate} - {props.detail.endDate}
+            {detail.startDate} - {detail.endDate}
           </em>
         </p>
-        <BulletPoints points={props.detail.highlights} />
+        <BulletPoints points={detail.highlights} />
       </div>
       {divider}
     </div>
@@ -44,8 +40,8 @@ interface IWorkComponentProps {
   content: IWorkEntity[];
 }
 
-export const Work = (props: IWorkComponentProps) => {
-  const numEntries = props.content.length;
+export const Work = ({ content }: IWorkComponentProps) => {
+  const numEntries = content.length;
   return (
     <section id="work">
       <div className="row work">
@@ -55,16 +51,14 @@ export const Work = (props: IWorkComponentProps) => {
           </h1>
         </div>
         <div className="ten columns main-col">
-          {props.content.map((detail, index) => {
-            return (
-              <WorkDetail
-                key={index}
-                index={index}
-                total={numEntries}
-                detail={detail}
-              />
-            );
-          })}
+          {content.map((detail, index) => (
+            <WorkDetail
+              key={index}
+              index={index}
+              total={numEntries}
+              detail={detail}
+            />
+          ))}
         </div>
       </div>
     </section>

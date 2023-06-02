@@ -1,5 +1,5 @@
-import React from "react";
-import { IProfilesEntity } from "../interface/resume.interface";
+import React from 'react';
+import { IProfilesEntity } from '../interface/resume.interface';
 
 interface ISocialMediaComponentProps {
   profiles: IProfilesEntity[];
@@ -8,24 +8,27 @@ interface ISocialMediaComponentProps {
 
 function mapIcon(socialMedia: string) {
   switch (socialMedia) {
-    case "email":
+    case 'email':
       return <i className="fas fa-envelope" />;
-    case "stackshare":
+    case 'stackshare':
       return <i className="stackshare-logo" />;
-    case "hackerrank":
+    case 'hackerrank':
       return <i className="fab fa-hackerrank" />;
-    case "npm":
+    case 'npm':
       return <i className="fab fa-npm" />;
     default:
-      return <i className={`fab fa-${socialMedia.replace(/ /g, "-")}`} />;
+      return <i className={`fab fa-${socialMedia.replace(/ /g, '-')}`} />;
   }
 }
 
-export const SocialMedia = (props: ISocialMediaComponentProps) => {
+export const SocialMedia = ({
+  profiles,
+  ulClass,
+}: ISocialMediaComponentProps) => {
   return (
     <div>
-      <ul className={props.ulClass}>
-        {props.profiles.map((profile, index) => {
+      <ul className={ulClass}>
+        {profiles.map((profile, index) => {
           const icon = mapIcon(profile.network.toLowerCase());
           return (
             <li key={index}>

@@ -5,41 +5,41 @@ interface IAboutComponentProps {
   content: IBasicsEntity;
 }
 
-export const About = (props: IAboutComponentProps) => {
+export const About = ({ content }: IAboutComponentProps) => {
   return (
     <section id="about">
       <div className="row">
         <div className="two columns">
           <img
             className="profile-pic"
-            src={props.content.picture}
-            alt={props.content.name}
+            src={content.picture}
+            alt={content.name}
           />
         </div>
         <div className="ten columns main-col">
           <h2>About Me</h2>
-          {props.content.summary.map((content, index) => (
+          {content.summary.map((content, index) => (
             <p key={index}>{content}</p>
           ))}
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact Details</h2>
               <p className="address">
-                <span>{props.content.location.city}</span>
-                {props.content.location.region && (
-                  <span>, {props.content.location.region}</span>
+                <span>{content.location.city}</span>
+                {content.location.region && (
+                  <span>, {content.location.region}</span>
                 )}
                 <br />
-                <span>{props.content.location.countryCode}</span>
+                <span>{content.location.countryCode}</span>
                 <br />
-                <a href={`mailto:${props.content.email}`}>
-                  <span>{props.content.email}</span>
+                <a href={`mailto:${content.email}`}>
+                  <span>{content.email}</span>
                 </a>
               </p>
             </div>
             <div className="columns download">
               <p>
-                <a className="button" href={props.content.resumeUrl}>
+                <a className="button" href={content.resumeUrl}>
                   <i className="fa fa-download" />
                   Download Resume
                 </a>

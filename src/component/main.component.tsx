@@ -15,14 +15,7 @@ export function Main() {
         <Banner basics={resume.basics} />
         <ScrollDown />
       </Header>
-      <Section
-        basics={resume.basics}
-        work={resume.work}
-        education={resume.education}
-        skills={resume.skills}
-        languages={resume.languages}
-        references={resume.references}
-      />
+      <Section {...resume} />
     </>
   ) : null;
 }

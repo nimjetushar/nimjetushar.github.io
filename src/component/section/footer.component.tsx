@@ -1,13 +1,13 @@
-import React from "react";
-import { IProfilesEntity } from "../../interface/resume.interface";
-import { SocialMedia } from "../socialMedia.component";
+import React from 'react';
+import { IProfilesEntity } from '../../interface/resume.interface';
+import { SocialMedia } from '../socialMedia.component';
 
-export const Footer = (props: { content: IProfilesEntity[] }) => {
+export const Footer = ({ content }: { content: IProfilesEntity[] }) => {
   return (
     <footer>
       <div className="row">
         <div className="twelve columns">
-          <SocialMedia ulClass="social-links" profiles={props.content} />
+          <SocialMedia ulClass="social-links" profiles={content} />
           <ul className="copyright">
             <li>
               This site is developed in React.js by&nbsp;
@@ -18,8 +18,8 @@ export const Footer = (props: { content: IProfilesEntity[] }) => {
                 rel="noopener noreferrer"
               >
                 Tushar Nimje
-              </a>{" "}
-              from the original design of Ceevee from&nbsp;{" "}
+              </a>{' '}
+              from the original design of Ceevee from&nbsp;{' '}
               <a
                 href="http://www.styleshout.com/"
                 title="Styleshout"

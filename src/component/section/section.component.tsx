@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   IBasicsEntity,
   IEducationEntity,
@@ -6,14 +6,14 @@ import {
   IReferencesEntity,
   ISkillsEntity,
   IWorkEntity,
-} from "../../interface/resume.interface";
+} from '../../interface/resume.interface';
 
-import { About } from "./about.component";
-import { Work } from "./work.component";
-import { Education } from "./education.component";
-import { Skills } from "./skills.component";
-import { References } from "./references.component";
-import { Footer } from "./footer.component";
+import { About } from './about.component';
+import { Work } from './work.component';
+import { Education } from './education.component';
+import { Skills } from './skills.component';
+import { References } from './references.component';
+import { Footer } from './footer.component';
 
 interface ISectionComponentProps {
   basics: IBasicsEntity;

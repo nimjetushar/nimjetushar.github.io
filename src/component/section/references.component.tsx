@@ -1,19 +1,19 @@
-import React from "react";
-import Carousel from "nuka-carousel";
-import { IReferencesEntity } from "../../interface/resume.interface";
+import React from 'react';
+import Carousel from 'nuka-carousel';
+import { IReferencesEntity } from '../../interface/resume.interface';
 
-const Reference = (props:{ reference: IReferencesEntity }) => {
+const Reference = (props: { reference: IReferencesEntity }) => {
   return (
     <div>
       <blockquote>
         <p>{props.reference.reference}</p>
-        {props.reference.name ? <cite>{props.reference.name}</cite> : ""}
+        {props.reference.name ? <cite>{props.reference.name}</cite> : ''}
       </blockquote>
     </div>
   );
 };
 
-export const References = (props: { content: IReferencesEntity[] }) => {
+export const References = ({ content }: { content: IReferencesEntity[] }) => {
   const carouselConfig = {
     autoplay: true,
     withoutControls: true,
@@ -36,9 +36,9 @@ export const References = (props: { content: IReferencesEntity[] }) => {
                 wrapAround={carouselConfig.wrapAround}
                 withoutControls={carouselConfig.withoutControls}
               >
-                {props.content.map((item, index) => {
-                  return <Reference key={index} reference={item} />;
-                })}
+                {content.map((item, index) => (
+                  <Reference key={index} reference={item} />
+                ))}
               </Carousel>
             </div>
           </div>
