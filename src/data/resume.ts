@@ -159,11 +159,6 @@ export const resume = {
           level: '50',
           keywords: ['language'],
         },
-        {
-          name: 'React Native',
-          level: '50',
-          keywords: ['programming', 'Mobile Development'],
-        },
       ],
     },
     {
