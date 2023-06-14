@@ -27,11 +27,6 @@ body {
   background: #fff;
 }
 
-.bullet-point {
-  font-size: 140%;
-  vertical-align: middle;
-}
-
 /* ------------------------------------------------------------------ */
 
 /* b. Header Styles
@@ -528,10 +523,11 @@ ul#nav {
 
   li {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     background: #ccc;
     height: 42px;
     border-radius: 3px;
+    list-style: none;
 
     em {
       font: 15px "opensans-bold", sans-serif;

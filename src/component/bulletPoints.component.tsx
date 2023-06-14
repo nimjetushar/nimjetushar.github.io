@@ -2,13 +2,16 @@ import React from 'react';
 
 export const BulletPoints = ({ points }: { points: string[] }) => {
   return (
-    <div>
+    <ul style={{ marginLeft: '14px' }}>
       {points.map((point, index) => (
-        <p key={index} className="point">
-          <span className="bullet-point">&bull; </span>
+        <li
+          style={{ listStyle: 'disc', lineHeight: '30px' }}
+          key={index}
+          className="point"
+        >
           {point}
-        </p>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
