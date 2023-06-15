@@ -1,4 +1,6 @@
-export const resume = {
+import { IResumeEntity } from 'src/interface/resume.interface';
+
+export const resume: IResumeEntity = {
   basics: {
     name: 'Tushar Nimje',
     label: 'Software Engineer',
@@ -132,7 +134,6 @@ export const resume = {
   skills: [
     {
       title: 'Programming Languages',
-      description: [],
       skillDetails: [
         {
           name: 'JavaScript',
@@ -163,7 +164,6 @@ export const resume = {
     },
     {
       title: 'Frameworks / Libraies',
-      description: [],
       skillDetails: [
         {
           name: 'Angular',
@@ -194,7 +194,6 @@ export const resume = {
     },
     {
       title: 'Database',
-      description: [],
       skillDetails: [
         {
           name: 'Mongodb',
@@ -210,7 +209,6 @@ export const resume = {
     },
     {
       title: 'Tools',
-      description: [],
       skillDetails: [
         {
           name: 'Git',

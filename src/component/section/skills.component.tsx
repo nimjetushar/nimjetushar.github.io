@@ -4,11 +4,11 @@ import {
   ISkillDetailsEntity,
 } from '../../interface/resume.interface';
 
-interface ISkillDetailComponentProps {
+type SkillDetailComponentProps = {
   detail: ISkillDetailsEntity;
-}
+};
 
-const SkillDetail = (props: ISkillDetailComponentProps) => {
+const SkillDetail: React.FC<SkillDetailComponentProps> = (props) => {
   const [style, setStyle] = useState({
     background: '#313131',
   });
@@ -38,21 +38,15 @@ const SkillDetail = (props: ISkillDetailComponentProps) => {
   );
 };
 
-interface ISkillComponentProps {
+type SkillComponentProps = {
   title: string;
   content: ISkillDetailsEntity[];
-  summary: string[];
-}
+};
 
-const Skill = ({ content, summary, title }: ISkillComponentProps) => {
+const Skill: React.FC<SkillComponentProps> = ({ content, title }) => {
   return (
     <div className="row inside">
       <h3>{title}</h3>
-      {summary.map((point, index) => (
-        <p key={index} className="skill-summary">
-          {point}
-        </p>
-      ))}
       <div className="bars">
         <ul className="skills">
           {content.map((detail, index) => (
@@ -64,7 +58,7 @@ const Skill = ({ content, summary, title }: ISkillComponentProps) => {
   );
 };
 
-export const Skills = ({ skills }: { skills: ISkillsEntity[] }) => {
+export const Skills: React.FC<{ skills: ISkillsEntity[] }> = ({ skills }) => {
   return (
     <section id="skill">
       <div className="row skill">
@@ -79,7 +73,6 @@ export const Skills = ({ skills }: { skills: ISkillsEntity[] }) => {
               key={index}
               title={skill.title}
               content={skill.skillDetails}
-              summary={skill.description}
             />
           ))}
         </div>

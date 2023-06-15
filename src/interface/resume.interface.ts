@@ -57,7 +57,6 @@ export interface IEducationEntity {
 
 export interface ISkillsEntity {
   title: string;
-  description: string[];
   skillDetails: ISkillDetailsEntity[];
 }
 
