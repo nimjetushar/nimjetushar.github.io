@@ -1,14 +1,33 @@
 import React, { useState } from 'react';
 import {
-  ISkillsEntity,
-  ISkillDetailsEntity,
+  SkillsEntity,
+  SkillDetailsEntity,
+  SkillOverviewEntity,
 } from '../../interface/resume.interface';
 
-type SkillDetailComponentProps = {
-  detail: ISkillDetailsEntity;
+export const Skills: React.FC<{ skills: SkillsEntity }> = ({ skills }) => {
+  return (
+    <section id="skill">
+      <div className="row skill">
+        <div className="two columns header-col">
+          <h1>
+            <span>Skills</span>
+          </h1>
+        </div>
+        <div className="ten columns main-col">
+          {skills.details.map((skill, index) => (
+            <Skill key={index} {...skill} />
+          ))}
+        </div>
+        <div className="ten columns main-col">
+          <SkillOverview overview={skills.overview} />
+        </div>
+      </div>
+    </section>
+  );
 };
 
-const SkillDetail: React.FC<SkillDetailComponentProps> = (props) => {
+const SkillDetail: React.FC<{ detail: SkillDetailsEntity }> = (props) => {
   const [style, setStyle] = useState({
     background: '#313131',
   });
@@ -38,18 +57,16 @@ const SkillDetail: React.FC<SkillDetailComponentProps> = (props) => {
   );
 };
 
-type SkillComponentProps = {
+const Skill: React.FC<{
   title: string;
-  content: ISkillDetailsEntity[];
-};
-
-const Skill: React.FC<SkillComponentProps> = ({ content, title }) => {
+  skillDetails: SkillDetailsEntity[];
+}> = ({ skillDetails, title }) => {
   return (
     <div className="row inside">
       <h3>{title}</h3>
       <div className="bars">
         <ul className="skills">
-          {content.map((detail, index) => (
+          {skillDetails.map((detail, index) => (
             <SkillDetail key={index} detail={detail} />
           ))}
         </ul>
@@ -58,25 +75,37 @@ const Skill: React.FC<SkillComponentProps> = ({ content, title }) => {
   );
 };
 
-export const Skills: React.FC<{ skills: ISkillsEntity[] }> = ({ skills }) => {
+const SkillOverview: React.FC<{ overview: SkillOverviewEntity[] }> = ({
+  overview,
+}) => {
   return (
-    <section id="skill">
-      <div className="row skill">
-        <div className="two columns header-col">
-          <h1>
-            <span>Skills</span>
-          </h1>
+    <>
+      <h3>Overview</h3>
+      {overview.map((o, index) => (
+        <div
+          key={index}
+          style={{
+            display: 'inline-block',
+            fontSize: '40px',
+            margin: '10px 20px 10px 2px',
+            verticalAlign: 'bottom',
+          }}
+        >
+          <a href={o.url ? o.url : void 0} target="_blank" rel="noreferrer">
+            <OverviewElement {...o} />
+          </a>
         </div>
-        <div className="ten columns main-col">
-          {skills.map((skill, index) => (
-            <Skill
-              key={index}
-              title={skill.title}
-              content={skill.skillDetails}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+      ))}
+    </>
   );
+};
+
+const OverviewElement: React.FC<SkillOverviewEntity> = (props) => {
+  const { title, icon, path, style } = props;
+  if (icon) {
+    return <i className={icon} title={title} style={style} />;
+  } else if (path) {
+    return <img src={path} alt={title} title={title} style={style} />;
+  }
+  return null;
 };

@@ -4,8 +4,9 @@ import {
   IEducationEntity,
   ILanguagesEntity,
   IReferencesEntity,
-  ISkillsEntity,
+  SkillsEntity,
   IWorkEntity,
+  IResumeEntity,
 } from '../../interface/resume.interface';
 
 import { About } from './about.component';
@@ -15,16 +16,7 @@ import { Skills } from './skills.component';
 import { References } from './references.component';
 import { Footer } from './footer.component';
 
-interface ISectionComponentProps {
-  basics: IBasicsEntity;
-  work: IWorkEntity[];
-  education: IEducationEntity[];
-  references: IReferencesEntity[];
-  skills: ISkillsEntity[];
-  languages: ILanguagesEntity[];
-}
-
-export const Section = (props: ISectionComponentProps) => {
+export const Section: React.FC<IResumeEntity> = (props) => {
   return (
     <>
       <About content={props.basics} />

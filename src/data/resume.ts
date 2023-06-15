@@ -131,108 +131,214 @@ export const resume: IResumeEntity = {
       courses: [],
     },
   ],
-  skills: [
-    {
-      title: 'Programming Languages',
-      skillDetails: [
-        {
-          name: 'JavaScript',
-          level: '90',
-          keywords: ['programming'],
-        },
-        {
-          name: 'HTML + CSS',
-          level: '90',
-          keywords: ['programming'],
-        },
-        {
-          name: 'TypeScript',
-          level: '90',
-          keywords: ['programming'],
-        },
-        {
-          name: 'Node Js',
-          level: '80',
-          keywords: ['programming', 'server technology'],
-        },
-        {
-          name: 'Python',
-          level: '50',
-          keywords: ['language'],
-        },
-      ],
-    },
-    {
-      title: 'Frameworks / Libraies',
-      skillDetails: [
-        {
-          name: 'Angular',
-          level: '90',
-          keywords: ['Angular', 'Angular 2'],
-        },
-        {
-          name: 'SCSS / Less',
-          level: '80',
-          keywords: ['css preprocessors'],
-        },
-        {
-          name: 'React',
-          level: '80',
-          keywords: ['library'],
-        },
-        {
-          name: 'Express Js',
-          level: '70',
-          keywords: ['framework'],
-        },
-        {
-          name: 'AngularJs',
-          level: '80',
-          keywords: ['Angular 1.x'],
-        },
-      ],
-    },
-    {
-      title: 'Database',
-      skillDetails: [
-        {
-          name: 'Mongodb',
-          level: '50',
-          keywords: ['mongo db', 'mongoos'],
-        },
-        {
-          name: 'SQL',
-          level: '50',
-          keywords: ['sql', 'microsoft sql database', 'database'],
-        },
-      ],
-    },
-    {
-      title: 'Tools',
-      skillDetails: [
-        {
-          name: 'Git',
-          level: '80',
-          keywords: ['version management tool'],
-        },
-        {
-          name: 'Webpack',
-          level: '80',
-          keywords: ['bundler'],
-        },
-        {
-          name: 'Gulp',
-          level: '70',
-          keywords: ['build tool'],
-        },
-        {
-          name: 'Cordova',
-          level: '60',
-          keywords: ['mobile app development tool'],
-        },
-      ],
-    },
-  ],
+  skills: {
+    details: [
+      {
+        title: 'Programming Languages',
+        skillDetails: [
+          {
+            name: 'JavaScript',
+            level: '90',
+            keywords: ['programming'],
+          },
+          {
+            name: 'HTML + CSS',
+            level: '90',
+            keywords: ['programming'],
+          },
+          {
+            name: 'TypeScript',
+            level: '90',
+            keywords: ['programming'],
+          },
+          {
+            name: 'Node Js',
+            level: '80',
+            keywords: ['programming', 'server technology'],
+          },
+          {
+            name: 'Python',
+            level: '50',
+            keywords: ['language'],
+          },
+        ],
+      },
+      {
+        title: 'Frameworks / Libraies',
+        skillDetails: [
+          {
+            name: 'Angular',
+            level: '90',
+            keywords: ['Angular', 'Angular 2'],
+          },
+          {
+            name: 'SCSS / Less',
+            level: '80',
+            keywords: ['css preprocessors'],
+          },
+          {
+            name: 'React',
+            level: '80',
+            keywords: ['library'],
+          },
+          {
+            name: 'Express Js',
+            level: '70',
+            keywords: ['framework'],
+          },
+          {
+            name: 'AngularJs',
+            level: '80',
+            keywords: ['Angular 1.x'],
+          },
+        ],
+      },
+      {
+        title: 'Database',
+        skillDetails: [
+          {
+            name: 'Mongodb',
+            level: '50',
+            keywords: ['mongo db', 'mongoos'],
+          },
+          {
+            name: 'SQL',
+            level: '50',
+            keywords: ['sql', 'microsoft sql database', 'database'],
+          },
+        ],
+      },
+      {
+        title: 'Tools',
+        skillDetails: [
+          {
+            name: 'Git',
+            level: '80',
+            keywords: ['version management tool'],
+          },
+          {
+            name: 'Webpack',
+            level: '80',
+            keywords: ['bundler'],
+          },
+          {
+            name: 'Gulp',
+            level: '70',
+            keywords: ['build tool'],
+          },
+          {
+            name: 'Cordova',
+            level: '60',
+            keywords: ['mobile app development tool'],
+          },
+        ],
+      },
+    ],
+    overview: [
+      {
+        icon: 'fa-brands fa-angular',
+        title: 'Angular',
+        style: { color: '#b53b3b' },
+        url: 'https://angular.io/',
+      },
+      {
+        icon: 'fa-brands fa-react',
+        title: 'React',
+        url: 'https://react.dev/',
+        style: { color: '#005af5' },
+      },
+      {
+        title: 'Nx dev',
+        path: 'public/logo/nx-logo.svg',
+        url: 'https://nx.dev/',
+        style: { width: '50px', paddingBottom: '4px' },
+      },
+      {
+        title: 'Prime NG',
+        path: 'public/logo/prime-ng-logo.png',
+        url: 'https://primeng.org/',
+        style: { width: '38px' },
+      },
+      {
+        title: 'JavaScript',
+        icon: 'fa-brands fa-js',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        style: { color: '#dcc218' },
+      },
+      {
+        title: 'TypeScript',
+        path: 'public/logo/typescript-icon.svg',
+        url: 'https://www.typescriptlang.org/',
+        style: { width: '40px' },
+      },
+      {
+        title: 'Github',
+        icon: 'fa-brands fa-github',
+        url: 'https://github.com/',
+        style: { color: '#000' },
+      },
+      {
+        title: 'Docker',
+        icon: 'fa-brands fa-docker',
+        url: 'https://www.docker.com/',
+        style: { color: '#1b63de' },
+      },
+      {
+        title: 'HTML 5',
+        icon: 'fa-brands fa-html5',
+        url: '',
+        style: { color: '#db1a1a' },
+      },
+      {
+        title: 'Python',
+        icon: 'fa-brands fa-python',
+        url: 'https://www.python.org/',
+        style: { color: '#09076e' },
+      },
+      {
+        title: 'Node JS',
+        icon: 'fa-brands fa-node',
+        url: 'https://nodejs.org/en',
+        style: { color: '#416204' },
+      },
+      {
+        title: 'Yarn',
+        icon: 'fa-brands fa-yarn',
+        url: 'https://yarnpkg.com/',
+        style: { color: '#6ca0f9' },
+      },
+      {
+        title: 'HTML 5',
+        icon: 'fa-brands fa-html5',
+        url: '',
+        style: { color: '#db1a1a' },
+      },
+      {
+        title: 'HTML 5',
+        icon: 'fa-brands fa-html5',
+        url: '',
+        style: { color: '#db1a1a' },
+      },
+      {
+        title: 'HTML 5',
+        icon: 'fa-brands fa-html5',
+        url: '',
+        style: { color: '#db1a1a' },
+      },
+      {
+        title: 'HTML 5',
+        icon: 'fa-brands fa-html5',
+        url: '',
+        style: { color: '#db1a1a' },
+      },
+      {
+        title: 'HTML 5',
+        icon: 'fa-brands fa-html5',
+        url: '',
+        style: { color: '#db1a1a' },
+      },
+    ],
+  },
   languages: [
     {
       name: 'English',

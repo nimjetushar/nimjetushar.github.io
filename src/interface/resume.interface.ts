@@ -1,8 +1,10 @@
+import React from 'react';
+
 export interface IResumeEntity {
   basics: IBasicsEntity;
   work: IWorkEntity[];
   education: IEducationEntity[];
-  skills: ISkillsEntity[];
+  skills: SkillsEntity;
   languages: ILanguagesEntity[];
   references: IReferencesEntity[];
 }
@@ -55,16 +57,24 @@ export interface IEducationEntity {
   courses?: string[];
 }
 
-export interface ISkillsEntity {
-  title: string;
-  skillDetails: ISkillDetailsEntity[];
-}
+export type SkillsEntity = {
+  details: { title: string; skillDetails: SkillDetailsEntity[] }[];
+  overview: SkillOverviewEntity[];
+};
 
-export interface ISkillDetailsEntity {
+export type SkillDetailsEntity = {
   name: string;
   level: string;
   keywords?: string[];
-}
+};
+
+export type SkillOverviewEntity = {
+  title: string;
+  url: string;
+  icon?: string;
+  style?: React.CSSProperties;
+  path?: string;
+};
 
 export interface ILanguagesEntity {
   name: string;
