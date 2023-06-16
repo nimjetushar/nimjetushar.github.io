@@ -70,7 +70,7 @@ export type SkillDetailsEntity = {
 
 export type SkillOverviewEntity = {
   title: string;
-  url: string;
+  url?: string;
   icon?: string;
   style?: React.CSSProperties;
   path?: string;
