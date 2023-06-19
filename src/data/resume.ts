@@ -354,6 +354,35 @@ export const resume: IResumeEntity = {
         style: { width: '40px' },
       },
       {
+        title: 'SQL',
+        path: 'logo/sql.png',
+        style: { width: '40px' },
+      },
+      {
+        title: 'Mongo DB',
+        path: 'logo/mongodb.png',
+        url: 'https://www.mongodb.com/',
+        style: { width: '40px' },
+      },
+      {
+        title: 'React Native',
+        icon: 'fa-brands fa-react',
+        url: 'https://reactnative.dev/',
+        style: { color: '#fff', backgroundColor: '#1e3152' },
+      },
+      {
+        title: 'Cordova',
+        path: 'logo/cordova.webp',
+        url: 'https://cordova.apache.org/',
+        style: { width: '40px' },
+      },
+      {
+        title: 'Ionic',
+        path: 'logo/ionic.png',
+        url: 'https://ionicframework.com/',
+        style: { width: '40px' },
+      },
+      {
         title: 'NPM',
         icon: 'fa-brands fa-npm',
         url: 'https://www.npmjs.com/',
@@ -364,12 +393,6 @@ export const resume: IResumeEntity = {
         icon: 'fa-brands fa-yarn',
         url: 'https://yarnpkg.com/',
         style: { color: '#6ca0f9' },
-      },
-      {
-        title: 'React Native',
-        icon: 'fa-brands fa-react',
-        url: 'https://reactnative.dev/',
-        style: { color: '#fff', backgroundColor: '#1e3152' },
       },
       {
         title: 'Nx dev',
@@ -424,6 +447,12 @@ export const resume: IResumeEntity = {
         style: { width: '40px' },
       },
       {
+        title: 'JIRA',
+        icon: 'fa-brands fa-jira',
+        url: 'https://www.atlassian.com/software/jira',
+        style: { color: '#1b63de' },
+      },
+      {
         title: 'GIT',
         icon: 'fa-brands fa-git',
         style: { color: '#db1a1a' },
@@ -445,29 +474,6 @@ export const resume: IResumeEntity = {
         icon: 'fa-brands fa-jenkins',
         url: 'https://www.jenkins.io/',
         style: { color: '#1e3152' },
-      },
-      {
-        title: 'Cordova',
-        path: 'logo/cordova.webp',
-        url: 'https://cordova.apache.org/',
-        style: { width: '40px' },
-      },
-      {
-        title: 'Ionic',
-        path: 'logo/ionic.png',
-        url: 'https://ionicframework.com/',
-        style: { width: '40px' },
-      },
-      {
-        title: 'SQL',
-        path: 'logo/sql.png',
-        style: { width: '40px' },
-      },
-      {
-        title: 'Mongo DB',
-        path: 'logo/mongodb.png',
-        url: 'https://www.mongodb.com/',
-        style: { width: '40px' },
       },
       {
         title: 'Nodepad ++',
