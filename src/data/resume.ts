@@ -16,7 +16,7 @@ export const resume: IResumeEntity = {
       Strong in architectural research, software design and agile team. Good work experience working as a Individual contributer and Team player`,
     ],
     resumeUrl:
-      'https://github.com/nimjetushar/nimjetushar.github.io/blob/master/resume/Tushar%20Nimje.pdf',
+      'https://github.com/nimjetushar/nimjetushar.github.io/raw/master/resume/Tushar%20Nimje.pdf',
     location: {
       address: '',
       postalCode: '',
