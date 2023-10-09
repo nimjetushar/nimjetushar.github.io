@@ -23,7 +23,7 @@
     "@nx/linter": "16.3.2",
     "@nx/react": "16.3.1",
     "@nx/vite": "16.3.1",
-    "@nx/workspace": "16.3.1",
+    "@nx/workspace": "16.10.0",
     "@testing-library/react": "14.0.0",
     "@types/node": "20.3.3",
     "@types/react": "18.2.21",
