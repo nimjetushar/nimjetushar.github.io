@@ -1,12 +1,12 @@
 import './App.scss';
+import { AboutSection } from './components/about-section.component';
+import { SkillSection } from './components/skill-section.component';
 
 export function App() {
   return (
-    <div>
-      <h1>
-        <span> Hello there, </span>
-        Welcome portfolio 👋
-      </h1>
+    <div className="vg-page">
+      <AboutSection />
+      <SkillSection />
     </div>
   );
 }

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx run portfolio:serve"
+    "start": "nx run portfolio:serve",
+    "lint": "nx run portfolio:lint",
+    "build": "nx run portfolio:build"
   },
   "private": true,
   "devDependencies": {
