@@ -1,0 +1,238 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@swc/helpers": "~0.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tslib": "^2.3.0",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@nx/eslint": "17.2.8",
+    "@nx/eslint-plugin": "17.2.8",
+    "@nx/jest": "17.2.8",
+    "@nx/js": "17.2.8",
+    "@nx/react": "^17.2.8",
+    "@nx/webpack": "17.2.8",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@svgr/webpack": "^8.0.1",
+    "@swc-node/register": "~1.6.7",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@testing-library/react": "14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "18.16.9",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "babel-jest": "^29.4.1",
+    "eslint": "~8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "nx": "17.2.8",
+    "prettier": "^2.6.2",
+    "react-refresh": "^0.10.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.2.2",
+    "url-loader": "^4.1.1"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "2841623009475199416"
+      },
+      {
+        "file": ".git/index",
+        "hash": "8644616376973072021"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "18440537626942857166"
+      }
+    ],
+    "projectFileMap": {
+      "portfolio": [
+        {
+          "file": "portfolio/.babelrc",
+          "hash": "13020124393823981135"
+        },
+        {
+          "file": "portfolio/.eslintrc.json",
+          "hash": "7388911630545237055"
+        },
+        {
+          "file": "portfolio/jest.config.ts",
+          "hash": "18242623828335324322"
+        },
+        {
+          "file": "portfolio/project.json",
+          "hash": "14586502486442927992"
+        },
+        {
+          "file": "portfolio/src/app/App.scss",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "portfolio/src/app/App.tsx",
+          "hash": "2757113817741713577"
+        },
+        {
+          "file": "portfolio/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "portfolio/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "portfolio/src/index.html",
+          "hash": "14050091152049140282"
+        },
+        {
+          "file": "portfolio/src/main.tsx",
+          "hash": "15724100768856802330",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "portfolio/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "portfolio/tsconfig.app.json",
+          "hash": "16536883993834092355"
+        },
+        {
+          "file": "portfolio/tsconfig.json",
+          "hash": "17849894785030224090"
+        },
+        {
+          "file": "portfolio/tsconfig.spec.json",
+          "hash": "6810478594055726884"
+        },
+        {
+          "file": "portfolio/webpack.config.js",
+          "hash": "9397115949254193752",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:@nx/react"
+          ]
+        }
+      ],
+      "nimjetushar.github.io": [
+        {
+          "file": ".DS_Store",
+          "hash": "14188633576448112788"
+        },
+        {
+          "file": ".eslintignore",
+          "hash": "7663861978715868291"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "18315524891129148814"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "16448050467312557263"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".semaphore/semaphore.yml",
+          "hash": "10125974930393808743"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "4637156562308165301"
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "12333515226966617182",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "9828375616581105368"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "2121211921985068287"
+        },
+        {
+          "file": "package.json",
+          "hash": "10417944416613425240",
+          "deps": [
+            "npm:@swc/helpers",
+            "npm:react",
+            "npm:react-dom",
+            "npm:tslib",
+            "npm:@babel/core",
+            "npm:@babel/preset-react",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/react",
+            "npm:@nx/webpack",
+            "npm:@pmmmwh/react-refresh-webpack-plugin",
+            "npm:@svgr/webpack",
+            "npm:@swc-node/register",
+            "npm:@swc/cli",
+            "npm:@swc/core",
+            "npm:@testing-library/react",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:babel-jest",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:jest",
+            "npm:jest-environment-jsdom",
+            "npm:nx",
+            "npm:prettier",
+            "npm:react-refresh",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript",
+            "npm:url-loader"
+          ]
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "16936441711144470533"
+        }
+      ]
+    }
+  }
+}
