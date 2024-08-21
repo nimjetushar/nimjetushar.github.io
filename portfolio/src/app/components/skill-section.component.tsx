@@ -22,21 +22,6 @@ export const SkillSection = () => {
               </div>
             </div>
             <div className="progress-wrapper wow fadeInUp">
-              <span className="caption">PHP</span>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  role="progressbar"
-                  // style="width: 80%;"
-                  // aria-valuenow="75"
-                  // aria-valuemin="0"
-                  // aria-valuemax="100"
-                >
-                  80%
-                </div>
-              </div>
-            </div>
-            <div className="progress-wrapper wow fadeInUp">
               <span className="caption">HTML + CSS</span>
               <div className="progress">
                 <div
