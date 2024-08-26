@@ -16,12 +16,14 @@ export const FadeIn: React.FC<Props> = ({ children }) => {
   };
 
   return (
-    <Waypoint onEnter={onEntry}>
+    <Waypoint onEnter={onEntry} bottomOffset={'20%'}>
       <div
         className={`animate-box ${
           elementVisible ? 'fadeInUp animated-fast' : ''
         }`}
-      ></div>
+      >
+        {children}
+      </div>
     </Waypoint>
   );
 };

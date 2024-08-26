@@ -24,6 +24,29 @@ export type About = {
   }>;
 };
 
+export type Experience = {
+  company: string;
+  position: string;
+  website: string;
+  startDate: string;
+  endDate: string;
+  summary: string;
+  highlights: string[];
+};
+
+export type Education = {
+  institution: string;
+  area: string;
+  studyType: string;
+  startDate: string;
+  endDate: string;
+  gpa: string;
+  summary: string;
+  courses: string[];
+};
+
 export type Resume = {
   about: About;
+  work: Experience[];
+  education: Education[];
 };

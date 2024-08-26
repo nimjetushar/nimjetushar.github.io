@@ -483,24 +483,24 @@ figure {
     margin-bottom: 0;
   }
 }
-.timeline > li {
+.timeline li {
   margin-bottom: 20px;
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  .timeline > li {
+  .timeline li {
     margin-bottom: 4em;
   }
 }
-.timeline > li:before,
-.timeline > li:after {
+.timeline li:before,
+.timeline li:after {
   content: ' ';
   display: table;
 }
-.timeline > li:after {
+.timeline li:after {
   clear: both;
 }
-.timeline > li > .timeline-panel {
+.timeline li > .timeline-panel {
   width: 45%;
   float: left;
   margin-bottom: 0;
@@ -511,18 +511,18 @@ figure {
   border-radius: 4px;
 }
 @media screen and (max-width: 768px) {
-  .timeline > li > .timeline-panel {
+  .timeline  li > .timeline-panel {
     width: 85% !important;
   }
 }
 @media screen and (max-width: 480px) {
-  .timeline > li > .timeline-panel {
+  .timeline li > .timeline-panel {
     width: 75% !important;
   }
-  .timeline > li > .timeline-panel:before {
+  .timeline li > .timeline-panel:before {
     top: 30px;
   }
-  .timeline > li > .timeline-panel:after {
+  .timeline li > .timeline-panel:after {
     top: 31px;
   }
 }
@@ -562,24 +562,24 @@ figure {
   height: 44px;
   font-size: 18px;
 }
-.timeline > li.timeline-unverted {
+.timeline li.timeline-unverted {
   text-align: right;
 }
 @media screen and (max-width: 768px) {
-  .timeline > li.timeline-unverted {
+  .timeline li.timeline-unverted {
     text-align: left;
   }
 }
-.timeline > li.timeline-inverted > .timeline-panel {
+.timeline li.timeline-inverted > .timeline-panel {
   float: right;
 }
-.timeline > li.timeline-inverted > .timeline-panel:before {
+.timeline li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
-.timeline > li.timeline-inverted > .timeline-panel:after {
+.timeline li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
@@ -612,7 +612,7 @@ figure {
     left: 90px;
   }
 
-  ul.timeline > li > .timeline-panel {
+  ul.timeline  li > .timeline-panel {
     width: calc(100% - 200px);
     width: -moz-calc(100% - 200px);
     width: -webkit-calc(100% - 200px);
@@ -624,18 +624,18 @@ figure {
     top: 16px;
   }
 
-  ul.timeline > li > .timeline-panel {
+  ul.timeline  li > .timeline-panel {
     float: right;
   }
 
-  ul.timeline > li > .timeline-panel:before {
+  ul.timeline  li > .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
     right: auto;
   }
 
-  ul.timeline > li > .timeline-panel:after {
+  ul.timeline  li > .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;

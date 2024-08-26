@@ -1,5 +1,5 @@
 import React from 'react';
-import { About } from '../types/resume.type';
+import { About } from '../../types/resume.type';
 
 export const AboutSection: React.FC<{ about: About }> = ({ about }) => {
   const themeList = getDetails(about);

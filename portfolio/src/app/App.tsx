@@ -1,15 +1,15 @@
 import './App.scss';
-import { AboutSection } from './components/about-section.component';
-import { ResumeSection } from './components/resume-section.component';
-import { SkillSection } from './components/skill-section.component';
 import { resume } from './data';
+import { AboutSection } from './sections/about/about-section.component';
+import { ResumeSection } from './sections/resume/resume-section.component';
+import { SkillSection } from './sections/skill/skill-section.component';
 
 export function App() {
   return (
     <div className="vg-page">
       <AboutSection about={resume.about} />
-      <ResumeSection />
       <SkillSection />
+      <ResumeSection experience={resume.work} education={resume.education} />
     </div>
   );
 }
