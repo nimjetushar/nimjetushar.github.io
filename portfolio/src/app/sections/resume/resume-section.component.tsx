@@ -1,4 +1,4 @@
-import { FadeIn } from '../../components/fade-in.component';
+import { Animate } from '../../components/animate.component';
 import { Education, Experience } from '../../types/resume.type';
 import { EducationTimeline } from './education.component';
 import { WorkExperienceTimeline } from './work-experience.component';
@@ -11,11 +11,11 @@ type Props = {
 export const ResumeSection: React.FC<Props> = ({ experience, education }) => {
   return (
     <div id="fh5co-resume" className="container js">
-      <FadeIn className="row">
+      <Animate className="row">
         <div className="col-md-12 text-center fh5co-heading">
           <h2>My Resume</h2>
         </div>
-      </FadeIn>
+      </Animate>
       <div className="row">
         <div className="col-md-12 col-md-offset-0">
           <ul className="timeline">

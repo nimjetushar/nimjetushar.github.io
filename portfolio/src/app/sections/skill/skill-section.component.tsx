@@ -1,4 +1,4 @@
-import { FadeIn } from '../../components/fade-in.component';
+import { Animate } from '../../components/animate.component';
 import { Skills } from '../../types/resume.type';
 
 type Props = {
@@ -8,18 +8,18 @@ type Props = {
 export const SkillSection: React.FC<Props> = ({ skills }) => {
   return (
     <div className="container py-5">
-      <FadeIn>
+      <Animate>
         <h1 className="text-center fw-normal">My Skills</h1>
-      </FadeIn>
+      </Animate>
       <div className="row py-3">
         {skills.details.map((s, idx) => (
           <div key={idx} className="col-md-6 my-4">
             <div className="px-lg-3">
-              <FadeIn>
+              <Animate>
                 <h4>{s.title}</h4>
-              </FadeIn>
+              </Animate>
               {s.skillDetails.map((skill, skillIdx) => (
-                <FadeIn key={skillIdx} className="progress-wrapper">
+                <Animate key={skillIdx} className="progress-wrapper">
                   <span className="caption">{skill.name}</span>
                   <div className="progress">
                     <div
@@ -30,7 +30,7 @@ export const SkillSection: React.FC<Props> = ({ skills }) => {
                       {skill.level}%
                     </div>
                   </div>
-                </FadeIn>
+                </Animate>
               ))}
             </div>
           </div>

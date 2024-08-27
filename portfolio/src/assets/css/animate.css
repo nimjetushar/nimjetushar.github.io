@@ -1193,10 +1193,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);*/
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 
   to {
@@ -1209,10 +1207,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);*/
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 
   to {
@@ -1263,10 +1259,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);*/
-    -webkit-transform: translate3d(-50px, 0, 0);
-    transform: translate3d(-50px, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -1279,10 +1273,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);*/
-    -webkit-transform: translate3d(-50px, 0, 0);
-    transform: translate3d(-50px, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -1333,10 +1325,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
-    transform: translate3d(50px, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 
   to {
@@ -1349,10 +1339,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    /*-webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
-    transform: translate3d(50px, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
 
   to {
@@ -1404,15 +1392,12 @@ Copyright (c) 2015 Daniel Eden
   from {
     opacity: 0;
     visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 40px, 0);
-    transform: translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
   to {
     opacity: 1;
-    /*visibility: visible;*/
     -webkit-transform: none;
     transform: none;
   }
@@ -1422,10 +1407,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     opacity: 0;
     visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 40px, 0);
-    transform: translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
   to {
@@ -1445,10 +1428,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     opacity: 0;
     visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
   to {
@@ -1463,10 +1444,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     opacity: 0;
     visibility: hidden;
-    /*-webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);*/
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
   to {

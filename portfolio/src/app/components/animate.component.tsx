@@ -3,10 +3,11 @@ import { Waypoint } from 'react-waypoint';
 
 type Props = {
   children: ReactElement | ReactElement[];
+  type?: 'fadeInUp' | 'fadeInRight';
   className?: string;
 };
 
-export const FadeIn: React.FC<Props> = ({ children, className }) => {
+export const Animate: React.FC<Props> = (props) => {
   const elementRef = useRef<HTMLDivElement>(null);
   const [elementVisible, setElementVisible] = useState(false);
 
@@ -35,11 +36,11 @@ export const FadeIn: React.FC<Props> = ({ children, className }) => {
     <Waypoint onEnter={onEntry}>
       <div
         ref={elementRef}
-        className={`animate-box ${className ?? ''} ${
-          elementVisible ? 'fadeInUp animated' : ''
+        className={`animate-box ${props.className ?? ''} ${
+          elementVisible ? `${props.type ?? 'fadeInUp'} animated` : ''
         }`}
       >
-        {children}
+        {props.children}
       </div>
     </Waypoint>
   );

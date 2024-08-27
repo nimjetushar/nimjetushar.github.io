@@ -1,4 +1,4 @@
-import { FadeIn } from '../../components/fade-in.component';
+import { Animate } from '../../components/animate.component';
 import { Experience } from '../../types/resume.type';
 
 type Props = {
@@ -8,15 +8,15 @@ type Props = {
 export const WorkExperienceTimeline: React.FC<Props> = ({ experience }) => {
   return (
     <>
-      <FadeIn>
+      <Animate>
         <li className="timeline-heading text-center">
           <div>
             <h3>Work Experience</h3>
           </div>
         </li>
-      </FadeIn>
+      </Animate>
       {experience.map((exp, idx) => (
-        <FadeIn key={idx}>
+        <Animate key={idx}>
           <li className={idx % 2 ? 'timeline-inverted' : 'timeline-unverted'}>
             <div className="timeline-badge">
               <i className="icon-suitcase"></i>
@@ -33,7 +33,7 @@ export const WorkExperienceTimeline: React.FC<Props> = ({ experience }) => {
               </div>
             </div>
           </li>
-        </FadeIn>
+        </Animate>
       ))}
     </>
   );
