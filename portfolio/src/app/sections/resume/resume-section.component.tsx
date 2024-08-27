@@ -10,12 +10,10 @@ type Props = {
 
 export const ResumeSection: React.FC<Props> = ({ experience, education }) => {
   return (
-    <div id="fh5co-resume" className="container fh5co-bg-color js">
-      <FadeIn>
-        <div className="row">
-          <div className="col-md-12 text-center fh5co-heading">
-            <h2>My Resume</h2>
-          </div>
+    <div id="fh5co-resume" className="container js">
+      <FadeIn className="row">
+        <div className="col-md-12 text-center fh5co-heading">
+          <h2>My Resume</h2>
         </div>
       </FadeIn>
       <div className="row">

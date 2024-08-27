@@ -7,11 +7,11 @@ export const AboutSection: React.FC<{ about: About }> = ({ about }) => {
     <div className="container page-about py-5">
       <div className="row">
         <div className="col-lg-4 py-3">
-          <div className="img-place wow fadeInUp animated">
+          <div className="img-place fadeInUp animated">
             <img src="../assets/img/person.jpg" alt="" />
           </div>
         </div>
-        <div className="col-lg-6 offset-lg-1 wow fadeInRight animated">
+        <div className="col-lg-6 offset-lg-1 fadeInRight animated">
           <h1 className="fw-light">{about.name}</h1>
           <h5 className="fg-theme mb-3">{about.label}</h5>
           {about.summary.map((s, idx) => (

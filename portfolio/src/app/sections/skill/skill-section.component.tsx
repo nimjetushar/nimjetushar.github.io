@@ -1,108 +1,40 @@
-export const SkillSection = () => {
+import { FadeIn } from '../../components/fade-in.component';
+import { Skills } from '../../types/resume.type';
+
+type Props = {
+  skills: Skills;
+};
+
+export const SkillSection: React.FC<Props> = ({ skills }) => {
   return (
     <div className="container py-5">
-      <h1 className="text-center fw-normal wow fadeIn">My Skills</h1>
+      <FadeIn>
+        <h1 className="text-center fw-normal">My Skills</h1>
+      </FadeIn>
       <div className="row py-3">
-        <div className="col-md-6">
-          <div className="px-lg-3">
-            <h4 className="wow fadeInUp">Coding skills</h4>
-            <div className="progress-wrapper wow fadeInUp">
-              <span className="caption">JavaScript</span>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  role="progressbar"
-                  // style="width: 86%;"
-                  // aria-valuenow="75"
-                  // aria-valuemin="0"
-                  // aria-valuemax="100"
-                >
-                  86%
-                </div>
-              </div>
-            </div>
-            <div className="progress-wrapper wow fadeInUp">
-              <span className="caption">HTML + CSS</span>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  role="progressbar"
-                  // style="width: 100%;"
-                  // aria-valuenow="75"
-                  // aria-valuemin="0"
-                  // aria-valuemax="100"
-                >
-                  100%
-                </div>
-              </div>
-            </div>
-            <div className="progress-wrapper wow fadeInUp">
-              <span className="caption">Phyton</span>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  role="progressbar"
-                  // style="width: 90%;"
-                  // aria-valuenow="75"
-                  // aria-valuemin="0"
-                  // aria-valuemax="100"
-                >
-                  90%
-                </div>
-              </div>
+        {skills.details.map((s, idx) => (
+          <div key={idx} className="col-md-6 my-4">
+            <div className="px-lg-3">
+              <FadeIn>
+                <h4>{s.title}</h4>
+              </FadeIn>
+              {s.skillDetails.map((skill, skillIdx) => (
+                <FadeIn key={skillIdx} className="progress-wrapper">
+                  <span className="caption">{skill.name}</span>
+                  <div className="progress">
+                    <div
+                      className="progress-bar"
+                      role="progressbar"
+                      style={{ width: `${skill.level}%` }}
+                    >
+                      {skill.level}%
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
             </div>
           </div>
-        </div>
-        <div className="col-md-6">
-          <div className="px-lg-3">
-            <h4 className="wow fadeInUp">Design Skills</h4>
-            <div className="progress-wrapper wow fadeInUp">
-              <span className="caption">UI / UX Design</span>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  role="progressbar"
-                  // style="width: 92%;"
-                  // aria-valuenow="75"
-                  // aria-valuemin="0"
-                  // aria-valuemax="100"
-                >
-                  92%
-                </div>
-              </div>
-            </div>
-            <div className="progress-wrapper wow fadeInUp">
-              <span className="caption">Web Design</span>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  role="progressbar"
-                  style={{ width: '99%' }}
-                  // aria-valuenow="75"
-                  // aria-valuemin="0"
-                  // aria-valuemax="100"
-                >
-                  99%
-                </div>
-              </div>
-            </div>
-            <div className="progress-wrapper wow fadeInUp">
-              <span className="caption">Logo Design</span>
-              <div className="progress">
-                <div
-                  className="progress-bar"
-                  role="progressbar"
-                  style={{ width: '79%' }}
-                  // aria-valuenow="75"
-                  // aria-valuemin="0"
-                  // aria-valuemax="100"
-                >
-                  79%
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

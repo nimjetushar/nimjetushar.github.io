@@ -17,11 +17,11 @@ export type About = {
     current: Location;
     origin: Location;
   };
-  profiles: Array<{
+  profiles: {
     network: string;
     username: string;
     url: string;
-  }>;
+  }[];
 };
 
 export type Experience = {
@@ -45,8 +45,22 @@ export type Education = {
   courses: string[];
 };
 
+export type SkillDetails = {
+  name: string;
+  level: string;
+  keywords: string[];
+};
+
+export type Skills = {
+  details: {
+    title: string;
+    skillDetails: SkillDetails[];
+  }[];
+};
+
 export type Resume = {
   about: About;
   work: Experience[];
   education: Education[];
+  skills: Skills;
 };

@@ -8,7 +8,7 @@ export function App() {
   return (
     <div className="vg-page">
       <AboutSection about={resume.about} />
-      <SkillSection />
+      <SkillSection skills={resume.skills} />
       <ResumeSection experience={resume.work} education={resume.education} />
     </div>
   );

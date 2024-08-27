@@ -129,81 +129,80 @@ export const resume: Resume = {
       courses: [],
     },
   ],
-  //   skills: {
-  //     details: [
-  //       {
-  //         title: 'Programming Languages',
-  //         skillDetails: [
-  //           {
-  //             name: 'JavaScript',
-  //             level: '90',
-  //             keywords: ['programming'],
-  //           },
-  //           {
-  //             name: 'HTML + CSS',
-  //             level: '90',
-  //             keywords: ['programming'],
-  //           },
-  //           {
-  //             name: 'TypeScript',
-  //             level: '90',
-  //             keywords: ['programming'],
-  //           },
-  //           {
-  //             name: 'Node Js',
-  //             level: '80',
-  //             keywords: ['programming', 'server technology'],
-  //           },
-  //           {
-  //             name: 'Python',
-  //             level: '50',
-  //             keywords: ['language'],
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         title: 'Frameworks / Libraies',
-  //         skillDetails: [
-  //           {
-  //             name: 'Angular',
-  //             level: '90',
-  //             keywords: ['Angular', 'Angular 2'],
-  //           },
-  //           {
-  //             name: 'SCSS / Less',
-  //             level: '80',
-  //             keywords: ['css preprocessors'],
-  //           },
-  //           {
-  //             name: 'React',
-  //             level: '80',
-  //             keywords: ['library'],
-  //           },
-  //           {
-  //             name: 'Express Js',
-  //             level: '70',
-  //             keywords: ['framework'],
-  //           },
-  //         ],
-  //       },
-  //       {
-  //         title: 'Database',
-  //         skillDetails: [
-  //           {
-  //             name: 'Mongodb',
-  //             level: '50',
-  //             keywords: ['mongo db', 'mongoos'],
-  //           },
-  //           {
-  //             name: 'SQL',
-  //             level: '50',
-  //             keywords: ['sql', 'microsoft sql database', 'database'],
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //     overview: skillsIcons,
-  //   },
+  skills: {
+    details: [
+      {
+        title: 'Programming Languages',
+        skillDetails: [
+          {
+            name: 'JavaScript',
+            level: '90',
+            keywords: ['programming'],
+          },
+          {
+            name: 'HTML + CSS',
+            level: '90',
+            keywords: ['programming'],
+          },
+          {
+            name: 'TypeScript',
+            level: '90',
+            keywords: ['programming'],
+          },
+          {
+            name: 'Node Js',
+            level: '80',
+            keywords: ['programming', 'server technology'],
+          },
+          {
+            name: 'Python',
+            level: '50',
+            keywords: ['language'],
+          },
+        ],
+      },
+      {
+        title: 'Frameworks / Libraies',
+        skillDetails: [
+          {
+            name: 'Angular',
+            level: '90',
+            keywords: ['Angular', 'Angular 2'],
+          },
+          {
+            name: 'SCSS / Less',
+            level: '80',
+            keywords: ['css preprocessors'],
+          },
+          {
+            name: 'React',
+            level: '80',
+            keywords: ['library'],
+          },
+          {
+            name: 'Express Js',
+            level: '70',
+            keywords: ['framework'],
+          },
+        ],
+      },
+      {
+        title: 'Database',
+        skillDetails: [
+          {
+            name: 'Mongodb',
+            level: '50',
+            keywords: ['mongo db', 'mongoos'],
+          },
+          {
+            name: 'SQL',
+            level: '50',
+            keywords: ['sql', 'microsoft sql database', 'database'],
+          },
+        ],
+      },
+    ],
+  },
   //   languages: [
   //     {
   //       name: 'English',

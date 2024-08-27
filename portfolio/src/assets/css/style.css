@@ -661,7 +661,7 @@ figure {
   float: right;
 }
 
-.progress {
+/* .progress {
   width: 100%;
   float: left;
   height: 5px;
@@ -688,7 +688,7 @@ figure {
 }
 .progress-bar.progress-bar-5 {
   background-color: #27ae60 !important;
-}
+} */
 
 .chart {
   width: 160px;
