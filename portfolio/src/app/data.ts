@@ -1,4 +1,4 @@
-import { Resume } from './types/resume.type';
+import {Resume} from './types/resume.type';
 
 export const resume: Resume = {
   about: {
@@ -19,8 +19,8 @@ export const resume: Resume = {
     resumeUrl:
       'https://github.com/nimjetushar/nimjetushar.github.io/raw/master/resume/Tushar%20Nimje.pdf',
     location: {
-      current: { city: 'Pune', country: 'India' },
-      origin: { city: 'Nagpur', country: 'India' },
+      current: {city: 'Pune', country: 'India'},
+      origin: {city: 'Nagpur', country: 'India'},
     },
     profiles: [
       {

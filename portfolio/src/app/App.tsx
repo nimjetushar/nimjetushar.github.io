@@ -1,18 +1,18 @@
 import './App.scss';
-import { resume } from './data';
-import { AboutSection } from './sections/about/about-section.component';
-import { Banner } from './sections/banner/banner.component';
-import { ResumeSection } from './sections/resume/resume-section.component';
-import { SkillSection } from './sections/skill/skill-section.component';
+import {resume} from './data';
+import {AboutSection} from './sections/about/about-section.component';
+import {Banner} from './sections/banner/banner.component';
+import {ResumeSection} from './sections/resume/resume-section.component';
+import {SkillSection} from './sections/skill/skill-section.component';
 
 export function App() {
   return (
-    <div className="vg-page">
+    <>
       <Banner about={resume.about} />
       <AboutSection about={resume.about} />
       <SkillSection skills={resume.skills} />
       <ResumeSection experience={resume.work} education={resume.education} />
-    </div>
+    </>
   );
 }
 

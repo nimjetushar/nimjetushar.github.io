@@ -1,11 +1,11 @@
-import { Animate } from '../../components/animate.component';
-import { Skills } from '../../types/resume.type';
+import {Animate} from '../../components/animate.component';
+import {Skills} from '../../types/resume.type';
 
 type Props = {
   skills: Skills;
 };
 
-export const SkillSection: React.FC<Props> = ({ skills }) => {
+export const SkillSection: React.FC<Props> = ({skills}) => {
   return (
     <div className="container py-5">
       <Animate>
@@ -25,7 +25,7 @@ export const SkillSection: React.FC<Props> = ({ skills }) => {
                     <div
                       className="progress-bar"
                       role="progressbar"
-                      style={{ width: `${skill.level}%` }}
+                      style={{width: `${skill.level}%`}}
                     >
                       {skill.level}%
                     </div>

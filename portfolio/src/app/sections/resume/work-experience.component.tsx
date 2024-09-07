@@ -1,12 +1,12 @@
-import { Animate } from '../../components/animate.component';
-import { Experience } from '../../types/resume.type';
-import { TimelinePanel } from './timeline-panel.component';
+import {Animate} from '../../components/animate.component';
+import {Experience} from '../../types/resume.type';
+import {TimelinePanel} from './timeline-panel.component';
 
 type Props = {
   experience: Experience[];
 };
 
-export const WorkExperienceTimeline: React.FC<Props> = ({ experience }) => {
+export const WorkExperienceTimeline: React.FC<Props> = ({experience}) => {
   return (
     <>
       <Animate>

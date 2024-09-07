@@ -1,14 +1,14 @@
-import { Animate } from '../../components/animate.component';
-import { Education, Experience } from '../../types/resume.type';
-import { EducationTimeline } from './education.component';
-import { WorkExperienceTimeline } from './work-experience.component';
+import {Animate} from '../../components/animate.component';
+import {Education, Experience} from '../../types/resume.type';
+import {EducationTimeline} from './education.component';
+import {WorkExperienceTimeline} from './work-experience.component';
 
 type Props = {
   experience: Experience[];
   education: Education[];
 };
 
-export const ResumeSection: React.FC<Props> = ({ experience, education }) => {
+export const ResumeSection: React.FC<Props> = ({experience, education}) => {
   return (
     <div id="fh5co-resume" className="container js">
       <Animate className="row">

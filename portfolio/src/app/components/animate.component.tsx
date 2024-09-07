@@ -1,5 +1,5 @@
-import React, { ReactElement, useEffect, useRef, useState } from 'react';
-import { Waypoint } from 'react-waypoint';
+import React, {ReactElement, useEffect, useRef, useState} from 'react';
+import {Waypoint} from 'react-waypoint';
 
 type Props = {
   children: ReactElement | ReactElement[];

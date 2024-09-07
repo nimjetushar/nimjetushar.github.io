@@ -1,9 +1,14 @@
 import React from 'react';
-import { Animate } from '../../components/animate.component';
-import { About } from '../../types/resume.type';
+import {Animate} from '../../components/animate.component';
+import {About} from '../../types/resume.type';
 
-export const AboutSection: React.FC<{ about: About }> = ({ about }) => {
+export const AboutSection: React.FC<{about: About}> = ({about}) => {
   const themeList = getDetails(about);
+
+  const downloadResume = () => {
+    window.open(about.resumeUrl);
+  };
+
   return (
     <div className="container page-about py-5">
       <div className="row">
@@ -13,24 +18,26 @@ export const AboutSection: React.FC<{ about: About }> = ({ about }) => {
           </Animate>
         </div>
         <Animate type="fadeInRight" className="col-lg-6 offset-lg-1">
+          <h1 className="fw-light">{about.name}</h1>
+          <h5 className="fg-theme mb-3">{about.label}</h5>
           <>
-            <h1 className="fw-light">{about.name}</h1>
-            <h5 className="fg-theme mb-3">{about.label}</h5>
             {about.summary.map((s, idx) => (
               <p key={idx} className="text-muted">
                 {s}
               </p>
             ))}
-
-            <ul className="theme-list">
-              {themeList.map((t, idx) => (
-                <li key={idx}>
-                  <b>{t.label}</b> {t.value}
-                </li>
-              ))}
-            </ul>
-            <button className="btn btn-theme-outline">Download CV</button>
           </>
+
+          <ul className="theme-list">
+            {themeList.map((t, idx) => (
+              <li key={idx}>
+                <b>{t.label}</b> {t.value}
+              </li>
+            ))}
+          </ul>
+          <button className="btn btn-theme-outline" onClick={downloadResume}>
+            Download CV
+          </button>
         </Animate>
       </div>
     </div>

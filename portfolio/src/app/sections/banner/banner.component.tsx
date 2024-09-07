@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import Background from '../../../assets/images/background.jpg';
-import { About } from '../../types/resume.type';
+import {About} from '../../types/resume.type';
 
 type Props = {
   about: About;
 };
 
-export const Banner: React.FC<Props> = ({ about }) => {
+export const Banner: React.FC<Props> = ({about}) => {
   const [height, setHeight] = useState('1000px');
 
   useEffect(() => {
@@ -29,15 +29,15 @@ export const Banner: React.FC<Props> = ({ about }) => {
     >
       <div className="overlay"></div>
       <div className="container">
-        <div className="display-t text-center" style={{ height }}>
+        <div className="display-t text-center" style={{height}}>
           <div
             className="display-tc animate-box fadeIn animated-fast"
             data-animate-effect="fadeIn"
-            style={{ height }}
+            style={{height}}
           >
             <div
               className="profile-thumb"
-              style={{ background: `url(${about.picture})` }}
+              style={{background: `url(${about.picture})`}}
             ></div>
             <h1>
               <span>{about.name}</span>
