@@ -27,33 +27,36 @@ export const resume: Resume = {
         network: 'Email',
         username: 'tusharnimje21@gmail.com',
         url: 'mailto:tusharnimje21@gmail.com',
+        iconClass: 'icon-mail',
       },
       {
         network: 'LinkedIn',
         username: 'tushar',
         url: 'https://www.linkedin.com/in/tushar-nimje',
+        iconClass: 'icon-linkedin3',
       },
-      {
-        network: 'GitHub',
-        username: 'nimjetushar',
-        url: 'https://github.com/nimjetushar',
-      },
-      {
-        network: 'StackShare',
-        username: 'nimjetushar',
-        url: 'https://stackshare.io/nimjetushar/my-stack',
-      },
-      {
-        network: 'HackerRank',
-        username: 'tusharnimje21',
-        url: 'https://www.hackerrank.com/tusharnimje21',
-      },
-      {
-        network: 'npm',
-        username: 'tusharnimje',
-        url: 'https://www.npmjs.com/~tusharnimje',
-      },
+      // {
+      //   network: 'GitHub',
+      //   username: 'nimjetushar',
+      //   url: 'https://github.com/nimjetushar',
+      // },
+      // {
+      //   network: 'StackShare',
+      //   username: 'nimjetushar',
+      //   url: 'https://stackshare.io/nimjetushar/my-stack',
+      // },
+      // {
+      //   network: 'HackerRank',
+      //   username: 'tusharnimje21',
+      //   url: 'https://www.hackerrank.com/tusharnimje21',
+      // },
+      // {
+      //   network: 'npm',
+      //   username: 'tusharnimje',
+      //   url: 'https://www.npmjs.com/~tusharnimje',
+      // },
     ],
+    jobTitle: ['Web Developer'],
   },
   work: [
     {

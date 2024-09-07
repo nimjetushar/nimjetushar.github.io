@@ -54,10 +54,6 @@ a:focus {
   text-decoration: none;
 }
 
-p {
-  margin-bottom: 30px;
-}
-
 h1,
 h2,
 h3,
@@ -372,6 +368,7 @@ figure {
   color: #ff9000;
   padding-left: 10px;
   padding-right: 10px;
+  text-decoration: none;
 }
 .fh5co-social-icons li a i {
   font-size: 20px;

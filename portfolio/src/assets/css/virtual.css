@@ -118,7 +118,7 @@ a:hover, a:active {
 }
 
 /* Overlay */
-.overlay {
+/* .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -126,7 +126,7 @@ a:hover, a:active {
     background: rgba(0,0,0,0.6);
     visibility: visible;
     z-index: 99;
-}
+} */
 
 /* 
     2. Button

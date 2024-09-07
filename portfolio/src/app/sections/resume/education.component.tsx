@@ -1,5 +1,6 @@
 import { Animate } from '../../components/animate.component';
 import { Education } from '../../types/resume.type';
+import { TimelinePanel } from './timeline-panel.component';
 
 type Props = {
   education: Education[];
@@ -15,24 +16,13 @@ export const EducationTimeline: React.FC<Props> = ({ education }) => {
           </div>
         </li>
       </Animate>
-      {education.map((exp, idx) => (
+      {education.map((edu, idx) => (
         <Animate key={idx}>
-          <li className={idx % 2 ? 'timeline-inverted' : 'timeline-unverted'}>
-            <div className="timeline-badge">
-              <i className="icon-suitcase"></i>
-            </div>
-            <div className="timeline-panel">
-              <div className="timeline-heading">
-                <h3 className="timeline-title">{exp.studyType}</h3>
-                <span className="company">
-                  {exp.institution} - {exp.startDate} - {exp.endDate}
-                </span>
-              </div>
-              <div className="timeline-body">
-                <p></p>
-              </div>
-            </div>
-          </li>
+          <TimelinePanel
+            inverted={!!(idx % 2)}
+            subTitle={`${edu.institution} - ${edu.startDate} - ${edu.endDate}`}
+            title={edu.studyType}
+          />
         </Animate>
       ))}
     </>

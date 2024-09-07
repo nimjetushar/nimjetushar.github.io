@@ -21,7 +21,9 @@ export type About = {
     network: string;
     username: string;
     url: string;
+    iconClass: string;
   }[];
+  jobTitle: string[];
 };
 
 export type Experience = {

@@ -9,7 +9,7 @@ export const AboutSection: React.FC<{ about: About }> = ({ about }) => {
       <div className="row">
         <div className="col-lg-4 py-3">
           <Animate className="img-place">
-            <img src="../assets/img/person.jpg" alt="" />
+            <img src={about.picture} alt={about.name} />
           </Animate>
         </div>
         <Animate type="fadeInRight" className="col-lg-6 offset-lg-1">
